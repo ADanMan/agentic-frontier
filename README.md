@@ -62,6 +62,11 @@ every morning, reads a fresh digest of **real current** papers and trending repo
 commits it. The content is real and grounded in today's sources; the automation is
 the point, not a disguise.
 
+The digest itself is fetched just before, by a GitHub Action
+([daily-digest](.github/workflows/digest.yml)) running on an open-internet runner —
+the post routine's sandbox can't reach arXiv/RSS directly, so the Action fetches and
+the routine writes from the committed digest.
+
 Guides in `guides/` stay evergreen (foundational deep-dives); the daily `posts/` are
 the fresh, digest-driven stream.
 
