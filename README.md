@@ -56,10 +56,14 @@ filler.
 
 This repo is fed by an **openly automated daily routine** — I'll say that plainly
 rather than pretend each post is hand-typed at dawn. A scheduled cloud agent runs
-every morning, picks a roadmap topic that hasn't been covered yet, writes one
-explainer in the plain-language, slightly-ironic voice you can see in the guides,
-saves it under `posts/`, and commits it. The content is real and on-topic; the
-automation is the point, not a disguise.
+every morning, reads a fresh digest of **real current** papers and trending repos
+(`scripts/digest.py`), picks one genuinely current item, and writes a **bilingual
+(RU + EN)** explainer about it — with a concept diagram — into `posts/<date>/`, then
+commits it. The content is real and grounded in today's sources; the automation is
+the point, not a disguise.
+
+Guides in `guides/` stay evergreen (foundational deep-dives); the daily `posts/` are
+the fresh, digest-driven stream.
 
 ### Prefer to run it yourself?
 
