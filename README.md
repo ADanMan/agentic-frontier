@@ -52,44 +52,24 @@ Short daily notes live in [`til/`](til/). One small, real thing learned per entr
 New entries are scaffolded with `scripts/new_til.py` and then written by hand — no
 filler.
 
-## The daily routine
+## How it runs (openly automated)
 
-The honest way to keep a green contribution graph is to *actually do a little every
-day and commit it*. This repo ships a tiny helper for exactly that:
+This repo is fed by an **openly automated daily routine** — I'll say that plainly
+rather than pretend each post is hand-typed at dawn. A scheduled cloud agent runs
+every morning, picks a roadmap topic that hasn't been covered yet, writes one
+explainer in the plain-language, slightly-ironic voice you can see in the guides,
+saves it under `posts/`, and commits it. The content is real and on-topic; the
+automation is the point, not a disguise.
 
-```bash
-python scripts/new_til.py "what I looked at today"
-# → creates til/2026/YYYY-MM-DD.md from a template
-# → open it, write 3–5 real sentences about what you learned
-git add til/ && git commit -m "til: <topic>"
-```
+### Prefer to run it yourself?
 
-No bots, no empty commits — each square is backed by a real note you can stand behind.
-
-### Optional: daily digest drop
-
-To seed ideas, `scripts/digest.py` drafts a digest from public sources (recent
-arXiv cs.AI/LG/CL papers + recently-trending AI repos) into `digests/<year>/`:
+Everything the routine does can also be run by hand — plus there's an optional
+GitHub Action ([daily.yml](.github/workflows/daily.yml)) and local scripts:
 
 ```bash
-python3 scripts/digest.py          # writes a DRAFT — it never commits
-# → open digests/YYYY-MM-DD.md, delete noise, add your own take per item
-git add digests/ && git commit -m "digest: YYYY-MM-DD"
-```
-
-The draft is a starting point, not the deliverable — the value (and the honesty)
-is in *curating* it and adding your own takes before committing.
-
-### Optional: a daily reminder
-
-If you want a nudge, install a local macOS reminder (a user LaunchAgent — no sudo,
-no cloud). It drafts the digest and pops a notification each morning; it never
-commits:
-
-```bash
-bash scripts/install_reminder.sh            # default 09:30
-bash scripts/install_reminder.sh 08:00      # custom time
-bash scripts/install_reminder.sh uninstall  # remove it
+python3 scripts/generate.py          # one post via the Anthropic API (needs ANTHROPIC_API_KEY)
+python3 scripts/new_til.py "topic"   # scaffold a dated note in til/
+python3 scripts/digest.py            # draft a digest from arXiv + trending repos
 ```
 
 ## License
