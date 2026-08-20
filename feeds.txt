@@ -1,0 +1,42 @@
+# RSS/Atom feeds for the daily digest — the "industry pulse" layer.
+# arXiv is handled separately by digest.py's API path (expanded categories),
+# so research papers are NOT listed here.
+#
+# One URL per line. Blank lines and lines starting with # are ignored; an inline
+# "# note" after a URL is fine (only the first token is used). Dead or moved feeds
+# are skipped automatically on fetch, so it's safe to keep optimistic entries.
+
+# ── vendor / engineering blogs ─────────────────────
+https://openai.com/news/rss.xml
+https://raw.githubusercontent.com/cnzhujie/ai-rss-feed/main/rss/anthropic_engineering_rss.xml
+https://huggingface.co/blog/feed.xml
+https://blog.google/technology/ai/rss/
+https://deepmind.google/blog/rss.xml
+
+# ── practitioners / newsletters ────────────────────
+https://magazine.sebastianraschka.com/feed
+https://simonwillison.net/atom/everything/
+https://jack-clark.net/feed/
+https://lilianweng.github.io/index.xml
+https://thegradient.pub/rss/
+https://lastweekin.ai/feed
+
+# ── Hacker News (topic-filtered via hnrss.org) ─────
+https://hnrss.org/frontpage?points=150
+https://hnrss.org/newest?q=LLM&points=50
+https://hnrss.org/newest?q=AI+agent&points=40
+https://hnrss.org/newest?q=agents&points=60
+https://hnrss.org/newest?q=RAG&points=30
+https://hnrss.org/newest?q=GPT&points=100
+https://hnrss.org/newest?q=diffusion+model&points=50
+https://hnrss.org/newest?q=fine-tuning&points=40
+https://hnrss.org/newest?q=vector+database&points=30
+https://hnrss.org/show?q=AI
+
+# ── news ───────────────────────────────────────────
+https://www.marktechpost.com/feed/
+
+# ── release radar (our stack) ──────────────────────
+https://github.com/vllm-project/vllm/releases.atom
+https://github.com/andrewyng/openworker/releases.atom
+https://github.com/multica-ai/multica/releases.atom
