@@ -48,9 +48,8 @@ In-depth, plain-language explanations of current tech.
 
 ## TIL (Today I Learned)
 
-Short daily notes live in [`til/`](til/). One small, real thing learned per entry.
-New entries are scaffolded with `scripts/new_til.py` and then written by hand — no
-filler.
+Short daily notes live in [`til/`](til/). One small, real thing learned per entry,
+written by hand — no filler.
 
 ## How it runs (openly automated)
 
@@ -58,9 +57,10 @@ This repo is fed by an **openly automated daily routine** — I'll say that plai
 rather than pretend each post is hand-typed at dawn. A scheduled cloud agent runs
 every morning, reads a fresh digest of **real current** papers and trending repos
 (`scripts/digest.py`), picks one genuinely current item, and writes a **bilingual
-(RU + EN)** explainer about it — with a concept diagram — into `posts/<date>/`, then
-commits it. The content is real and grounded in today's sources; the automation is
-the point, not a disguise.
+(RU + EN)** explainer about it — always citing the source, and illustrated with the
+source's own image when there is one (else a generated diagram) — into `posts/<date>/`,
+then commits it. The content is real and grounded in today's sources; the automation
+is the point, not a disguise.
 
 The digest itself is fetched just before, by a GitHub Action
 ([daily-digest](.github/workflows/digest.yml)) running on an open-internet runner —
@@ -70,15 +70,12 @@ the routine writes from the committed digest.
 Guides in `guides/` stay evergreen (foundational deep-dives); the daily `posts/` are
 the fresh, digest-driven stream.
 
-### Prefer to run it yourself?
+### Run the digest yourself
 
-Everything the routine does can also be run by hand — plus there's an optional
-GitHub Action ([daily.yml](.github/workflows/daily.yml)) and local scripts:
+The digest fetcher is the only moving part you'd run by hand; it needs no API key:
 
 ```bash
-python3 scripts/generate.py          # one post via the Anthropic API (needs ANTHROPIC_API_KEY)
-python3 scripts/new_til.py "topic"   # scaffold a dated note in til/
-python3 scripts/digest.py            # draft a digest from arXiv + trending repos
+python3 scripts/digest.py   # fetch today's digest (arXiv + feeds.txt + trending repos)
 ```
 
 ## License

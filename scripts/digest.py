@@ -5,9 +5,10 @@ Usage:
     python3 scripts/digest.py
 
 Sources:
-  - arXiv API (expanded CS + stat.ML categories) — recent papers, via the API path;
+  - arXiv API (expanded CS + stat.ML categories) — recent papers;
   - RSS/Atom feeds listed in feeds.txt — industry pulse (vendor blogs, practitioners,
-    Hacker News topic feeds, release radar);
+    Hacker News topic feeds, release radar). For feed items we also try to extract the
+    source page's og:image URL, so a post can embed the real source image;
   - recently-created high-star AI repos via the `gh` CLI (best-effort).
 
 Writes a DRAFT to digests/<year>/<YYYY-MM-DD>.md. It does NOT commit. Only reads
@@ -18,6 +19,7 @@ from __future__ import annotations
 
 import datetime as _dt
 import json
+import re
 import subprocess
 import sys
 import urllib.parse
@@ -41,6 +43,14 @@ ATOM = "{http://www.w3.org/2005/Atom}"
 
 MAX_PER_FEED = 3     # newest N entries kept per feed
 MAX_FEED_ITEMS = 30  # overall cap across all feeds
+MAX_IMAGES = 14      # how many feed items to probe for an og:image URL
+
+# og:image / twitter:image, both attribute orders.
+OG_PATTERNS = [
+    rb'property=["\']og:image(?::url)?["\'][^>]*?content=["\']([^"\'>]+)["\']',
+    rb'content=["\']([^"\'>]+)["\'][^>]*?property=["\']og:image(?::url)?["\']',
+    rb'name=["\']twitter:image["\'][^>]*?content=["\']([^"\'>]+)["\']',
+]
 
 
 def _get(url: str) -> bytes:
@@ -61,8 +71,7 @@ def fetch_arxiv() -> list[dict]:
         }
     )
     try:
-        raw = _get(f"{ARXIV_API}?{params}")
-        root = ET.fromstring(raw)
+        root = ET.fromstring(_get(f"{ARXIV_API}?{params}"))
     except Exception as exc:  # network/parse — degrade gracefully
         print(f"[arxiv] skipped: {exc}", file=sys.stderr)
         return []
@@ -130,7 +139,7 @@ def fetch_one_feed(url: str) -> list[dict]:
                 ):
                     link = child.get("href")
         if title and link:
-            items.append({"title": title, "url": link, "source": source})
+            items.append({"title": title, "url": link, "source": source, "image": None})
         if len(items) >= MAX_PER_FEED:
             break
     return items
@@ -148,6 +157,28 @@ def fetch_feeds() -> list[dict]:
             if len(out) >= MAX_FEED_ITEMS:
                 return out
     return out
+
+
+def fetch_og_image_url(page_url: str) -> str | None:
+    """Return the source page's og:image (absolute URL), or None. Best-effort."""
+    try:
+        html = _get(page_url)
+    except Exception:
+        return None
+    for pat in OG_PATTERNS:
+        m = re.search(pat, html, re.IGNORECASE)
+        if m:
+            raw = m.group(1).decode("utf-8", "ignore").strip()
+            url = urllib.parse.urljoin(page_url, raw)
+            if url.startswith("http"):
+                return url
+    return None
+
+
+def attach_images(feeds: list[dict]) -> None:
+    """Probe the first MAX_IMAGES feed items for an og:image URL (in place)."""
+    for item in feeds[:MAX_IMAGES]:
+        item["image"] = fetch_og_image_url(item["url"])
 
 
 def fetch_trending_repos() -> list[dict]:
@@ -194,8 +225,8 @@ def render(today, papers, feeds, repos) -> str:
         "",
         f"# AI digest — {today.isoformat()}",
         "",
-        "> Draft auto-generated from public sources. Delete the noise, keep what",
-        "> matters, and add one line of your own take per item before committing.",
+        "> Draft auto-generated from public sources. Every item carries its real source",
+        "> URL; feed items may also carry an `image:` (the source's og:image).",
         "",
         "## Recent papers (arXiv)",
         "",
@@ -204,8 +235,8 @@ def render(today, papers, feeds, repos) -> str:
         for p in papers:
             authors = ", ".join(p["authors"]) + (" et al." if len(p["authors"]) >= 4 else "")
             lines.append(f"- **[{p['title']}]({p['url']})** — {authors}")
+            lines.append(f"  - source: {p['url']}")
             lines.append(f"  - {p['summary']}")
-            lines.append("  - _My take:_ ")
     else:
         lines.append("_(arXiv fetch skipped — add papers manually.)_")
 
@@ -213,6 +244,9 @@ def render(today, papers, feeds, repos) -> str:
     if feeds:
         for f in feeds:
             lines.append(f"- [{f['title']}]({f['url']}) — _{f['source']}_")
+            lines.append(f"  - source: {f['url']}")
+            if f.get("image"):
+                lines.append(f"  - image: {f['image']}")
     else:
         lines.append("_(no feed items — feeds.txt empty or all fetches failed.)_")
 
@@ -220,6 +254,7 @@ def render(today, papers, feeds, repos) -> str:
     if repos:
         for r in repos:
             lines.append(f"- **[{r['name']}]({r['url']})** — ⭐{r['stars']}")
+            lines.append(f"  - source: {r['url']}")
             if r["desc"]:
                 lines.append(f"  - {r['desc']}")
     else:
@@ -238,15 +273,15 @@ def main() -> int:
 
     papers = fetch_arxiv()
     feeds = fetch_feeds()
+    attach_images(feeds)
     repos = fetch_trending_repos()
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(render(today, papers, feeds, repos), encoding="utf-8")
 
+    with_img = sum(1 for f in feeds if f.get("image"))
     print(f"Drafted {out_path}")
-    print(f"  papers: {len(papers)}  feed items: {len(feeds)}  repos: {len(repos)}")
-    print("Curate it, then:")
-    print(f'  git add digests/ && git commit -m "digest: {today.isoformat()}"')
+    print(f"  papers: {len(papers)}  feed items: {len(feeds)} ({with_img} w/ image)  repos: {len(repos)}")
     return 0
 
 
