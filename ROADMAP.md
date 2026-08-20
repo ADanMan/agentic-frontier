@@ -1,70 +1,52 @@
-# Roadmap
+# Roadmap — search vectors, not a shopping list
 
-The backlog of guides and deep-dives across the **full** current AI stack, not just
-agent frameworks. Each item becomes a file under `guides/` when written. Checked off
-only when the guide actually exists.
+A list of tools rots in months (whatever was the default six months ago is already
+legacy). So this file isn't a checklist of technologies — it's a set of durable
+**search vectors**: lenses to point at whatever the daily digest drags in.
 
-## Protocols & standards
+When a new paper or repo shows up, don't ask "is it on the list?" — ask **which vector
+it belongs to**. That's how you stay current without chasing names. The concrete names
+live at the bottom, dated, under *Recent signals* — the vectors above them stay put.
 
-- [x] **MCP (Model Context Protocol)** — how agents discover and call external tools
-- [ ] **Agent Skills** — progressive-disclosure capability packaging
-- [ ] **Agent-to-agent (A2A)** communication patterns
-- [ ] **Code execution with MCP** — calling MCPs as typed APIs instead of raw tool calls
+Think of it the way the *humanizer* skill names writing tells (inflated symbolism, rule
+of three, negative parallelisms…): stable, named patterns — not a catalogue of instances.
 
-## Agent frameworks & orchestration (current, 2025–2026)
+## Search vectors
 
-- [ ] **Claude Agent SDK** — Anthropic-native production agents
-- [ ] **LangGraph 1.0** — stateful multi-step workflows
-- [ ] **CrewAI** — role-based multi-agent prototypes
-- [ ] **LlamaIndex Workflows** — RAG-grounded agents
-- [ ] **openworker** (andrewyng/openworker) — open-source AI coworker teardown
-- [ ] **multica** (multica-ai/multica) — fan-out issues to 20+ coding agents
-- [ ] **openclaw** — self-hosted personal assistant + gateway model
+Each vector = a name, the question it asks, and what to look for.
 
-## RAG & retrieval
+- **Context economy** — *What does the system choose to put in the model's window, and
+  what does it throw away?* Look for: retrieval triggers, compaction, memory scoping,
+  cache-aware ordering.
+- **The authorization boundary** — *Where does "the model proposed X" turn into "X
+  actually happened"?* Look for: tool schemas, permission gates, draft-vs-commit,
+  sandboxing.
+- **Where the training signal comes from** — *What actually teaches the model, and does
+  that source scale?* Look for: self-play / synthetic environments, distillation, data
+  attribution, reward design.
+- **Retrieval as a first-class design** — *What is the unit of retrieval, and why that
+  unit?* Look for: chunking, hybrid search, graph-vs-vector, freshness.
+- **Serving under real load** — *What breaks when N users hit it at once?* Look for:
+  batching, paged attention, quantization, latency-vs-throughput tradeoffs.
+- **Adapting a model cheaply** — *When is changing weights worth it over changing the
+  prompt?* Look for: LoRA / QLoRA, low-VRAM finetuning, and when NOT to finetune.
+- **Proving it works** — *How do you know it's good, not just vibes?* Look for: eval
+  harnesses, hallucination detection, offline-vs-online, regression.
+- **Untrusted tool output** — *Where could injected text hijack the agent?* Look for:
+  prompt-injection boundaries, provenance, least privilege.
+- **The churn watch** — *What was the default six months ago that's now legacy, and why
+  did it lose?* Look for: framework migrations, deprecations, "we replaced X with Y".
 
-- [ ] **LlamaIndex** — data-centric agent development
-- [ ] **Haystack** — production RAG orchestration
-- [ ] **Vector DBs compared** — Milvus vs. Qdrant vs. Weaviate
-- [ ] **Hybrid search** — vector + structured filtering
-- [ ] **Knowledge graphs without a vector store** — deterministic AST/parse approaches
+## How this file stays fresh
 
-## Inference & serving
+The daily routine maps each digest item to the vector it touches and appends a dated
+one-liner under *Recent signals*. The vectors don't move; the evidence under them
+accumulates. Concrete tool names belong there — dated — never in the vectors themselves.
 
-- [ ] **vLLM** — high-throughput serving, paged attention
-- [ ] **Groq / Cerebras** — ultra-fast hosted inference (LPU / wafer-scale)
-- [ ] **On-device inference** — X-bit quantization, edge/private LLMs
-- [ ] **Serving on Apple Silicon** — tiny vLLM + small models
+## Recent signals
 
-## Fine-tuning & adaptation
+*(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- [ ] **Unsloth** — up to 80% less VRAM
-- [ ] **LlamaFactory** — unified fine-tuning across many models
-- [ ] **LoRA / QLoRA** — when adaptation beats prompting
-
-## Evals & observability
-
-- [ ] **DeepEval** — unit-testing LLM apps
-- [ ] **RAGAS** — retrieval quality metrics
-- [ ] **Tracing & production monitoring** — what to log, what to alert on
-- [ ] **Hallucination detection** — automated + human-in-the-loop
-
-## Harness engineering (the durable knowledge)
-
-- [ ] **Anatomy of an agent harness** — the control-plane loop
-- [ ] **Tool design** — narrow, typed, validated, auditable contracts
-- [ ] **Permissions & approval gates** — draft vs. commit for risky actions
-- [ ] **Context engineering** — retrieval, memory, compaction, cache-aware ordering
-- [ ] **Planning & goals** — planning mode, checkpoints, stopping conditions
-- [ ] **Prompt caching & cost** — stable-prefix design, telemetry
-- [ ] **Prompt-injection boundaries** — treating tool output as untrusted data
-
-## Staying current (sources to mine)
-
-- [ ] Follow trend digests (e.g. `duanyytop/agents-radar` open-source trend issues)
-- [ ] Primary engineering blogs (Anthropic, OpenAI) + framework changelogs
-- [ ] arXiv agent-engineering papers (memory, eval, workflows)
-
----
-
-**Rule:** check items off only when the guide is written. Every guide links its sources.
+- 2026-08-20 — SPADE: self-play generates its own training environments → *Where the training signal comes from*
+- 2026-08-20 — Group-Calibrated On-Policy Distillation: long-context distillation pitfalls → *Where the training signal comes from*
+- 2026-08-20 — "Learned, Then Lost": measuring one example's effect on a pretrained model → *Proving it works*
