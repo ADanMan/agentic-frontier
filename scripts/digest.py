@@ -20,6 +20,7 @@ from __future__ import annotations
 import datetime as _dt
 import json
 import re
+from html import unescape
 import subprocess
 import sys
 import urllib.parse
@@ -168,7 +169,7 @@ def fetch_og_image_url(page_url: str) -> str | None:
     for pat in OG_PATTERNS:
         m = re.search(pat, html, re.IGNORECASE)
         if m:
-            raw = m.group(1).decode("utf-8", "ignore").strip()
+            raw = unescape(m.group(1).decode("utf-8", "ignore").strip())
             url = urllib.parse.urljoin(page_url, raw)
             if url.startswith("http"):
                 return url
