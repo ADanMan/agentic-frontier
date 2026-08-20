@@ -66,6 +66,32 @@ git add til/ && git commit -m "til: <topic>"
 
 No bots, no empty commits — each square is backed by a real note you can stand behind.
 
+### Optional: daily digest drop
+
+To seed ideas, `scripts/digest.py` drafts a digest from public sources (recent
+arXiv cs.AI/LG/CL papers + recently-trending AI repos) into `digests/<year>/`:
+
+```bash
+python3 scripts/digest.py          # writes a DRAFT — it never commits
+# → open digests/YYYY-MM-DD.md, delete noise, add your own take per item
+git add digests/ && git commit -m "digest: YYYY-MM-DD"
+```
+
+The draft is a starting point, not the deliverable — the value (and the honesty)
+is in *curating* it and adding your own takes before committing.
+
+### Optional: a daily reminder
+
+If you want a nudge, install a local macOS reminder (a user LaunchAgent — no sudo,
+no cloud). It drafts the digest and pops a notification each morning; it never
+commits:
+
+```bash
+bash scripts/install_reminder.sh            # default 09:30
+bash scripts/install_reminder.sh 08:00      # custom time
+bash scripts/install_reminder.sh uninstall  # remove it
+```
+
 ## License
 
 [MIT](LICENSE) — take anything useful.
