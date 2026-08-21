@@ -54,3 +54,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-08-21 — Gemini 3.7 Flash: Google's fast/cheap model tier, routing over reasoning → *Serving under real load*
 - 2026-08-21 — OpenAI AI Futures: framing announcement, no product detail yet → *The churn watch*
 - 2026-08-21 — OpenAI Zero Data Retention on frontier models: promise vs. verifiable → *Context economy*
+- 2026-08-21 — watermarks-remover (16k★): strips C2PA/provenance marks from AI content → *Untrusted tool output*

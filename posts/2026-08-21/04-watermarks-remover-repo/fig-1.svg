@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="title desc">
+  <title id="title">Provenance marks vs. stripping tool</title>
+  <desc id="desc">AI-generated content carries provenance marks like C2PA or statistical signals checked by a detector; a stripping tool removes those marks so content passes as unlabeled instead of being flagged as AI.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrowhead); opacity: 0.85; }
+    .dashed { stroke-dasharray: 5 4; opacity: 0.6; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <rect x="20" y="120" width="150" height="60" rx="8" class="box"/>
+  <text x="95" y="145" text-anchor="middle" class="txt">ИИ-контент</text>
+  <text x="95" y="163" text-anchor="middle" class="lbl">image / text / doc</text>
+
+  <rect x="220" y="120" width="170" height="60" rx="8" class="box"/>
+  <text x="305" y="145" text-anchor="middle" class="txt">Метки происхождения</text>
+  <text x="305" y="163" text-anchor="middle" class="lbl">C2PA / статистические</text>
+
+  <rect x="440" y="120" width="150" height="60" rx="8" class="box"/>
+  <text x="515" y="145" text-anchor="middle" class="txt">Детектор /</text>
+  <text x="515" y="163" text-anchor="middle" class="lbl">политика платформы</text>
+
+  <rect x="220" y="230" width="170" height="50" rx="8" class="box dashed"/>
+  <text x="305" y="260" text-anchor="middle" class="lbl">watermarks-remover</text>
+
+  <text x="95" y="40" text-anchor="middle" class="lbl">метки целы → помечено как ИИ</text>
+  <text x="530" y="40" text-anchor="middle" class="lbl">метки сняты → проходит как немаркированный</text>
+
+  <path d="M170,150 L220,150" class="arrow"/>
+  <path d="M390,150 L440,150" class="arrow"/>
+  <path d="M305,230 L305,180" class="arrow dashed"/>
+</svg>
