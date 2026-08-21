@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" width="640" height="280" role="img" aria-labelledby="title desc">
+  <title id="title">Zero data retention inference flow</title>
+  <desc id="desc">A request goes through inference to a response; under zero data retention the request and response are discarded instead of being logged or used for training.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 15px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrowhead); opacity: 0.85; }
+    .dashed { stroke-dasharray: 5 4; opacity: 0.6; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <rect x="20" y="110" width="120" height="60" rx="8" class="box"/>
+  <text x="80" y="145" text-anchor="middle" class="txt">Запрос</text>
+
+  <rect x="200" y="110" width="120" height="60" rx="8" class="box"/>
+  <text x="260" y="145" text-anchor="middle" class="txt">Инференс</text>
+
+  <rect x="380" y="110" width="120" height="60" rx="8" class="box"/>
+  <text x="440" y="145" text-anchor="middle" class="txt">Ответ</text>
+
+  <circle cx="580" cy="70" r="34" class="box"/>
+  <text x="580" y="75" text-anchor="middle" class="lbl">Удалено</text>
+
+  <rect x="530" y="190" width="100" height="60" rx="8" class="box dashed"/>
+  <text x="580" y="215" text-anchor="middle" class="lbl">До ZDR:</text>
+  <text x="580" y="232" text-anchor="middle" class="lbl">лог / дообучение</text>
+
+  <path d="M140,140 L200,140" class="arrow"/>
+  <path d="M320,140 L380,140" class="arrow"/>
+  <path d="M320,120 C400,80 480,70 546,70" class="arrow dashed"/>
+  <path d="M320,160 C400,200 460,210 528,215" class="arrow dashed"/>
+</svg>
