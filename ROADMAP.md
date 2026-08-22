@@ -57,3 +57,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-08-21 — watermarks-remover (16k★): strips C2PA/provenance marks from AI content → *Untrusted tool output*
 - 2026-08-21 — qm (14k★): multiplayer agent harness, team-scale approval gates → *The authorization boundary*
 - 2026-08-21 — Google Sheets canvas: AI decides what data to surface vs. hide → *Context economy*
+- 2026-08-22 — genoffice (3.5k★): open-source office suite, agents write .docx/.xlsx/.pptx → *The authorization boundary*
