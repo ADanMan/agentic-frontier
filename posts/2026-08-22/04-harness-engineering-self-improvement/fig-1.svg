@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="title desc">
+  <title id="title">Harness engineering as a lever separate from weights</title>
+  <desc id="desc">Model weights connect to a harness made of tools, memory, and prompt or retry rules. Each of those improves capability without any gradient step back into the weights.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrowhead); opacity: 0.85; }
+    .dashed { stroke-dasharray: 5 4; opacity: 0.6; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <rect x="20" y="115" width="130" height="55" rx="8" class="box"/>
+  <text x="85" y="147" text-anchor="middle" class="txt">Model weights</text>
+
+  <rect x="215" y="115" width="110" height="55" rx="8" class="box"/>
+  <text x="270" y="147" text-anchor="middle" class="txt">Harness</text>
+
+  <rect x="390" y="20" width="110" height="45" rx="8" class="box"/>
+  <text x="445" y="47" text-anchor="middle" class="lbl">Tools</text>
+
+  <rect x="390" y="118" width="110" height="45" rx="8" class="box"/>
+  <text x="445" y="145" text-anchor="middle" class="lbl">Memory</text>
+
+  <rect x="390" y="215" width="140" height="45" rx="8" class="box"/>
+  <text x="460" y="242" text-anchor="middle" class="lbl">Prompt / retry rules</text>
+
+  <rect x="560" y="118" width="60" height="45" rx="8" class="box"/>
+  <text x="590" y="138" text-anchor="middle" class="lbl">Capability</text>
+  <text x="590" y="153" text-anchor="middle" class="lbl">improves</text>
+
+  <path d="M150,142 L215,142" class="arrow"/>
+  <path d="M325,135 L390,42" class="arrow"/>
+  <path d="M325,142 L390,140" class="arrow"/>
+  <path d="M325,150 L390,235" class="arrow"/>
+  <path d="M500,42 L560,120" class="arrow"/>
+  <path d="M500,140 L560,140" class="arrow"/>
+  <path d="M530,235 L560,160" class="arrow"/>
+
+  <path d="M590,118 C 590,60 200,60 85,115" class="arrow dashed"/>
+  <text x="330" y="55" text-anchor="middle" class="lbl">no gradient step back into weights</text>
+</svg>
