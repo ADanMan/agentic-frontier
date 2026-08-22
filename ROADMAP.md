@@ -61,3 +61,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-08-22 — phone-harness (2k★): agent taps/swipes your phone, no built-in action gate → *The authorization boundary*
 - 2026-08-22 — Vercel Labs Foreman: eve Software Factory template, full dev pipeline agent → *The churn watch*
 - 2026-08-22 — Lilian Weng, "Harness Engineering for Self-Improvement": scaffolding as the improvement lever → *Where the training signal comes from*
+- 2026-08-22 — Liquid AI LFM2.5-DSpark: up to 3.2x faster inference, edge-focused → *Serving under real load*
