@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" width="640" height="260" role="img" aria-labelledby="title desc">
+  <title id="title">Foreman software factory pipeline</title>
+  <desc id="desc">A task flows through Foreman the orchestrator, into code generation, automated tests, and review, which then either deploys autonomously or waits for a human checkpoint before deploy.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrowhead); opacity: 0.85; }
+    .dashed { stroke-dasharray: 5 4; opacity: 0.6; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <rect x="15" y="100" width="100" height="50" rx="8" class="box"/>
+  <text x="65" y="130" text-anchor="middle" class="txt">Task</text>
+
+  <rect x="155" y="100" width="120" height="50" rx="8" class="box"/>
+  <text x="215" y="130" text-anchor="middle" class="txt">Foreman</text>
+
+  <rect x="315" y="100" width="120" height="50" rx="8" class="box"/>
+  <text x="375" y="130" text-anchor="middle" class="txt">Code + tests</text>
+
+  <rect x="475" y="100" width="120" height="50" rx="8" class="box"/>
+  <text x="535" y="130" text-anchor="middle" class="txt">Review</text>
+
+  <rect x="380" y="200" width="110" height="45" rx="8" class="box"/>
+  <text x="435" y="227" text-anchor="middle" class="lbl">autonomous deploy</text>
+
+  <rect x="510" y="200" width="115" height="45" rx="8" class="box dashed"/>
+  <text x="567" y="227" text-anchor="middle" class="lbl">human checkpoint</text>
+
+  <path d="M115,125 L155,125" class="arrow"/>
+  <path d="M275,125 L315,125" class="arrow"/>
+  <path d="M435,125 L475,125" class="arrow"/>
+  <path d="M520,150 L450,200" class="arrow"/>
+  <path d="M555,150 L575,200" class="arrow dashed"/>
+</svg>

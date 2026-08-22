@@ -59,3 +59,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-08-21 — Google Sheets canvas: AI decides what data to surface vs. hide → *Context economy*
 - 2026-08-22 — genoffice (3.5k★): open-source office suite, agents write .docx/.xlsx/.pptx → *The authorization boundary*
 - 2026-08-22 — phone-harness (2k★): agent taps/swipes your phone, no built-in action gate → *The authorization boundary*
+- 2026-08-22 — Vercel Labs Foreman: eve Software Factory template, full dev pipeline agent → *The churn watch*
