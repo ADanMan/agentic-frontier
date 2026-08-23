@@ -67,3 +67,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-08-23 — DeepMind retrospective: Atari to EVE Online, environments getting more open → *The churn watch*
 - 2026-08-23 — Raschka on Claude watermarking: statistical token bias as provenance signal → *Untrusted tool output*
 - 2026-08-23 — Raschka on reasoning effort: a per-step dial, not a global switch → *Serving under real load*
+- 2026-08-23 — Fuxi (1.7k★): terminal coding agent, cost-aware multi-provider routing → *Serving under real load*
