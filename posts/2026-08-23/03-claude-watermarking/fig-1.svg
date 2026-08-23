@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" width="640" height="240" role="img" aria-labelledby="title desc">
+  <title id="title">Statistical text watermarking, conceptually</title>
+  <desc id="desc">A prompt goes into the model, which generates text with a slight, human-invisible statistical bias in token choice. The text reads normally to a person but a detector that knows the pattern can identify it as machine-generated.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrowhead); opacity: 0.85; }
+    .dashed { stroke-dasharray: 5 4; opacity: 0.6; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <rect x="15" y="90" width="100" height="50" rx="8" class="box"/>
+  <text x="65" y="120" text-anchor="middle" class="txt">Prompt</text>
+
+  <rect x="155" y="90" width="130" height="50" rx="8" class="box"/>
+  <text x="220" y="115" text-anchor="middle" class="txt">Claude</text>
+  <text x="220" y="130" text-anchor="middle" class="lbl">token bias</text>
+
+  <rect x="325" y="30" width="140" height="50" rx="8" class="box"/>
+  <text x="395" y="55" text-anchor="middle" class="txt">Reads normal</text>
+  <text x="395" y="70" text-anchor="middle" class="lbl">to a human</text>
+
+  <rect x="325" y="150" width="140" height="50" rx="8" class="box dashed"/>
+  <text x="395" y="175" text-anchor="middle" class="txt">Statistical trace</text>
+
+  <rect x="505" y="150" width="120" height="50" rx="8" class="box"/>
+  <text x="565" y="170" text-anchor="middle" class="txt">Detector</text>
+  <text x="565" y="185" text-anchor="middle" class="lbl">needs the key</text>
+
+  <path d="M115,115 L155,115" class="arrow"/>
+  <path d="M285,105 L325,60" class="arrow"/>
+  <path d="M285,125 L325,175" class="arrow dashed"/>
+  <path d="M465,175 L505,175" class="arrow dashed"/>
+</svg>
