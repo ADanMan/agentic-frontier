@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" width="640" height="240" role="img" aria-labelledby="title desc">
+  <title id="title">Reasoning effort as a dial, not a switch</title>
+  <desc id="desc">A horizontal dial ranging from low reasoning effort, fast and cheap but less accurate on hard tasks, to high reasoning effort, slow and expensive but more accurate. A marker shows the sweet spot depends on the task.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .track { fill: currentColor; opacity: 0.15; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.75; }
+    .marker { fill: currentColor; }
+  </style>
+
+  <text x="20" y="30" class="txt">Reasoning effort</text>
+
+  <rect x="20" y="60" width="600" height="24" rx="12" class="track"/>
+  <line x1="20" y1="60" x2="20" y2="84" class="box"/>
+  <line x1="620" y1="60" x2="620" y2="84" class="box"/>
+
+  <circle cx="160" cy="72" r="8" class="marker"/>
+  <circle cx="420" cy="72" r="8" class="marker"/>
+
+  <text x="20" y="110" class="lbl">Низкий / Low</text>
+  <text x="20" y="125" class="lbl">быстро, дёшево / fast, cheap</text>
+
+  <text x="620" y="110" text-anchor="end" class="lbl">Высокий / High</text>
+  <text x="620" y="125" text-anchor="end" class="lbl">медленно, дорого, точнее / slow, costly, sharper</text>
+
+  <text x="160" y="150" text-anchor="middle" class="lbl">тривиальный шаг</text>
+  <text x="160" y="163" text-anchor="middle" class="lbl">trivial step</text>
+
+  <text x="420" y="150" text-anchor="middle" class="lbl">сложный шаг</text>
+  <text x="420" y="163" text-anchor="middle" class="lbl">hard step</text>
+</svg>
