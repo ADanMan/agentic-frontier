@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" width="640" height="220" role="img" aria-labelledby="title desc">
+  <title id="title">Sign language recognition pipeline, gesture to text</title>
+  <desc id="desc">A hand gesture captured by camera feeds a multimodal model that accounts for motion, facial expression, and body position, producing recognized sign language output as text or speech for the other person in the conversation.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrowhead); opacity: 0.85; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <rect x="15" y="85" width="130" height="50" rx="8" class="box"/>
+  <text x="80" y="110" text-anchor="middle" class="txt">Camera input</text>
+  <text x="80" y="125" text-anchor="middle" class="lbl">gesture, face, pose</text>
+
+  <rect x="195" y="85" width="140" height="50" rx="8" class="box"/>
+  <text x="265" y="115" text-anchor="middle" class="txt">Model</text>
+
+  <rect x="385" y="85" width="130" height="50" rx="8" class="box"/>
+  <text x="450" y="110" text-anchor="middle" class="txt">Recognized</text>
+  <text x="450" y="125" text-anchor="middle" class="lbl">sign language</text>
+
+  <rect x="555" y="85" width="70" height="50" rx="8" class="box"/>
+  <text x="590" y="115" text-anchor="middle" class="txt">Text</text>
+
+  <path d="M145,110 L195,110" class="arrow"/>
+  <path d="M335,110 L385,110" class="arrow"/>
+  <path d="M515,110 L555,110" class="arrow"/>
+</svg>
