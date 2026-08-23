@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" width="640" height="260" role="img" aria-labelledby="title desc">
+  <title id="title">Game environments getting progressively more open, 2013 to 2026</title>
+  <desc id="desc">Four stages left to right: Atari, a closed single-agent environment with fixed rules; AlphaGo, a closed two-player environment; AlphaStar, a closed environment with a huge decision space; EVE Online, an open, multi-agent, player-driven economy with no fixed rules.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.12; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrowhead); opacity: 0.85; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <rect x="10" y="90" width="130" height="60" rx="8" class="box"/>
+  <text x="75" y="115" text-anchor="middle" class="txt">Atari</text>
+  <text x="75" y="133" text-anchor="middle" class="lbl">closed, 1 agent</text>
+
+  <rect x="175" y="90" width="130" height="60" rx="8" class="box"/>
+  <text x="240" y="115" text-anchor="middle" class="txt">AlphaGo</text>
+  <text x="240" y="133" text-anchor="middle" class="lbl">closed, 2 players</text>
+
+  <rect x="340" y="90" width="130" height="60" rx="8" class="box"/>
+  <text x="405" y="115" text-anchor="middle" class="txt">AlphaStar</text>
+  <text x="405" y="133" text-anchor="middle" class="lbl">huge decision space</text>
+
+  <rect x="505" y="80" width="130" height="80" rx="8" class="boxfill"/>
+  <text x="570" y="110" text-anchor="middle" class="txt">EVE Online</text>
+  <text x="570" y="128" text-anchor="middle" class="lbl">open, multi-agent</text>
+  <text x="570" y="144" text-anchor="middle" class="lbl">player-driven economy</text>
+
+  <path d="M140,120 L175,120" class="arrow"/>
+  <path d="M305,120 L340,120" class="arrow"/>
+  <path d="M470,120 L505,120" class="arrow"/>
+
+  <text x="10" y="200" class="lbl">2013–2015</text>
+  <text x="175" y="200" class="lbl">2016</text>
+  <text x="340" y="200" class="lbl">2019</text>
+  <text x="505" y="200" class="lbl">2026</text>
+</svg>
