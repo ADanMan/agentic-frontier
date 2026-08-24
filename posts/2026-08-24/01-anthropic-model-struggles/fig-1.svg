@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="title desc">
+  <title id="title">Quality leader vs. price-sensitive market</title>
+  <desc id="desc">A top-quality but expensive model and a cheaper "good enough" model both feed into a production team's decision, which weighs real traffic volume and unit economics rather than benchmark rank alone.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrowhead); opacity: 0.85; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <rect x="20" y="30" width="180" height="60" rx="8" class="box"/>
+  <text x="110" y="55" text-anchor="middle" class="txt">Топ-модель</text>
+  <text x="110" y="75" text-anchor="middle" class="lbl">высокое качество, выс. цена</text>
+
+  <rect x="20" y="200" width="180" height="60" rx="8" class="box"/>
+  <text x="110" y="225" text-anchor="middle" class="txt">Дешёвая модель</text>
+  <text x="110" y="245" text-anchor="middle" class="lbl">«достаточно хорошо»</text>
+
+  <rect x="280" y="115" width="180" height="70" rx="8" class="box"/>
+  <text x="370" y="140" text-anchor="middle" class="txt">Выбор</text>
+  <text x="370" y="158" text-anchor="middle" class="lbl">продакшн-команды</text>
+
+  <rect x="520" y="115" width="100" height="70" rx="8" class="box"/>
+  <text x="570" y="145" text-anchor="middle" class="txt">Unit-</text>
+  <text x="570" y="163" text-anchor="middle" class="txt">экономика</text>
+
+  <path d="M200,60 C240,60 240,120 280,140" class="arrow"/>
+  <path d="M200,230 C240,230 240,170 280,160" class="arrow"/>
+  <path d="M460,150 L520,150" class="arrow"/>
+</svg>
