@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" width="640" height="260" role="img" aria-labelledby="title desc">
+  <title id="title">AI text detector pipeline</title>
+  <desc id="desc">Arbitrary text goes through feature extraction and a statistical classifier to produce a confidence score, which is thresholded into an AI-or-human verdict; paraphrasing breaks the underlying statistical artifacts.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrowhead); opacity: 0.85; }
+    .dashed { stroke-dasharray: 5 4; opacity: 0.6; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <rect x="20" y="100" width="110" height="60" rx="8" class="box"/>
+  <text x="75" y="125" text-anchor="middle" class="txt">Текст</text>
+  <text x="75" y="143" text-anchor="middle" class="lbl">произвольный</text>
+
+  <rect x="180" y="100" width="130" height="60" rx="8" class="box"/>
+  <text x="245" y="125" text-anchor="middle" class="txt">Признаки</text>
+  <text x="245" y="143" text-anchor="middle" class="lbl">статистика</text>
+
+  <rect x="360" y="100" width="130" height="60" rx="8" class="box"/>
+  <text x="425" y="125" text-anchor="middle" class="txt">Классификатор</text>
+
+  <circle cx="580" cy="130" r="40" class="box"/>
+  <text x="580" y="126" text-anchor="middle" class="lbl">AI или</text>
+  <text x="580" y="141" text-anchor="middle" class="lbl">человек?</text>
+
+  <rect x="330" y="200" width="160" height="45" rx="8" class="box dashed"/>
+  <text x="410" y="227" text-anchor="middle" class="lbl">артефакты ломаются</text>
+
+  <path d="M130,130 L180,130" class="arrow"/>
+  <path d="M310,130 L360,130" class="arrow"/>
+  <path d="M490,130 L540,130" class="arrow"/>
+  <path d="M425,160 L410,200" class="arrow dashed"/>
+</svg>

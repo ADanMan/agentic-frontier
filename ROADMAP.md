@@ -73,3 +73,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-08-24 — Anthropic "Building Effective Agents": workflows fix control flow, agents let the model own it → *The authorization boundary*
 - 2026-08-24 — Anthropic Contextual Retrieval: LLM-annotate chunks before indexing to fix lost context → *Retrieval as a first-class design*
 - 2026-08-24 — SWE-bench Verified + Sonnet: the score is model + harness, not model alone → *Proving it works*
+- 2026-08-24 — Raschka's AI text detector from scratch: provenance is a heuristic score, not fact → *Untrusted tool output*
