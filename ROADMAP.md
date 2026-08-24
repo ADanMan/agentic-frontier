@@ -70,3 +70,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-08-23 — Fuxi (1.7k★): terminal coding agent, cost-aware multi-provider routing → *Serving under real load*
 - 2026-08-23 — DeepMind sign language AI: lab prototype to daily-use product for real users → *Proving it works*
 - 2026-08-24 — Anthropic's top model losing users to cheaper tools: benchmarks ≠ adoption → *Proving it works*
+- 2026-08-24 — Anthropic "Building Effective Agents": workflows fix control flow, agents let the model own it → *The authorization boundary*
