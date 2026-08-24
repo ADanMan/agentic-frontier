@@ -71,3 +71,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-08-23 — DeepMind sign language AI: lab prototype to daily-use product for real users → *Proving it works*
 - 2026-08-24 — Anthropic's top model losing users to cheaper tools: benchmarks ≠ adoption → *Proving it works*
 - 2026-08-24 — Anthropic "Building Effective Agents": workflows fix control flow, agents let the model own it → *The authorization boundary*
+- 2026-08-24 — Anthropic Contextual Retrieval: LLM-annotate chunks before indexing to fix lost context → *Retrieval as a first-class design*
