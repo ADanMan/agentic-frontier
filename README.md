@@ -48,27 +48,35 @@ In-depth, plain-language explanations of current tech.
 
 ## TIL (Today I Learned)
 
-Short daily notes live in [`til/`](til/). One small, real thing learned per entry,
-written by hand — no filler.
+Short daily notes live in [`til/`](til/), one folder per day (`til/<date>/NN-slug/`).
+One small, real thing learned per entry — no filler.
 
 ## How it runs (openly automated)
 
 This repo is fed by an **openly automated daily routine** — I'll say that plainly
 rather than pretend each post is hand-typed at dawn. A scheduled cloud agent runs
-every morning, reads a fresh digest of **real current** papers and trending repos
-(`scripts/digest.py`), picks one genuinely current item, and writes a **bilingual
-(RU + EN)** explainer about it — always citing the source, and illustrated with the
-source's own image when there is one (else a generated diagram) — into `posts/<date>/`,
-then commits it. The content is real and grounded in today's sources; the automation
-is the point, not a disguise.
+every morning, reads a fresh digest of **real current** sources (`scripts/digest.py`),
+and writes across three streams, each grounded in and citing today's real sources:
 
-The digest itself is fetched just before, by a GitHub Action
-([daily-digest](.github/workflows/digest.yml)) running on an open-internet runner —
-the post routine's sandbox can't reach arXiv/RSS directly, so the Action fetches and
-the routine writes from the committed digest.
+- **`posts/<date>/NN-slug/`** — full **bilingual (RU + EN)** explainers of the day's
+  most notable items, illustrated with the source's own image (else a generated diagram);
+- **`til/<date>/NN-slug/`** — short "today I learned" notes on smaller items;
+- **`guides/<date>/NN-slug/`** — deeper plain-language explainers of one concept.
 
-Guides in `guides/` stay evergreen (foundational deep-dives); the daily `posts/` are
-the fresh, digest-driven stream.
+Several folders per stream per day. The content is real and grounded in today's sources;
+the automation is the point, not a disguise.
+
+**Where the digest comes from.** The routine's cloud sandbox blocks outbound traffic to
+almost everything (arXiv, vendor blogs, Hacker News). What it *can* reach is
+`raw.githubusercontent.com`, so `feeds.txt` leads with community RSS **mirrors** hosted
+there — HF trending papers (with abstracts), GitHub trending/ranking repos, HF blog —
+that are rebuilt daily. `digest.py` fetches those in-sandbox; the arXiv API and vendor
+feeds below them enrich the digest only when the script runs on an open network. No
+GitHub Action and no API key are involved — the routine is fully self-contained.
+
+Evergreen deep-dives stay at the top level of [`guides/`](guides/) (e.g.
+[MCP explained](guides/mcp-explained.md)); the dated daily explainers land in
+`guides/<date>/` alongside them.
 
 ### Run the digest yourself
 

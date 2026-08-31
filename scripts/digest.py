@@ -4,15 +4,23 @@
 Usage:
     python3 scripts/digest.py
 
-Sources:
-  - arXiv API (expanded CS + stat.ML categories) — recent papers;
-  - RSS/Atom feeds listed in feeds.txt — industry pulse (vendor blogs, practitioners,
-    Hacker News topic feeds, release radar). For feed items we also try to extract the
-    source page's og:image URL, so a post can embed the real source image;
-  - recently-created high-star AI repos via the `gh` CLI (best-effort).
+Sources (each is best-effort — a blocked or dead source is skipped, never fatal):
+  - RSS/Atom feeds listed in feeds.txt — the industry pulse. IMPORTANT: the cloud
+    post-routine runs in a sandbox whose egress proxy blocks most hosts (arXiv, vendor
+    blogs, Hacker News, huggingface.co directly). What DOES get through is
+    `raw.githubusercontent.com`, so feeds.txt leads with community RSS *mirrors* hosted
+    there (HF trending papers, GitHub trending/ranking, HF blog) that are rebuilt daily.
+    Those mirrors are what keeps the digest current from inside the sandbox. Vendor feeds
+    and arXiv stay in feeds.txt below the mirrors: they enrich the digest when this script
+    runs on an open network, and cost nothing when they're blocked.
+  - arXiv API (expanded CS + stat.ML categories) — recent papers (open-network only);
+  - recently-created high-star AI repos via the `gh` CLI (best-effort; needs a token).
 
-Writes a DRAFT to digests/<year>/<YYYY-MM-DD>.md. It does NOT commit. Only reads
-public data; sends nothing anywhere.
+For each feed item we keep a short text summary (real grounding for the write-up) and
+try to extract the source page's og:image URL, so a post can embed the real source image.
+
+Writes a DRAFT to digests/<year>/<YYYY-MM-DD>.md. It does NOT commit, and it does NOT
+overwrite an existing draft for the day. Only reads public data; sends nothing anywhere.
 """
 
 from __future__ import annotations
@@ -127,7 +135,7 @@ def fetch_one_feed(url: str) -> list[dict]:
     for e in root.iter():
         if e.tag.split("}")[-1] not in ("item", "entry"):  # RSS item / Atom entry
             continue
-        title = link = None
+        title = link = summary = None
         for child in e:
             tag = child.tag.split("}")[-1]
             if tag == "title" and child.text and not title:
@@ -139,11 +147,28 @@ def fetch_one_feed(url: str) -> list[dict]:
                     not link or child.get("rel") in (None, "alternate")
                 ):
                     link = child.get("href")
+            elif tag in ("description", "summary", "content") and not summary:
+                summary = "".join(child.itertext()).strip()
         if title and link:
-            items.append({"title": title, "url": link, "source": source, "image": None})
+            items.append({
+                "title": title,
+                "url": link,
+                "source": source,
+                "image": None,
+                "summary": _clean_summary(summary),
+            })
         if len(items) >= MAX_PER_FEED:
             break
     return items
+
+
+def _clean_summary(text: str | None) -> str:
+    """Strip HTML tags/entities from a feed summary and trim to a short snippet."""
+    if not text:
+        return ""
+    text = unescape(re.sub(r"<[^>]+>", " ", text))
+    text = re.sub(r"\s+", " ", text).strip()
+    return text[:280] + ("…" if len(text) > 280 else "")
 
 
 def fetch_feeds() -> list[dict]:
@@ -248,6 +273,8 @@ def render(today, papers, feeds, repos) -> str:
             lines.append(f"  - source: {f['url']}")
             if f.get("image"):
                 lines.append(f"  - image: {f['image']}")
+            if f.get("summary"):
+                lines.append(f"  - {f['summary']}")
     else:
         lines.append("_(no feed items — feeds.txt empty or all fetches failed.)_")
 

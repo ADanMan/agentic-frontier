@@ -1,19 +1,32 @@
 # RSS/Atom feeds for the daily digest — the "industry pulse" layer.
-# arXiv is handled separately by digest.py's API path (expanded categories),
-# so research papers are NOT listed here.
 #
 # One URL per line. Blank lines and lines starting with # are ignored; an inline
 # "# note" after a URL is fine (only the first token is used). Dead or moved feeds
 # are skipped automatically on fetch, so it's safe to keep optimistic entries.
+#
+# ORDER MATTERS. digest.py keeps the newest few items per feed and caps the total,
+# walking this file top-down. The cloud post-routine's sandbox blocks egress to almost
+# everything EXCEPT raw.githubusercontent.com, so the reliably-reachable MIRRORS are
+# listed FIRST — they are what keeps the digest current from inside the sandbox. The
+# open-network sources (arXiv is handled in code; vendor blogs, HN, releases below)
+# enrich the digest when the script runs with open internet, and are simply skipped
+# when the proxy blocks them.
 
-# ── vendor / engineering blogs ─────────────────────
+# ── reachable-in-sandbox mirrors (raw.githubusercontent.com, rebuilt daily) ──
+# Community RSS mirrors. These pass the sandbox proxy and stay fresh, so they are the
+# spine of the digest. Papers carry an abstract; trending/ranking carry repo links.
+https://raw.githubusercontent.com/cnzhujie/ai-rss-feed/main/rss/huggingface_papers_rss.xml   # HF trending papers (arXiv-backed)
+https://raw.githubusercontent.com/cnzhujie/ai-rss-feed/main/rss/github_trending_rss.xml       # GitHub trending repos
+https://raw.githubusercontent.com/cnzhujie/ai-rss-feed/main/rss/github_ranking_ai_rss.xml     # top AI repos by momentum
+https://raw.githubusercontent.com/cnzhujie/ai-rss-feed/main/rss/huggingface_blog_rss.xml      # HF blog
+
+# ── vendor / engineering blogs (open-network only) ─────────────────
 https://openai.com/news/rss.xml
-https://raw.githubusercontent.com/cnzhujie/ai-rss-feed/main/rss/anthropic_engineering_rss.xml
 https://huggingface.co/blog/feed.xml
 https://blog.google/technology/ai/rss/
 https://deepmind.google/blog/rss.xml
 
-# ── practitioners / newsletters ────────────────────
+# ── practitioners / newsletters (open-network only) ────────────────
 https://magazine.sebastianraschka.com/feed
 https://simonwillison.net/atom/everything/
 https://jack-clark.net/feed/
@@ -21,22 +34,14 @@ https://lilianweng.github.io/index.xml
 https://thegradient.pub/rss/
 https://lastweekin.ai/feed
 
-# ── Hacker News (topic-filtered via hnrss.org) ─────
+# ── Hacker News (open-network only, via hnrss.org) ─────────────────
 https://hnrss.org/frontpage?points=150
 https://hnrss.org/newest?q=LLM&points=50
 https://hnrss.org/newest?q=AI+agent&points=40
 https://hnrss.org/newest?q=agents&points=60
 https://hnrss.org/newest?q=RAG&points=30
-https://hnrss.org/newest?q=GPT&points=100
-https://hnrss.org/newest?q=diffusion+model&points=50
-https://hnrss.org/newest?q=fine-tuning&points=40
-https://hnrss.org/newest?q=vector+database&points=30
-https://hnrss.org/show?q=AI
 
-# ── news ───────────────────────────────────────────
-https://www.marktechpost.com/feed/
-
-# ── release radar (our stack) ──────────────────────
+# ── release radar (open-network only) ──────────────────────────────
 https://github.com/vllm-project/vllm/releases.atom
-https://github.com/andrewyng/openworker/releases.atom
-https://github.com/multica-ai/multica/releases.atom
+https://github.com/ollama/ollama/releases.atom
+https://github.com/huggingface/transformers/releases.atom
