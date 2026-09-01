@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" role="img" aria-labelledby="title desc">
+  <title id="title">Classic OCR pipeline vs PULSAR vision-first retrieval</title>
+  <desc id="desc">Two pipelines for searching visual documents: OCR plus figure verbalization losing chart detail, versus PULSAR's late-interaction search directly on page images</desc>
+  <style>
+    text { font-family: -apple-system, Segoe UI, Roboto, sans-serif; }
+    .title { font-size: 15px; fill: currentColor; font-weight: 600; }
+    .step { font-size: 13px; fill: currentColor; }
+    .note { font-size: 12px; fill: currentColor; opacity: 0.65; }
+    .box-a { fill: none; stroke: #ef4444; stroke-width: 1.5; }
+    .box-b { fill: none; stroke: #22c55e; stroke-width: 1.5; }
+    .arrow { stroke: currentColor; stroke-width: 1.5; opacity: 0.6; marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" opacity="0.6"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="24" class="title">Classic pipeline</text>
+  <rect x="20" y="36" width="150" height="40" rx="6" class="box-a"/>
+  <text x="95" y="60" class="step" text-anchor="middle">OCR</text>
+  <line x1="170" y1="56" x2="210" y2="56" class="arrow"/>
+  <rect x="210" y="36" width="180" height="40" rx="6" class="box-a"/>
+  <text x="300" y="60" class="step" text-anchor="middle">Figure verbalization</text>
+  <line x1="390" y1="56" x2="430" y2="56" class="arrow"/>
+  <rect x="430" y="36" width="170" height="40" rx="6" class="box-a"/>
+  <text x="515" y="60" class="step" text-anchor="middle">Text index</text>
+  <text x="20" y="96" class="note">Expensive to refresh hourly · loses chart detail</text>
+
+  <text x="20" y="150" class="title">PULSAR</text>
+  <rect x="20" y="162" width="220" height="40" rx="6" class="box-b"/>
+  <text x="130" y="186" class="step" text-anchor="middle">Late-interaction search on page image</text>
+  <line x1="240" y1="182" x2="280" y2="182" class="arrow"/>
+  <rect x="280" y="162" width="220" height="40" rx="6" class="box-b"/>
+  <text x="390" y="186" class="step" text-anchor="middle">Pooled unified representation</text>
+  <text x="20" y="222" class="note">Vision-first · keeps chart and table structure</text>
+</svg>

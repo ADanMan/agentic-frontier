@@ -78,3 +78,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-01 — OpenAI cuts Cursor's model contract after its SpaceX acquisition → *The churn watch*
 - 2026-09-01 — deepseek-harness (205k★): "Everything is a Plugin" core/extension split → *The authorization boundary*
 - 2026-09-01 — Tencent Hy4 Preview: 770B total/49B active MoE, 2.5x Hy3's size → *Serving under real load*
+- 2026-09-01 — PULSAR: vision-first late-interaction RAG skips OCR for pitch decks → *Retrieval as a first-class design*
