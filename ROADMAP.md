@@ -76,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-08-24 — Raschka's AI text detector from scratch: provenance is a heuristic score, not fact → *Untrusted tool output*
 - 2026-08-24 — HF on ASR benchmark optimization: low WER on LibriSpeech ≠ real-world quality → *Proving it works*
 - 2026-09-01 — OpenAI cuts Cursor's model contract after its SpaceX acquisition → *The churn watch*
+- 2026-09-01 — deepseek-harness (205k★): "Everything is a Plugin" core/extension split → *The authorization boundary*
