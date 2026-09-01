@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" role="img" aria-labelledby="title desc">
+  <title id="title">Hy3 vs Hy4: total vs active parameters</title>
+  <desc id="desc">Bar chart comparing total and active parameter counts for Tencent's Hy3 and Hy4 Preview models</desc>
+  <style>
+    text { font-family: -apple-system, Segoe UI, Roboto, sans-serif; }
+    .label { font-size: 15px; fill: currentColor; }
+    .value { font-size: 14px; fill: currentColor; font-weight: 600; }
+    .axis { font-size: 12px; fill: currentColor; opacity: 0.6; }
+    .bar-total { fill: #6366f1; }
+    .bar-active { fill: #22c55e; }
+  </style>
+
+  <!-- legend -->
+  <rect x="20" y="16" width="14" height="14" class="bar-total"/>
+  <text x="40" y="27" class="label">Total parameters</text>
+  <rect x="220" y="16" width="14" height="14" class="bar-active"/>
+  <text x="240" y="27" class="label">Active parameters</text>
+
+  <!-- baseline -->
+  <line x1="140" y1="290" x2="140" y2="55" stroke="currentColor" opacity="0.25"/>
+
+  <!-- Hy3 row -->
+  <text x="20" y="120" class="label">Hy3 (Jul)</text>
+  <rect x="140" y="95" width="215" height="26" class="bar-total"/>
+  <text x="363" y="114" class="value">295B total</text>
+  <rect x="140" y="130" width="15" height="26" class="bar-active"/>
+  <text x="163" y="149" class="value">21B active</text>
+
+  <!-- Hy4 row -->
+  <text x="20" y="230" class="label">Hy4 Preview</text>
+  <rect x="140" y="205" width="560" height="26" class="bar-total"/>
+  <text x="145" y="224" class="value" fill="#ffffff">770B total</text>
+  <rect x="140" y="240" width="36" height="26" class="bar-active"/>
+  <text x="184" y="259" class="value">49B active</text>
+
+  <text x="140" y="315" class="axis">Bar length proportional to parameter count (illustrative scale)</text>
+</svg>
