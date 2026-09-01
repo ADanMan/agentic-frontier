@@ -47,16 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-08-20 — SPADE: self-play generates its own training environments → *Where the training signal comes from*
-- 2026-08-20 — Group-Calibrated On-Policy Distillation: long-context distillation pitfalls → *Where the training signal comes from*
-- 2026-08-20 — "Learned, Then Lost": measuring one example's effect on a pretrained model → *Proving it works*
-- 2026-08-20 — SPADE (executable envs): co-evolve goals so the task distribution never freezes → *Where the training signal comes from*
-- 2026-08-21 — Gemini 3.7 Flash: Google's fast/cheap model tier, routing over reasoning → *Serving under real load*
-- 2026-08-21 — OpenAI AI Futures: framing announcement, no product detail yet → *The churn watch*
-- 2026-08-21 — OpenAI Zero Data Retention on frontier models: promise vs. verifiable → *Context economy*
-- 2026-08-21 — watermarks-remover (16k★): strips C2PA/provenance marks from AI content → *Untrusted tool output*
-- 2026-08-21 — qm (14k★): multiplayer agent harness, team-scale approval gates → *The authorization boundary*
-- 2026-08-21 — Google Sheets canvas: AI decides what data to surface vs. hide → *Context economy*
 - 2026-08-22 — genoffice (3.5k★): open-source office suite, agents write .docx/.xlsx/.pptx → *The authorization boundary*
 - 2026-08-22 — phone-harness (2k★): agent taps/swipes your phone, no built-in action gate → *The authorization boundary*
 - 2026-08-22 — Vercel Labs Foreman: eve Software Factory template, full dev pipeline agent → *The churn watch*
@@ -83,3 +73,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-01 — pgbot (840★): schema/stats-aware Postgres layer for agents, not just text-to-SQL → *The authorization boundary*
 - 2026-09-01 — OCaml maintainer: a bare bug rumor is now enough for LLMs to find an exploit → *Untrusted tool output*
 - 2026-09-01 — Survey of Optimizers: coordinates→matrices, fixed horizon→policies, rule→state → *Where the training signal comes from*
+- 2026-09-01 — Logos harness: capabilities formally carry a tracked inverse (undo) → *The authorization boundary*
