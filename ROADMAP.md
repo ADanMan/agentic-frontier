@@ -81,3 +81,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-01 — PULSAR: vision-first late-interaction RAG skips OCR for pitch decks → *Retrieval as a first-class design*
 - 2026-09-01 — minimind (472★/day): readable 64M-param LLM pretrain pipeline, 2h on one GPU → *Where the training signal comes from*
 - 2026-09-01 — pgbot (840★): schema/stats-aware Postgres layer for agents, not just text-to-SQL → *The authorization boundary*
+- 2026-09-01 — OCaml maintainer: a bare bug rumor is now enough for LLMs to find an exploit → *Untrusted tool output*
