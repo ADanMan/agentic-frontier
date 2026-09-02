@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-labelledby="title desc">
+  <title id="title">Five-step research skill pipeline</title>
+  <desc id="desc">A left-to-right pipeline of five stages: research, write, review, revise, finalize.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 15px; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow2); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="10" y="60" width="105" height="46" rx="8" class="box" />
+  <text x="62" y="88" text-anchor="middle" class="txt">research</text>
+  <path d="M115,83 H140" class="arrow" />
+
+  <rect x="140" y="60" width="105" height="46" rx="8" class="box" />
+  <text x="192" y="88" text-anchor="middle" class="txt">write</text>
+  <path d="M245,83 H270" class="arrow" />
+
+  <rect x="270" y="60" width="105" height="46" rx="8" class="box" />
+  <text x="322" y="88" text-anchor="middle" class="txt">review</text>
+  <path d="M375,83 H400" class="arrow" />
+
+  <rect x="400" y="60" width="105" height="46" rx="8" class="box" />
+  <text x="452" y="88" text-anchor="middle" class="txt">revise</text>
+  <path d="M505,83 H530" class="arrow" />
+
+  <rect x="530" y="60" width="105" height="46" rx="8" class="box" />
+  <text x="582" y="88" text-anchor="middle" class="txt">finalize</text>
+</svg>

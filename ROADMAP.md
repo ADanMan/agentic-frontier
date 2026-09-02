@@ -77,3 +77,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-02 — ponytail (119k★): agent prompt trained to prefer writing no code at all → *Context economy*
 - 2026-09-02 — openclaude (31k★, #1 trending): "runs anywhere, uses anything" harness pitch → *The churn watch*
 - 2026-09-02 — HF "State of Open Models" Summer 2026: "open" splits into weights/data/code/license axes → *The churn watch*
+- 2026-09-02 — academic-research-skills (45k★): 5-step research→write→review→revise→finalize skill → *Proving it works*
