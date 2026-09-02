@@ -75,3 +75,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-01 — Survey of Optimizers: coordinates→matrices, fixed horizon→policies, rule→state → *Where the training signal comes from*
 - 2026-09-01 — Logos harness: capabilities formally carry a tracked inverse (undo) → *The authorization boundary*
 - 2026-09-02 — ponytail (119k★): agent prompt trained to prefer writing no code at all → *Context economy*
+- 2026-09-02 — openclaude (31k★, #1 trending): "runs anywhere, uses anything" harness pitch → *The churn watch*

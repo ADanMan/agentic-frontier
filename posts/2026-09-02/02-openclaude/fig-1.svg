@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-labelledby="title desc">
+  <title id="title">Decoupled harness: model, tools, runtime</title>
+  <desc id="desc">A hub-and-spoke diagram showing a harness core connecting independently to multiple models and multiple tools, decoupled from any single runtime.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .core { fill: none; stroke: currentColor; stroke-width: 2.5; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.7; }
+    .line { stroke: currentColor; stroke-width: 1.5; opacity: 0.8; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+
+  <rect x="260" y="120" width="120" height="60" rx="10" class="core" />
+  <text x="320" y="145" text-anchor="middle" class="txt">Harness</text>
+  <text x="320" y="163" text-anchor="middle" class="txt">core</text>
+
+  <rect x="30" y="20" width="130" height="40" rx="8" class="box" />
+  <text x="95" y="45" text-anchor="middle" class="txt">Model A</text>
+  <line x1="160" y1="45" x2="260" y2="130" class="line" />
+
+  <rect x="30" y="130" width="130" height="40" rx="8" class="box" />
+  <text x="95" y="155" text-anchor="middle" class="txt">Model B</text>
+  <line x1="160" y1="150" x2="260" y2="150" class="line" />
+
+  <rect x="30" y="240" width="130" height="40" rx="8" class="box" />
+  <text x="95" y="265" text-anchor="middle" class="txt">Local model</text>
+  <line x1="160" y1="260" x2="260" y2="170" class="line" />
+
+  <rect x="480" y="20" width="130" height="40" rx="8" class="box" />
+  <text x="545" y="45" text-anchor="middle" class="txt">Shell tool</text>
+  <line x1="480" y1="45" x2="380" y2="130" class="line" />
+
+  <rect x="480" y="130" width="130" height="40" rx="8" class="box" />
+  <text x="545" y="155" text-anchor="middle" class="txt">File tool</text>
+  <line x1="480" y1="150" x2="380" y2="150" class="line" />
+
+  <rect x="480" y="240" width="130" height="40" rx="8" class="box" />
+  <text x="545" y="265" text-anchor="middle" class="txt">MCP server</text>
+  <line x1="480" y1="260" x2="380" y2="170" class="line" />
+
+  <text x="320" y="20" text-anchor="middle" class="lbl">runs anywhere · uses anything</text>
+</svg>
