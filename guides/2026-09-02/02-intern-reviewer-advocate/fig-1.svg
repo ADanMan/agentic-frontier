@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">Decomposing subjective quality into measurable proxies</title>
+  <desc id="desc">A diagram showing an unmeasurable quality like "good review" broken down into checkable proxy signals: factual grounding and structural coverage, feeding an RL reward.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    .line { stroke: currentColor; stroke-width: 1.5; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+
+  <rect x="220" y="10" width="200" height="46" rx="8" class="box" />
+  <text x="320" y="38" text-anchor="middle" class="txt">«Хорошая рецензия»</text>
+
+  <line x1="270" y1="56" x2="120" y2="110" class="line" />
+  <line x1="370" y1="56" x2="520" y2="110" class="line" />
+
+  <rect x="20" y="110" width="200" height="50" rx="8" class="box" />
+  <text x="120" y="132" text-anchor="middle" class="txt">Факт-граундинг</text>
+  <text x="120" y="150" text-anchor="middle" class="lbl">сверка с текстом статьи</text>
+
+  <rect x="420" y="110" width="200" height="50" rx="8" class="box" />
+  <text x="520" y="132" text-anchor="middle" class="txt">Структурное покрытие</text>
+  <text x="520" y="150" text-anchor="middle" class="lbl">разделы, обоснованность</text>
+
+  <line x1="120" y1="160" x2="280" y2="205" class="line" />
+  <line x1="520" y1="160" x2="360" y2="205" class="line" />
+
+  <rect x="220" y="205" width="200" height="46" rx="8" class="box" />
+  <text x="320" y="233" text-anchor="middle" class="txt">RL reward сигнал</text>
+</svg>

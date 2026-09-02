@@ -47,12 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-08-22 — genoffice (3.5k★): open-source office suite, agents write .docx/.xlsx/.pptx → *The authorization boundary*
-- 2026-08-22 — phone-harness (2k★): agent taps/swipes your phone, no built-in action gate → *The authorization boundary*
-- 2026-08-22 — Vercel Labs Foreman: eve Software Factory template, full dev pipeline agent → *The churn watch*
-- 2026-08-22 — Lilian Weng, "Harness Engineering for Self-Improvement": scaffolding as the improvement lever → *Where the training signal comes from*
-- 2026-08-22 — Liquid AI LFM2.5-DSpark: up to 3.2x faster inference, edge-focused → *Serving under real load*
-- 2026-08-22 — IBM Research: how much memory does an agent actually need? → *Context economy*
 - 2026-08-23 — Stampli/OpenAI: ChatGPT Work claims 68% faster customer launch → *Proving it works*
 - 2026-08-23 — DeepMind retrospective: Atari to EVE Online, environments getting more open → *The churn watch*
 - 2026-08-23 — Raschka on Claude watermarking: statistical token bias as provenance signal → *Untrusted tool output*
@@ -82,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-02 — Sentence Transformers adds late-interaction multi-vector embeddings (ColBERT-style) → *Retrieval as a first-class design*
 - 2026-09-02 — Dharma-AI: +33 points GPU cluster utilization from job scheduling order alone → *Serving under real load*
 - 2026-09-02 — SHAPE: decomposes math-reasoning accuracy into separate measurable skills → *Proving it works*
+- 2026-09-02 — InternReviewer/InternAdvocate: objective reward for subjective peer-review/rebuttal RL → *Where the training signal comes from*
