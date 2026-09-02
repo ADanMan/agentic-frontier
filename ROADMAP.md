@@ -74,3 +74,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-01 — OCaml maintainer: a bare bug rumor is now enough for LLMs to find an exploit → *Untrusted tool output*
 - 2026-09-01 — Survey of Optimizers: coordinates→matrices, fixed horizon→policies, rule→state → *Where the training signal comes from*
 - 2026-09-01 — Logos harness: capabilities formally carry a tracked inverse (undo) → *The authorization boundary*
+- 2026-09-02 — ponytail (119k★): agent prompt trained to prefer writing no code at all → *Context economy*
