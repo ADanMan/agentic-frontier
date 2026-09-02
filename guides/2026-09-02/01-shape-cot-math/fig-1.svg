@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" role="img" aria-labelledby="title desc">
+  <title id="title">One accuracy score vs. a skill profile</title>
+  <desc id="desc">Comparison showing that a single accuracy number hides a decomposable profile of underlying reasoning skills.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    .bar { fill: none; stroke: currentColor; stroke-width: 2; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+
+  <text x="140" y="24" text-anchor="middle" class="txt">Классический бенчмарк</text>
+  <rect x="60" y="40" width="160" height="60" rx="8" class="box" />
+  <text x="140" y="65" text-anchor="middle" class="txt">accuracy = 82%</text>
+  <text x="140" y="85" text-anchor="middle" class="lbl">одно число</text>
+
+  <text x="470" y="24" text-anchor="middle" class="txt">SHAPE-подход</text>
+
+  <rect x="360" y="45" width="220" height="18" class="bar" />
+  <rect x="360" y="45" width="190" height="18" fill="currentColor" opacity="0.5" />
+  <text x="590" y="59" class="lbl">выбор метода</text>
+
+  <rect x="360" y="75" width="220" height="18" class="bar" />
+  <rect x="360" y="75" width="140" height="18" fill="currentColor" opacity="0.5" />
+  <text x="590" y="89" class="lbl">арифметика</text>
+
+  <rect x="360" y="105" width="220" height="18" class="bar" />
+  <rect x="360" y="105" width="80" height="18" fill="currentColor" opacity="0.5" />
+  <text x="590" y="119" class="lbl">самокоррекция</text>
+
+  <text x="320" y="160" text-anchor="middle" class="lbl">Одинаковый итоговый score → разные профили навыков</text>
+  <text x="320" y="180" text-anchor="middle" class="lbl">Same final score → different skill profiles</text>
+
+  <path d="M320,200 C 200,230 200,250 140,260" class="box" fill="none" />
+  <path d="M320,200 C 440,230 440,250 500,260" class="box" fill="none" />
+  <text x="140" y="275" text-anchor="middle" class="lbl">понимает / understands</text>
+  <text x="500" y="275" text-anchor="middle" class="lbl">угадывает / pattern-matches</text>
+</svg>
