@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">Axes of model openness</title>
+  <desc id="desc">A diagram showing that "open model" splits into several independent axes: open weights, open dataset, open training code, and open license.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.7; }
+    .line { stroke: currentColor; stroke-width: 1.5; opacity: 0.8; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+
+  <rect x="240" y="10" width="160" height="46" rx="8" class="box" />
+  <text x="320" y="38" text-anchor="middle" class="txt">"Open model"</text>
+
+  <line x1="280" y1="56" x2="90" y2="110" class="line" />
+  <line x1="300" y1="56" x2="230" y2="110" class="line" />
+  <line x1="340" y1="56" x2="410" y2="110" class="line" />
+  <line x1="360" y1="56" x2="550" y2="110" class="line" />
+
+  <rect x="20" y="110" width="140" height="50" rx="8" class="box" />
+  <text x="90" y="132" text-anchor="middle" class="txt">Открытые веса</text>
+  <text x="90" y="150" text-anchor="middle" class="lbl">open weights</text>
+
+  <rect x="160" y="110" width="140" height="50" rx="8" class="box" />
+  <text x="230" y="132" text-anchor="middle" class="txt">Открытый датасет</text>
+  <text x="230" y="150" text-anchor="middle" class="lbl">open dataset</text>
+
+  <rect x="340" y="110" width="140" height="50" rx="8" class="box" />
+  <text x="410" y="132" text-anchor="middle" class="txt">Открытый код</text>
+  <text x="410" y="150" text-anchor="middle" class="lbl">training code</text>
+
+  <rect x="480" y="110" width="140" height="50" rx="8" class="box" />
+  <text x="550" y="132" text-anchor="middle" class="txt">Открытая лицензия</text>
+  <text x="550" y="150" text-anchor="middle" class="lbl">open license</text>
+
+  <text x="320" y="210" text-anchor="middle" class="lbl">каждая ось — независимо «да / нет / частично»</text>
+  <text x="320" y="230" text-anchor="middle" class="lbl">each axis independently: yes / no / partial</text>
+</svg>
