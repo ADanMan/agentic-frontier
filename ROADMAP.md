@@ -80,3 +80,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-02 — academic-research-skills (45k★): 5-step research→write→review→revise→finalize skill → *Proving it works*
 - 2026-09-02 — Quivr (new #10, Chatbot): "opiniated RAG", any LLM/any vectorstore, defaults vs. flexibility → *Retrieval as a first-class design*
 - 2026-09-02 — Sentence Transformers adds late-interaction multi-vector embeddings (ColBERT-style) → *Retrieval as a first-class design*
+- 2026-09-02 — Dharma-AI: +33 points GPU cluster utilization from job scheduling order alone → *Serving under real load*
