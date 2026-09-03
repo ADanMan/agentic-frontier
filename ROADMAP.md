@@ -47,7 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-08-24 — Anthropic "Building Effective Agents": workflows fix control flow, agents let the model own it → *The authorization boundary*
 - 2026-08-24 — Anthropic Contextual Retrieval: LLM-annotate chunks before indexing to fix lost context → *Retrieval as a first-class design*
 - 2026-08-24 — SWE-bench Verified + Sonnet: the score is model + harness, not model alone → *Proving it works*
 - 2026-08-24 — Raschka's AI text detector from scratch: provenance is a heuristic score, not fact → *Untrusted tool output*
@@ -77,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-03 — Quivr "NEW ENTRY #10" two days running: trending snapshots are noisy, not stable rankings → *The churn watch*
 - 2026-09-03 — fmtlib/fmt #1 in "AI trends": a plain C++ lib, feed labels aren't content filters → *The churn watch*
 - 2026-09-03 — Institutional Newspapers Pipeline: billions of tokens need layout parsing before OCR reading order → *Where the training signal comes from*
+- 2026-09-03 — IBM Research "How Much Memory Does Your Agent Actually Need": working/episodic/long-term have separate costs → *Context economy*
