@@ -80,3 +80,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-03 — TimesFM (30k★, #2): one pretrained model replaces per-series ARIMA/Prophet, zero-shot → *The churn watch*
 - 2026-09-03 — RECAP-Forcing: long video memory organized by content appearance, not just recency → *Context economy*
 - 2026-09-03 — ponytail (122k★, #3 overall, day 2): a second consecutive trending day beats one, still isn't adoption proof → *Proving it works*
+- 2026-09-03 — deepseek-harness (209k★, day 3): "everything is a plugin" needs a permission model, not just extensibility → *Untrusted tool output*

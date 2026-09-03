@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" role="img" aria-labelledby="title desc">
+  <title id="title">Plugin permission model as the open question</title>
+  <desc id="desc">A harness core connected to three plugins, one from the community, all funneling into the question of what permissions each plugin gets, branching into a risky full-access outcome and a safer scoped-access outcome.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="270" y="15" width="100" height="40" rx="8" class="box" />
+  <text x="320" y="40" text-anchor="middle" class="txt">Ядро</text>
+
+  <path d="M300,55 C 220,80 150,90 130,110" class="arrow" />
+  <path d="M320,55 V110" class="arrow" />
+  <path d="M340,55 C 420,80 490,90 510,110" class="arrow" />
+
+  <rect x="60" y="110" width="140" height="34" rx="6" class="box" /><text x="130" y="132" text-anchor="middle" class="txt">Плагин: tool-calling</text>
+  <rect x="250" y="110" width="140" height="34" rx="6" class="box" /><text x="320" y="132" text-anchor="middle" class="txt">Плагин: память</text>
+  <rect x="440" y="110" width="150" height="34" rx="6" class="box" /><text x="515" y="132" text-anchor="middle" class="txt">Плагин: сторонний</text>
+
+  <path d="M130,144 C 200,170 250,170 320,178" class="arrow" />
+  <path d="M320,144 V178" class="arrow" />
+  <path d="M515,144 C 440,170 390,170 320,178" class="arrow" />
+
+  <rect x="230" y="178" width="180" height="34" rx="6" class="box" />
+  <text x="320" y="200" text-anchor="middle" class="txt">Какие права у плагина?</text>
+
+  <path d="M280,212 C 200,230 150,235 120,235" class="arrow" />
+  <text x="120" y="252" text-anchor="middle" class="lbl">полный доступ →</text>
+  <text x="120" y="266" text-anchor="middle" class="lbl">точка входа для риска</text>
+
+  <path d="M360,212 C 440,230 490,235 520,235" class="arrow" />
+  <text x="520" y="252" text-anchor="middle" class="lbl">границы прав →</text>
+  <text x="520" y="266" text-anchor="middle" class="lbl">компрометация локализована</text>
+</svg>
