@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">Star growth over two days as a weak-to-stronger signal</title>
+  <desc id="desc">A bar chart showing star counts rising from 119,035 to 121,956 over two days, with a note that one day is a weak signal and a second consecutive day of growth is a stronger, though still not conclusive, one.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .bar { fill: currentColor; opacity: 0.18; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    axisline { stroke: currentColor; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+
+  <line x1="60" y1="200" x2="600" y2="200" stroke="currentColor" stroke-width="1.5" opacity="0.5" />
+
+  <rect x="140" y="90" width="90" height="110" class="bar" />
+  <text x="185" y="80" text-anchor="middle" class="txt">119 035★</text>
+  <text x="185" y="220" text-anchor="middle" class="lbl">День 1</text>
+  <text x="185" y="238" text-anchor="middle" class="lbl">слабый сигнал</text>
+
+  <rect x="380" y="55" width="90" height="145" class="bar" />
+  <text x="425" y="45" text-anchor="middle" class="txt">121 956★ (+487)</text>
+  <text x="425" y="220" text-anchor="middle" class="lbl">День 2 · #3 общий рейтинг</text>
+  <text x="425" y="238" text-anchor="middle" class="lbl">сильнее, но не доказательство</text>
+</svg>
