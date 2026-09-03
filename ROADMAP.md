@@ -77,3 +77,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-02 — Dharma-AI: +33 points GPU cluster utilization from job scheduling order alone → *Serving under real load*
 - 2026-09-02 — SHAPE: decomposes math-reasoning accuracy into separate measurable skills → *Proving it works*
 - 2026-09-02 — InternReviewer/InternAdvocate: objective reward for subjective peer-review/rebuttal RL → *Where the training signal comes from*
+- 2026-09-03 — TimesFM (30k★, #2): one pretrained model replaces per-series ARIMA/Prophet, zero-shot → *The churn watch*
