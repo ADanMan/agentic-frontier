@@ -47,13 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-08-23 — Stampli/OpenAI: ChatGPT Work claims 68% faster customer launch → *Proving it works*
-- 2026-08-23 — DeepMind retrospective: Atari to EVE Online, environments getting more open → *The churn watch*
-- 2026-08-23 — Raschka on Claude watermarking: statistical token bias as provenance signal → *Untrusted tool output*
-- 2026-08-23 — Raschka on reasoning effort: a per-step dial, not a global switch → *Serving under real load*
-- 2026-08-23 — Fuxi (1.7k★): terminal coding agent, cost-aware multi-provider routing → *Serving under real load*
-- 2026-08-23 — DeepMind sign language AI: lab prototype to daily-use product for real users → *Proving it works*
-- 2026-08-24 — Anthropic's top model losing users to cheaper tools: benchmarks ≠ adoption → *Proving it works*
 - 2026-08-24 — Anthropic "Building Effective Agents": workflows fix control flow, agents let the model own it → *The authorization boundary*
 - 2026-08-24 — Anthropic Contextual Retrieval: LLM-annotate chunks before indexing to fix lost context → *Retrieval as a first-class design*
 - 2026-08-24 — SWE-bench Verified + Sonnet: the score is model + harness, not model alone → *Proving it works*
@@ -83,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-03 — deepseek-harness (209k★, day 3): "everything is a plugin" needs a permission model, not just extensibility → *Untrusted tool output*
 - 2026-09-03 — Quivr "NEW ENTRY #10" two days running: trending snapshots are noisy, not stable rankings → *The churn watch*
 - 2026-09-03 — fmtlib/fmt #1 in "AI trends": a plain C++ lib, feed labels aren't content filters → *The churn watch*
+- 2026-09-03 — Institutional Newspapers Pipeline: billions of tokens need layout parsing before OCR reading order → *Where the training signal comes from*
