@@ -78,3 +78,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-02 — SHAPE: decomposes math-reasoning accuracy into separate measurable skills → *Proving it works*
 - 2026-09-02 — InternReviewer/InternAdvocate: objective reward for subjective peer-review/rebuttal RL → *Where the training signal comes from*
 - 2026-09-03 — TimesFM (30k★, #2): one pretrained model replaces per-series ARIMA/Prophet, zero-shot → *The churn watch*
+- 2026-09-03 — RECAP-Forcing: long video memory organized by content appearance, not just recency → *Context economy*
