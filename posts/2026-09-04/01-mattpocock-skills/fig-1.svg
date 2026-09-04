@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">One prompt vs. loaded-on-demand skills</title>
+  <desc id="desc">A single long system prompt paid for on every call, compared to a skills library where only the needed file loads into context.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <text x="20" y="24" class="lbl">Один system prompt</text>
+  <rect x="20" y="34" width="260" height="46" rx="8" class="box" />
+  <text x="150" y="62" text-anchor="middle" class="txt">Всё содержимое сразу</text>
+  <path d="M150,80 V108" class="arrow" />
+  <rect x="20" y="108" width="260" height="40" rx="6" class="box" />
+  <text x="150" y="133" text-anchor="middle" class="txt">Оплачено токенами в КАЖДОМ вызове</text>
+
+  <text x="360" y="24" class="lbl">Библиотека skills</text>
+  <rect x="360" y="34" width="260" height="40" rx="8" class="box" />
+  <text x="490" y="59" text-anchor="middle" class="txt">Нужен навык прямо сейчас?</text>
+
+  <path d="M430,74 C 400,90 380,95 370,108" class="arrow" />
+  <text x="380" y="128" text-anchor="middle" class="lbl">нет</text>
+  <rect x="330" y="132" width="150" height="40" rx="6" class="box" />
+  <text x="405" y="157" text-anchor="middle" class="txt">Токены не тратятся</text>
+
+  <path d="M550,74 C 580,90 600,95 610,108" class="arrow" />
+  <text x="600" y="128" text-anchor="middle" class="lbl">да</text>
+  <rect x="480" y="132" width="150" height="40" rx="6" class="box" />
+  <text x="555" y="157" text-anchor="middle" class="txt">Грузится один файл</text>
+
+  <text x="330" y="220" class="lbl" text-anchor="start">Оба сценария решают один вопрос: что попадает в окно контекста модели —</text>
+  <text x="330" y="238" class="lbl" text-anchor="start">и по какой цене.</text>
+</svg>
