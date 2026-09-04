@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">Visual similarity vs entity identity as the unit of retrieval</title>
+  <desc id="desc">A photo of a rare object branches two ways: CLIP-style visual similarity search which can return a similar but different entity, and entity-aligned retrieval which returns the same entity even if it looks different.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="250" y="15" width="140" height="40" rx="8" class="box" />
+  <text x="320" y="40" text-anchor="middle" class="txt">Фото объекта</text>
+
+  <path d="M290,55 C 220,80 160,90 140,110" class="arrow" />
+  <path d="M350,55 C 420,80 480,90 500,110" class="arrow" />
+
+  <rect x="40" y="110" width="200" height="40" rx="6" class="box" />
+  <text x="140" y="135" text-anchor="middle" class="txt">CLIP: визуальное сходство</text>
+
+  <rect x="400" y="110" width="200" height="40" rx="6" class="box" />
+  <text x="500" y="130" text-anchor="middle" class="txt">Entity-aligned:</text>
+  <text x="500" y="144" text-anchor="middle" class="txt">поиск по сущности</text>
+
+  <path d="M140,150 V178" class="arrow" />
+  <rect x="40" y="178" width="200" height="46" rx="6" class="box" />
+  <text x="140" y="198" text-anchor="middle" class="txt">Похожий объект,</text>
+  <text x="140" y="214" text-anchor="middle" class="txt">но другая сущность</text>
+
+  <path d="M500,150 V178" class="arrow" />
+  <rect x="400" y="178" width="200" height="46" rx="6" class="box" />
+  <text x="500" y="198" text-anchor="middle" class="txt">Та же сущность,</text>
+  <text x="500" y="214" text-anchor="middle" class="txt">даже если выглядит иначе</text>
+</svg>
