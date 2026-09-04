@@ -78,3 +78,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-03 — Institutional Newspapers Pipeline: billions of tokens need layout parsing before OCR reading order → *Where the training signal comes from*
 - 2026-09-03 — IBM Research "How Much Memory Does Your Agent Actually Need": working/episodic/long-term have separate costs → *Context economy*
 - 2026-09-04 — mattpocock/skills (248k★, #2): one dev's .agents folder, stars track fame not proven quality → *Context economy*
+- 2026-09-04 — hermes-agent (241k★, #3, Nous Research): "grows with you" names no mechanism at all → *The churn watch*

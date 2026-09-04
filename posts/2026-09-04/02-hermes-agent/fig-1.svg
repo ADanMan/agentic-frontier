@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">A tagline branching into unanswered mechanisms</title>
+  <desc id="desc">The phrase grows with you branches into four possible mechanisms: cross-session memory, on-the-fly fine-tuning, an expanding toolset, or nothing concrete at all.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="230" y="15" width="180" height="46" rx="8" class="box" />
+  <text x="320" y="35" text-anchor="middle" class="txt">«Grows with</text>
+  <text x="320" y="52" text-anchor="middle" class="txt">you»</text>
+
+  <path d="M280,61 C 220,90 150,105 110,130" class="arrow" />
+  <path d="M310,61 C 270,95 220,110 200,130" class="arrow" />
+  <path d="M330,61 C 380,95 430,110 450,130" class="arrow" />
+  <path d="M360,61 C 420,90 490,105 540,130" class="arrow" />
+
+  <rect x="20" y="130" width="180" height="40" rx="6" class="box" />
+  <text x="110" y="155" text-anchor="middle" class="txt">Память между сессиями?</text>
+
+  <rect x="210" y="130" width="180" height="40" rx="6" class="box" />
+  <text x="300" y="150" text-anchor="middle" class="txt">Дообучение / LoRA</text>
+  <text x="300" y="164" text-anchor="middle" class="txt">на лету?</text>
+
+  <rect x="400" y="130" width="200" height="40" rx="6" class="box" />
+  <text x="500" y="155" text-anchor="middle" class="txt">Больше навыков?</text>
+
+  <rect x="150" y="195" width="340" height="40" rx="6" class="box" />
+  <text x="320" y="220" text-anchor="middle" class="txt">Или просто слоган без механизма</text>
+</svg>
