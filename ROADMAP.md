@@ -47,10 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-08-24 — Anthropic Contextual Retrieval: LLM-annotate chunks before indexing to fix lost context → *Retrieval as a first-class design*
-- 2026-08-24 — SWE-bench Verified + Sonnet: the score is model + harness, not model alone → *Proving it works*
-- 2026-08-24 — Raschka's AI text detector from scratch: provenance is a heuristic score, not fact → *Untrusted tool output*
-- 2026-08-24 — HF on ASR benchmark optimization: low WER on LibriSpeech ≠ real-world quality → *Proving it works*
 - 2026-09-01 — OpenAI cuts Cursor's model contract after its SpaceX acquisition → *The churn watch*
 - 2026-09-01 — deepseek-harness (205k★): "Everything is a Plugin" core/extension split → *The authorization boundary*
 - 2026-09-01 — Tencent Hy4 Preview: 770B total/49B active MoE, 2.5x Hy3's size → *Serving under real load*
@@ -80,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-04 — mattpocock/skills (248k★, #2): one dev's .agents folder, stars track fame not proven quality → *Context economy*
 - 2026-09-04 — hermes-agent (241k★, #3, Nous Research): "grows with you" names no mechanism at all → *The churn watch*
 - 2026-09-04 — Entity-Aligned Retrieval for KB-VQA: CLIP similarity finds "looks like", not "is the same entity" → *Retrieval as a first-class design*
+- 2026-09-05 — Conditional Experience Transfer: autonomous post-training learns when NOT to reuse past runs → *Where the training signal comes from*
