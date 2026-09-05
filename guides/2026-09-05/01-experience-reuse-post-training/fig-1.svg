@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-labelledby="title desc">
+  <title id="title">Naive transfer vs. conditional experience transfer</title>
+  <desc id="desc">Naive approach feeds all accumulated experience into the model regardless of relevance, risking negative transfer. Conditional transfer filters experience by relevance to the new task before reuse.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .dim { fill: none; stroke: currentColor; stroke-width: 2; opacity: 0.4; stroke-dasharray: 4 3; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    .hd { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; font-weight: 600; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    .darrow { stroke: currentColor; stroke-width: 2; fill: none; opacity: 0.4; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <text x="20" y="20" class="hd">Naive: always transfer</text>
+  <rect x="20" y="30" width="120" height="34" rx="6" class="box" />
+  <text x="80" y="52" text-anchor="middle" class="txt">Experience A</text>
+  <rect x="20" y="72" width="120" height="34" rx="6" class="box" />
+  <text x="80" y="94" text-anchor="middle" class="txt">Experience B</text>
+  <path d="M140,47 H210" class="arrow" />
+  <path d="M140,89 H210" class="arrow" />
+  <rect x="210" y="52" width="110" height="40" rx="6" class="box" />
+  <text x="265" y="76" text-anchor="middle" class="txt">Model</text>
+  <path d="M320,72 H390" class="arrow" />
+  <rect x="390" y="40" width="220" height="64" rx="6" class="box" />
+  <text x="500" y="62" text-anchor="middle" class="txt">Task C underperforms:</text>
+  <text x="500" y="80" text-anchor="middle" class="lbl">inherited bias from A and B</text>
+
+  <text x="20" y="150" class="hd">Conditional transfer</text>
+  <rect x="20" y="160" width="120" height="34" rx="6" class="box" />
+  <text x="80" y="182" text-anchor="middle" class="txt">Experience A</text>
+  <rect x="20" y="202" width="120" height="34" rx="6" class="box" />
+  <text x="80" y="224" text-anchor="middle" class="txt">Experience B</text>
+  <path d="M140,177 H190" class="arrow" />
+  <path d="M140,219 H190" class="arrow" />
+  <rect x="190" y="182" width="90" height="46" rx="6" class="box" />
+  <text x="235" y="200" text-anchor="middle" class="txt">Relevant</text>
+  <text x="235" y="216" text-anchor="middle" class="txt">to C?</text>
+  <path d="M280,198 H350" class="arrow" />
+  <text x="315" y="192" text-anchor="middle" class="lbl">yes</text>
+  <path d="M235,228 V250" class="darrow" />
+  <text x="255" y="245" text-anchor="middle" class="lbl">no → discard</text>
+  <rect x="350" y="182" width="90" height="34" rx="6" class="box" />
+  <text x="395" y="204" text-anchor="middle" class="txt">Model</text>
+  <path d="M440,199 H500" class="arrow" />
+  <rect x="500" y="170" width="120" height="64" rx="6" class="box" />
+  <text x="560" y="192" text-anchor="middle" class="txt">Task C improves:</text>
+  <text x="560" y="210" text-anchor="middle" class="lbl">only relevant</text>
+  <text x="560" y="226" text-anchor="middle" class="lbl">experience used</text>
+</svg>
