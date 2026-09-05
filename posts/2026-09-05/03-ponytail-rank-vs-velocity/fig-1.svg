@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">ponytail: falling daily stars, rising trending rank</title>
+  <desc id="desc">Three readings for ponytail: Sep 2 at +1273 stars/day (category-only), Sep 3 at +487 stars/day and rank 3, Sep 5 at +406 stars/day and rank 2 — daily growth falls while rank improves, because rank is relative to competitors.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <text x="110" y="30" text-anchor="middle" class="lbl">Sep 2</text>
+  <rect x="20" y="40" width="180" height="50" rx="8" class="box" />
+  <text x="110" y="62" text-anchor="middle" class="txt">+1,273 stars/day</text>
+  <text x="110" y="80" text-anchor="middle" class="lbl">category rank only</text>
+
+  <path d="M200,65 H230" class="arrow" />
+
+  <text x="320" y="30" text-anchor="middle" class="lbl">Sep 3</text>
+  <rect x="230" y="40" width="180" height="50" rx="8" class="box" />
+  <text x="320" y="62" text-anchor="middle" class="txt">+487 stars/day</text>
+  <text x="320" y="80" text-anchor="middle" class="lbl">#3 overall</text>
+
+  <path d="M410,65 H440" class="arrow" />
+
+  <text x="530" y="30" text-anchor="middle" class="lbl">Sep 5</text>
+  <rect x="440" y="40" width="180" height="50" rx="8" class="box" />
+  <text x="530" y="62" text-anchor="middle" class="txt">+406 stars/day</text>
+  <text x="530" y="80" text-anchor="middle" class="lbl">#2 overall</text>
+
+  <text x="320" y="140" text-anchor="middle" class="txt">Daily stars keep falling — but rank keeps improving.</text>
+  <text x="320" y="165" text-anchor="middle" class="lbl">Rank is a leaderboard: it moves with everyone else's</text>
+  <text x="320" y="182" text-anchor="middle" class="lbl">speed, not just your own.</text>
+</svg>
