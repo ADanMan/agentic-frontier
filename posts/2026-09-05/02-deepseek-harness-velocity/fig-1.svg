@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">deepseek-harness daily star growth, three readings</title>
+  <desc id="desc">Daily new stars for deepseek-harness on Sep 1, Sep 3, and Sep 5: 1712, then 1469, then 1336 — a decelerating but still positive trend, while forks keep climbing.</desc>
+  <style>
+    .axis { stroke: currentColor; stroke-width: 1.5; opacity: 0.6; }
+    .bar { fill: currentColor; opacity: 0.85; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.75; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+
+  <line x1="70" y1="30" x2="70" y2="190" class="axis" />
+  <line x1="70" y1="190" x2="600" y2="190" class="axis" />
+
+  <rect x="120" y="46" width="90" height="144" class="bar" />
+  <text x="165" y="40" text-anchor="middle" class="txt">1,712</text>
+  <text x="165" y="210" text-anchor="middle" class="lbl">01.09</text>
+
+  <rect x="290" y="66" width="90" height="124" class="bar" />
+  <text x="335" y="60" text-anchor="middle" class="txt">1,469</text>
+  <text x="335" y="210" text-anchor="middle" class="lbl">03.09</text>
+
+  <rect x="460" y="82" width="90" height="108" class="bar" />
+  <text x="505" y="76" text-anchor="middle" class="txt">1,336</text>
+  <text x="505" y="210" text-anchor="middle" class="lbl">05.09</text>
+
+  <text x="335" y="235" text-anchor="middle" class="lbl">New stars per day — decelerating, still positive.</text>
+  <text x="335" y="251" text-anchor="middle" class="lbl">Forks (23,823 → 24,326 → 24,792) keep climbing steadily.</text>
+</svg>
