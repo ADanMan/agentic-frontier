@@ -78,3 +78,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-05 — deepseek-harness (211k★, 3rd reading): star growth decelerates while forks keep climbing steadily → *Proving it works*
 - 2026-09-05 — ponytail (126k★, #2): daily stars keep falling but overall rank keeps climbing → *The churn watch*
 - 2026-09-06 — sglang (35.5k★, +1,237/day, 8,563 forks): fork count is a more honest usage signal than stars → *Serving under real load*
+- 2026-09-06 — ECC (250k★, #2): "security" across 4 different harnesses is a claim, not a verified boundary → *The authorization boundary*
