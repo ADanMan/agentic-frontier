@@ -81,3 +81,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-06 — ECC (250k★, #2): "security" across 4 different harnesses is a claim, not a verified boundary → *The authorization boundary*
 - 2026-09-07 — ECC ranked #1 while trailing #2 on stars, growth, and "today" count → *The churn watch*
 - 2026-09-07 — Motion-Omni: speech and co-speech motion still ship as two models with no shared context → *The churn watch*
+- 2026-09-07 — diagram-design (32.6k★, #3): "no Mermaid slop" names auto-generated Mermaid as the new legacy default → *The churn watch*
