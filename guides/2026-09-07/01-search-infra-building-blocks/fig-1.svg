@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" font-family="Helvetica, Arial, sans-serif">
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 1.5; }
+    .txt { fill: currentColor; font-size: 13px; }
+    .lbl { fill: currentColor; font-size: 11px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 1.2; fill: none; marker-end: url(#arrow6); opacity: 0.85; }
+    .dash { stroke: currentColor; stroke-width: 1.2; fill: none; stroke-dasharray: 4 4; opacity: 0.6; marker-end: url(#arrow6); }
+    svg { color: #1a1a1a; }
+    @media (prefers-color-scheme: dark) {
+      svg { color: #e6e6e6; }
+    }
+  </style>
+  <defs>
+    <marker id="arrow6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <text x="160" y="25" text-anchor="middle" class="txt" font-size="13" font-weight="bold">Write path (async)</text>
+  <rect x="20" y="45" width="130" height="45" class="box" rx="6"/>
+  <text x="85" y="72" text-anchor="middle" class="txt" font-size="11">Сырые документы</text>
+
+  <rect x="190" y="45" width="130" height="45" class="box" rx="6"/>
+  <text x="255" y="68" text-anchor="middle" class="txt" font-size="11">Job</text>
+  <text x="255" y="83" text-anchor="middle" class="lbl" font-size="10">батч-пересчёт</text>
+
+  <path d="M150,67 L188,67" class="arrow"/>
+
+  <rect x="105" y="130" width="130" height="45" class="box" rx="6"/>
+  <text x="170" y="153" text-anchor="middle" class="txt" font-size="11">Bucket</text>
+  <text x="170" y="168" text-anchor="middle" class="lbl" font-size="10">хранилище индекса</text>
+
+  <path d="M255,90 L200,130" class="arrow"/>
+
+  <text x="480" y="25" text-anchor="middle" class="txt" font-size="13" font-weight="bold">Read path (sync)</text>
+  <rect x="410" y="45" width="140" height="45" class="box" rx="6"/>
+  <text x="480" y="72" text-anchor="middle" class="txt" font-size="11">Запрос пользователя</text>
+
+  <rect x="410" y="130" width="140" height="45" class="box" rx="6"/>
+  <text x="480" y="153" text-anchor="middle" class="txt" font-size="11">Endpoint</text>
+  <text x="480" y="168" text-anchor="middle" class="lbl" font-size="10">модель онлайн</text>
+
+  <path d="M480,90 L480,130" class="arrow"/>
+
+  <path d="M235,153 L410,153" class="dash"/>
+  <text x="320" y="145" text-anchor="middle" class="lbl" font-size="10">читает индекс</text>
+
+  <rect x="480" y="215" width="140" height="45" class="box" rx="6"/>
+  <text x="550" y="238" text-anchor="middle" class="txt" font-size="11">Результат поиска</text>
+  <path d="M480,175 L550,215" class="arrow"/>
+
+  <text x="320" y="300" text-anchor="middle" class="lbl">разведены вычисление (Job) и хранение (Bucket), обслуживание (Endpoint) — лёгкое и быстрое</text>
+</svg>
