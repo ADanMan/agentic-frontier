@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" font-family="Helvetica, Arial, sans-serif">
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 1.5; }
+    .highlight { fill: none; stroke: currentColor; stroke-width: 2.5; }
+    .txt { fill: currentColor; font-size: 13px; }
+    .lbl { fill: currentColor; font-size: 11px; opacity: 0.75; }
+    .arrow { stroke: currentColor; stroke-width: 1.2; fill: none; marker-end: url(#arrow9); opacity: 0.85; }
+    svg { color: #1a1a1a; }
+    @media (prefers-color-scheme: dark) {
+      svg { color: #e6e6e6; }
+    }
+  </style>
+  <defs>
+    <marker id="arrow9" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <rect x="230" y="15" width="180" height="44" class="box" rx="8"/>
+  <text x="320" y="38" text-anchor="middle" class="txt" font-size="12">Новая модальность</text>
+  <text x="320" y="54" text-anchor="middle" class="lbl">речь</text>
+
+  <rect x="30" y="110" width="240" height="60" class="box" rx="8"/>
+  <text x="150" y="132" text-anchor="middle" class="txt" font-size="12">Обученный модуль</text>
+  <text x="150" y="150" text-anchor="middle" class="lbl">аудио-энкодер + finetuning</text>
+  <text x="150" y="166" text-anchor="middle" class="lbl">риск forgetting, дороже</text>
+
+  <rect x="370" y="110" width="240" height="60" class="highlight" rx="8"/>
+  <text x="490" y="132" text-anchor="middle" class="txt" font-size="12">Frozen VLM</text>
+  <text x="490" y="150" text-anchor="middle" class="lbl">веса не трогаем</text>
+  <text x="490" y="166" text-anchor="middle" class="lbl">речь → уже знакомая форма</text>
+
+  <path d="M280,59 L150,110" class="arrow"/>
+  <path d="M360,59 L490,110" class="arrow"/>
+
+  <rect x="230" y="230" width="180" height="55" class="box" rx="8"/>
+  <text x="320" y="252" text-anchor="middle" class="txt" font-size="12">Совместное понимание</text>
+  <text x="320" y="270" text-anchor="middle" class="lbl">речь + видео + время</text>
+
+  <path d="M490,170 L320,230" class="arrow"/>
+  <path d="M150,170 L320,230" class="arrow" stroke-dasharray="4 3"/>
+
+  <text x="320" y="305" text-anchor="middle" class="lbl">training-free ≠ просто frozen: адаптер сверху уже не training-free</text>
+</svg>
