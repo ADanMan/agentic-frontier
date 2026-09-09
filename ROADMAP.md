@@ -87,3 +87,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-08 — context-mode (21k★, #3): claimed 98% tool-output reduction is a README number, not a benchmark → *Context economy*
 - 2026-09-09 — i-have-adhd (31k★, #1, +819): a skill that forces the answer before the reasoning → *Context economy*
 - 2026-09-09 — openai/skills (26.6k★, #3): Codex ships an official skills catalog, format now cross-harness → *The churn watch*
+- 2026-09-09 — ECC (253k★, +1,315): forks (38k) are the more honest usage signal, stars aren't proof → *Proving it works*
