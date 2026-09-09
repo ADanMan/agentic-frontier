@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" role="img" aria-labelledby="title desc">
+  <title id="title">Naive quantization vs. quantization-aware healing</title>
+  <desc id="desc">A full-precision model compressed naively into 4 bits loses accuracy. The same model compressed with a quantization-aware healing step is corrected afterward, with the blog post claiming it ends up outperforming the original.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.7; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="20" y="20" width="180" height="50" rx="8" class="box" />
+  <text x="110" y="42" text-anchor="middle" class="txt">Модель, FP16/32</text>
+  <text x="110" y="60" text-anchor="middle" class="lbl">полная точность</text>
+
+  <path d="M200,45 H260" class="arrow" />
+  <path d="M110,70 V150" class="arrow" />
+
+  <rect x="260" y="20" width="180" height="50" rx="8" class="box" />
+  <text x="350" y="42" text-anchor="middle" class="txt">Наивное квантование</text>
+  <text x="350" y="60" text-anchor="middle" class="lbl">округление до 4-бит</text>
+
+  <path d="M350,70 V100" class="arrow" />
+  <rect x="260" y="100" width="180" height="50" rx="8" class="box" />
+  <text x="350" y="122" text-anchor="middle" class="txt">4-бит модель</text>
+  <text x="350" y="140" text-anchor="middle" class="lbl">качество хуже оригинала</text>
+
+  <rect x="20" y="150" width="180" height="50" rx="8" class="box" />
+  <text x="110" y="172" text-anchor="middle" class="txt">Quantization-Aware</text>
+  <text x="110" y="190" text-anchor="middle" class="txt">Healing</text>
+
+  <path d="M110,200 V230" class="arrow" />
+  <rect x="20" y="230" width="180" height="40" rx="8" class="boxfill" />
+  <text x="110" y="255" text-anchor="middle" class="txt">4-бит, «залечена»</text>
+
+  <text x="240" y="255" class="lbl">Заявлено в блоге:</text>
+  <text x="240" y="275" class="lbl">обгоняет full-precision оригинал</text>
+</svg>
