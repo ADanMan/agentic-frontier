@@ -88,3 +88,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-09 — i-have-adhd (31k★, #1, +819): a skill that forces the answer before the reasoning → *Context economy*
 - 2026-09-09 — openai/skills (26.6k★, #3): Codex ships an official skills catalog, format now cross-harness → *The churn watch*
 - 2026-09-09 — ECC (253k★, +1,315): forks (38k) are the more honest usage signal, stars aren't proof → *Proving it works*
+- 2026-09-09 — On-Policy Self-Distillation critical review: dense IL signal + on-policy RL needs a second teacher model → *Where the training signal comes from*

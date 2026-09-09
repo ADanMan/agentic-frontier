@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">Two ingredients combined, one cost incurred</title>
+  <desc id="desc">On-policy self-distillation combines dense per-token supervision from imitation learning with on-policy sampling from reinforcement learning, but requires running a second teacher model alongside the one being trained.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.7; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="20" y="20" width="200" height="50" rx="8" class="box" />
+  <text x="120" y="42" text-anchor="middle" class="txt">Imitation learning</text>
+  <text x="120" y="60" text-anchor="middle" class="lbl">плотный сигнал</text>
+
+  <rect x="240" y="20" width="200" height="50" rx="8" class="box" />
+  <text x="340" y="42" text-anchor="middle" class="txt">On-policy RL</text>
+  <text x="340" y="60" text-anchor="middle" class="lbl">свои генерации</text>
+
+  <path d="M120,70 V100 H340 V70" class="arrow" />
+  <path d="M340,70 V100" class="arrow" fill="none" stroke="none" />
+
+  <rect x="130" y="110" width="320" height="50" rx="8" class="boxfill" />
+  <text x="290" y="132" text-anchor="middle" class="txt">On-policy self-distillation</text>
+  <text x="290" y="150" text-anchor="middle" class="lbl">лучшее из двух миров</text>
+
+  <path d="M290,160 V190" class="arrow" />
+
+  <rect x="130" y="195" width="320" height="50" rx="8" class="box" />
+  <text x="290" y="217" text-anchor="middle" class="txt">"Requires a second…"</text>
+  <text x="290" y="235" text-anchor="middle" class="lbl">teacher-модель работает параллельно</text>
+
+  <text x="480" y="140" class="lbl">"One symptom,</text>
+  <text x="480" y="158" class="lbl">three levers" —</text>
+  <text x="480" y="176" class="lbl">три способа</text>
+  <text x="480" y="194" class="lbl">смягчить издержку</text>
+</svg>
