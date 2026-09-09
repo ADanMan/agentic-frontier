@@ -85,3 +85,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-08 — hyperframes (46.4k★, #1): "Write HTML. Render video." trades pixels for markup, same bet as diagrams → *The churn watch*
 - 2026-09-08 — markitdown (180.5k★, #2): the doc-to-text step sets the ceiling for every RAG chunk after it → *Retrieval as a first-class design*
 - 2026-09-08 — context-mode (21k★, #3): claimed 98% tool-output reduction is a README number, not a benchmark → *Context economy*
+- 2026-09-09 — i-have-adhd (31k★, #1, +819): a skill that forces the answer before the reasoning → *Context economy*

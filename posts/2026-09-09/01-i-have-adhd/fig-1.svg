@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">Answer first vs. answer buried at the end</title>
+  <desc id="desc">Without the skill, the agent's answer sits at the end of a long chain of reasoning. With i-have-adhd, the answer comes first and the reasoning is optional afterward.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.7; }
+    .cap { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; font-weight: 600; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+
+  <text x="20" y="28" class="cap">Без скилла</text>
+  <rect x="20" y="40" width="120" height="34" rx="6" class="box" />
+  <text x="80" y="61" text-anchor="middle" class="txt">преамбула</text>
+  <rect x="150" y="40" width="120" height="34" rx="6" class="box" />
+  <text x="210" y="61" text-anchor="middle" class="txt">рассуждения</text>
+  <rect x="280" y="40" width="120" height="34" rx="6" class="box" />
+  <text x="340" y="61" text-anchor="middle" class="txt">варианты</text>
+  <rect x="410" y="40" width="150" height="34" rx="6" class="boxfill" />
+  <text x="485" y="61" text-anchor="middle" class="txt">ответ (в конце)</text>
+  <text x="20" y="100" class="lbl">пользователь читает всё, чтобы найти суть</text>
+
+  <line x1="20" y1="130" x2="620" y2="130" stroke="currentColor" stroke-width="1" opacity="0.2" />
+
+  <text x="20" y="158" class="cap">С i-have-adhd</text>
+  <rect x="20" y="170" width="150" height="34" rx="6" class="boxfill" />
+  <text x="95" y="191" text-anchor="middle" class="txt">ответ (сразу)</text>
+  <rect x="190" y="170" width="120" height="34" rx="6" class="box" />
+  <text x="250" y="191" text-anchor="middle" class="txt">обоснование</text>
+  <rect x="320" y="170" width="120" height="34" rx="6" class="box" />
+  <text x="380" y="191" text-anchor="middle" class="txt">детали</text>
+  <text x="470" y="192" class="lbl">— опционально, если нужно</text>
+  <text x="20" y="230" class="lbl">суть видна за одну строку, без пролистывания</text>
+</svg>
