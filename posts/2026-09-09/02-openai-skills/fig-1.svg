@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">The skill format spreads from one harness to another</title>
+  <desc id="desc">Claude Code popularized reusable per-task skills. Community harnesses built their own variants. OpenAI now ships an official skills catalog for Codex, treating the format as standard.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; opacity: 0.7; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="20" y="30" width="170" height="50" rx="8" class="box" />
+  <text x="105" y="52" text-anchor="middle" class="txt">Claude Code</text>
+  <text x="105" y="70" text-anchor="middle" class="lbl">skills как формат</text>
+
+  <path d="M190,55 H250" class="arrow" />
+
+  <rect x="250" y="30" width="170" height="50" rx="8" class="box" />
+  <text x="335" y="52" text-anchor="middle" class="txt">Энтузиасты</text>
+  <text x="335" y="70" text-anchor="middle" class="lbl">свои .agents-папки</text>
+
+  <path d="M420,55 H480" class="arrow" />
+
+  <rect x="480" y="30" width="140" height="50" rx="8" class="boxfill" />
+  <text x="550" y="52" text-anchor="middle" class="txt">openai/skills</text>
+  <text x="550" y="70" text-anchor="middle" class="lbl">официальный каталог</text>
+
+  <line x1="20" y1="120" x2="620" y2="120" stroke="currentColor" stroke-width="1" opacity="0.2" />
+
+  <text x="20" y="150" class="txt">98 звёзд/день —</text>
+  <text x="20" y="170" class="lbl">внимание есть, ажиотажа нет</text>
+
+  <text x="340" y="150" class="txt">819 звёзд/день у #1 сегодня —</text>
+  <text x="340" y="170" class="lbl">для сравнения масштаба</text>
+
+  <text x="20" y="215" class="lbl">формат закрепляется как стандарт раньше, чем становится вирусным</text>
+</svg>
