@@ -74,3 +74,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-09 — ECC (253k★, +1,315): forks (38k) are the more honest usage signal, stars aren't proof → *Proving it works*
 - 2026-09-09 — On-Policy Self-Distillation critical review: dense IL signal + on-policy RL needs a second teacher model → *Where the training signal comes from*
 - 2026-09-10 — superpowers (284k★, #3): "methodology that works" claimed with zero benchmark or case study attached → *Proving it works*
+- 2026-09-10 — teamai-cli (Tencent, #2, +327): "AI native" names a state, not shared-CLI/memory/permissions mechanism → *The churn watch*
