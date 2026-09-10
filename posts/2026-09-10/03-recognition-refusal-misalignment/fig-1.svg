@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">Recognition failure vs. routing failure</title>
+  <desc id="desc">A malformed question can fail either because the model does not recognize it is malformed, or because recognition happens but the signal never routes to a refusal.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="20" y="20" width="200" height="40" rx="8" class="box" />
+  <text x="120" y="45" text-anchor="middle" class="txt">cot(-540°) ?</text>
+
+  <path d="M220,40 H270" class="arrow" />
+  <rect x="270" y="16" width="220" height="48" rx="8" class="box" />
+  <text x="380" y="36" text-anchor="middle" class="txt">Recognition:</text>
+  <text x="380" y="54" text-anchor="middle" class="lbl">is the question well-formed?</text>
+
+  <path d="M380,64 L200,110" class="arrow" />
+  <path d="M380,64 L380,110" class="arrow" />
+
+  <rect x="80" y="110" width="220" height="40" rx="8" class="boxfill" />
+  <text x="190" y="135" text-anchor="middle" class="txt">Recognition fails</text>
+
+  <rect x="330" y="110" width="220" height="40" rx="8" class="box" />
+  <text x="440" y="135" text-anchor="middle" class="txt">Recognized as malformed</text>
+
+  <path d="M190,150 V225" class="arrow" />
+  <path d="M440,150 V180" class="arrow" />
+  <rect x="330" y="180" width="220" height="40" rx="8" class="box" />
+  <text x="440" y="205" text-anchor="middle" class="txt">Routing to refusal</text>
+
+  <path d="M440,220 L250,240" class="arrow" />
+  <path d="M440,220 L560,240" class="arrow" />
+
+  <rect x="80" y="185" width="220" height="45" rx="8" class="boxfill" />
+  <text x="190" y="210" text-anchor="middle" class="txt">Answers anyway</text>
+
+  <text x="250" y="255" text-anchor="middle" class="lbl">routing breaks → answers anyway</text>
+  <text x="560" y="255" text-anchor="middle" class="lbl">routing works → refuses</text>
+</svg>
