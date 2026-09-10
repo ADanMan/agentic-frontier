@@ -47,22 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-01 — Tencent Hy4 Preview: 770B total/49B active MoE, 2.5x Hy3's size → *Serving under real load*
-- 2026-09-01 — PULSAR: vision-first late-interaction RAG skips OCR for pitch decks → *Retrieval as a first-class design*
-- 2026-09-01 — minimind (472★/day): readable 64M-param LLM pretrain pipeline, 2h on one GPU → *Where the training signal comes from*
-- 2026-09-01 — pgbot (840★): schema/stats-aware Postgres layer for agents, not just text-to-SQL → *The authorization boundary*
-- 2026-09-01 — OCaml maintainer: a bare bug rumor is now enough for LLMs to find an exploit → *Untrusted tool output*
-- 2026-09-01 — Survey of Optimizers: coordinates→matrices, fixed horizon→policies, rule→state → *Where the training signal comes from*
-- 2026-09-01 — Logos harness: capabilities formally carry a tracked inverse (undo) → *The authorization boundary*
-- 2026-09-02 — ponytail (119k★): agent prompt trained to prefer writing no code at all → *Context economy*
-- 2026-09-02 — openclaude (31k★, #1 trending): "runs anywhere, uses anything" harness pitch → *The churn watch*
-- 2026-09-02 — HF "State of Open Models" Summer 2026: "open" splits into weights/data/code/license axes → *The churn watch*
-- 2026-09-02 — academic-research-skills (45k★): 5-step research→write→review→revise→finalize skill → *Proving it works*
-- 2026-09-02 — Quivr (new #10, Chatbot): "opiniated RAG", any LLM/any vectorstore, defaults vs. flexibility → *Retrieval as a first-class design*
-- 2026-09-02 — Sentence Transformers adds late-interaction multi-vector embeddings (ColBERT-style) → *Retrieval as a first-class design*
-- 2026-09-02 — Dharma-AI: +33 points GPU cluster utilization from job scheduling order alone → *Serving under real load*
-- 2026-09-02 — SHAPE: decomposes math-reasoning accuracy into separate measurable skills → *Proving it works*
-- 2026-09-02 — InternReviewer/InternAdvocate: objective reward for subjective peer-review/rebuttal RL → *Where the training signal comes from*
 - 2026-09-03 — TimesFM (30k★, #2): one pretrained model replaces per-series ARIMA/Prophet, zero-shot → *The churn watch*
 - 2026-09-03 — RECAP-Forcing: long video memory organized by content appearance, not just recency → *Context economy*
 - 2026-09-03 — ponytail (122k★, #3 overall, day 2): a second consecutive trending day beats one, still isn't adoption proof → *Proving it works*
@@ -89,3 +73,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-09 — openai/skills (26.6k★, #3): Codex ships an official skills catalog, format now cross-harness → *The churn watch*
 - 2026-09-09 — ECC (253k★, +1,315): forks (38k) are the more honest usage signal, stars aren't proof → *Proving it works*
 - 2026-09-09 — On-Policy Self-Distillation critical review: dense IL signal + on-policy RL needs a second teacher model → *Where the training signal comes from*
+- 2026-09-10 — superpowers (284k★, #3): "methodology that works" claimed with zero benchmark or case study attached → *Proving it works*
