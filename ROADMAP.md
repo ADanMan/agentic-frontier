@@ -77,3 +77,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-10 — teamai-cli (Tencent, #2, +327): "AI native" names a state, not shared-CLI/memory/permissions mechanism → *The churn watch*
 - 2026-09-10 — Recognition-Refusal Misalignment: models answer malformed questions — recognition fails, or routing to refusal does? → *Proving it works*
 - 2026-09-10 — deepseek-harness (216.8k★): fork/star ratio flat at 11.8% for days despite rising stars, permission model still unclear → *The authorization boundary*
+- 2026-09-11 — gods-eye-view (24.9k★, #2): "+916" window growth vs "1,762 stars today" on the same card, ~2x gap → *Proving it works*
