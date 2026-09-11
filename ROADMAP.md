@@ -79,3 +79,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-10 — deepseek-harness (216.8k★): fork/star ratio flat at 11.8% for days despite rising stars, permission model still unclear → *The authorization boundary*
 - 2026-09-11 — gods-eye-view (24.9k★, #2): "+916" window growth vs "1,762 stars today" on the same card, ~2x gap → *Proving it works*
 - 2026-09-11 — OreoLook: three-layer cache filters expensive live-crawl+synthesis path on commodity CPU → *Serving under real load*
+- 2026-09-11 — AutoResearch via world models: cheap simulated outcomes replace real experiments, accuracy on novel hypotheses unstated → *Where the training signal comes from*
