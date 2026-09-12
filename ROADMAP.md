@@ -47,12 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-03 — TimesFM (30k★, #2): one pretrained model replaces per-series ARIMA/Prophet, zero-shot → *The churn watch*
-- 2026-09-03 — RECAP-Forcing: long video memory organized by content appearance, not just recency → *Context economy*
-- 2026-09-03 — ponytail (122k★, #3 overall, day 2): a second consecutive trending day beats one, still isn't adoption proof → *Proving it works*
-- 2026-09-03 — deepseek-harness (209k★, day 3): "everything is a plugin" needs a permission model, not just extensibility → *Untrusted tool output*
-- 2026-09-03 — Quivr "NEW ENTRY #10" two days running: trending snapshots are noisy, not stable rankings → *The churn watch*
-- 2026-09-03 — fmtlib/fmt #1 in "AI trends": a plain C++ lib, feed labels aren't content filters → *The churn watch*
 - 2026-09-03 — Institutional Newspapers Pipeline: billions of tokens need layout parsing before OCR reading order → *Where the training signal comes from*
 - 2026-09-03 — IBM Research "How Much Memory Does Your Agent Actually Need": working/episodic/long-term have separate costs → *Context economy*
 - 2026-09-04 — mattpocock/skills (248k★, #2): one dev's .agents folder, stars track fame not proven quality → *Context economy*
@@ -81,3 +75,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-11 — OreoLook: three-layer cache filters expensive live-crawl+synthesis path on commodity CPU → *Serving under real load*
 - 2026-09-11 — AutoResearch via world models: cheap simulated outcomes replace real experiments, accuracy on novel hypotheses unstated → *Where the training signal comes from*
 - 2026-09-11 — HyQuant: same low bit-width is fine for MLP weights, large error inside attention, hence hybrid precision → *Serving under real load*
+- 2026-09-12 — Prompt-Engineering-Guide (78.2k★, #9→#10) swaps ranks same day/category with an agent-tutorial repo → *The churn watch*
