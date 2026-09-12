@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-labelledby="title desc">
+  <title id="title">Prompt engineering versus context engineering</title>
+  <desc id="desc">Prompt engineering shapes one instruction sent to the model. Context engineering decides what retrieved documents, tool output, memory and system instructions all end up in the context window.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .big { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; font-weight: 600; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <text x="140" y="24" text-anchor="middle" class="big">Prompt engineering</text>
+  <rect x="40" y="40" width="200" height="44" rx="6" class="boxfill" />
+  <text x="140" y="66" text-anchor="middle" class="txt">One instruction</text>
+  <path d="M240,62 L300,62" class="arrow" />
+  <rect x="300" y="40" width="90" height="44" rx="6" class="box" />
+  <text x="345" y="66" text-anchor="middle" class="txt">Model</text>
+
+  <line x1="20" y1="110" x2="620" y2="110" stroke="currentColor" stroke-width="1" opacity="0.3" />
+
+  <text x="140" y="135" text-anchor="middle" class="big">Context engineering</text>
+
+  <rect x="30" y="150" width="150" height="34" rx="6" class="boxfill" />
+  <text x="105" y="172" text-anchor="middle" class="lbl">Retrieved docs</text>
+  <rect x="30" y="192" width="150" height="34" rx="6" class="boxfill" />
+  <text x="105" y="214" text-anchor="middle" class="lbl">Tool output</text>
+  <rect x="30" y="234" width="150" height="34" rx="6" class="boxfill" />
+  <text x="105" y="256" text-anchor="middle" class="lbl">History / memory</text>
+  <rect x="30" y="276" width="150" height="16" rx="4" class="boxfill" />
+
+  <path d="M180,167 L280,205" class="arrow" />
+  <path d="M180,209 L280,205" class="arrow" />
+  <path d="M180,251 L280,205" class="arrow" />
+
+  <rect x="280" y="185" width="100" height="40" rx="6" class="box" />
+  <text x="330" y="210" text-anchor="middle" class="txt">Context window</text>
+
+  <path d="M380,205 L470,205" class="arrow" />
+  <rect x="470" y="183" width="100" height="44" rx="6" class="box" />
+  <text x="520" y="209" text-anchor="middle" class="txt">Model</text>
+
+  <text x="330" y="245" text-anchor="middle" class="lbl">select · order · compress · drop</text>
+</svg>
