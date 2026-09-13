@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">Propose vs. send: where the real authorization boundary sits</title>
+  <desc id="desc">An AI agent wired into a live WhatsApp channel either drafts a message for human approval or sends it directly; the README's "MCP-ready" label says nothing about which.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .big { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; font-weight: 600; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="240" y="15" width="160" height="55" rx="8" class="boxfill" />
+  <text x="320" y="48" text-anchor="middle" class="big">Agent drafts reply</text>
+
+  <path d="M300,70 L180,130" class="arrow" />
+  <path d="M340,70 L460,130" class="arrow" />
+
+  <rect x="20" y="130" width="260" height="90" rx="8" class="boxfill" />
+  <text x="150" y="155" text-anchor="middle" class="txt">Human approves first</text>
+  <text x="150" y="178" text-anchor="middle" class="big">Useful assistant</text>
+  <text x="150" y="200" text-anchor="middle" class="lbl">agent proposes</text>
+
+  <rect x="360" y="130" width="260" height="90" rx="8" class="box" />
+  <text x="490" y="155" text-anchor="middle" class="txt">No confirmation step</text>
+  <text x="490" y="178" text-anchor="middle" class="big">Autonomous sender</text>
+  <text x="490" y="200" text-anchor="middle" class="lbl">acting as the business</text>
+</svg>

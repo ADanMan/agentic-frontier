@@ -77,3 +77,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-12 — Prompt-Engineering-Guide (78.2k★, #9→#10) swaps ranks same day/category with an agent-tutorial repo → *The churn watch*
 - 2026-09-12 — hello-agents (78.4k★, #10→#9): near-tied stars with its rival, but +1,146 forks → *Proving it works*
 - 2026-09-13 — system_prompts_leaks (65.5k★, #3): extraction across 4 vendors proves prompts are text, not an enforced boundary → *Untrusted tool output*
+- 2026-09-13 — DeskcommCRM (1.9k★, #2): AI agent wired into live WhatsApp sends, "MCP-ready" says nothing about propose-vs-send → *The authorization boundary*
