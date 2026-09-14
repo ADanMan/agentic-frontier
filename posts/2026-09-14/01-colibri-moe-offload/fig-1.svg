@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" role="img" aria-labelledby="title desc">
+  <title id="title">MoE expert routing with disk offload</title>
+  <desc id="desc">A router selects one or two experts per token out of many; only the selected experts are loaded from disk into memory, the rest stay on disk.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .boxfill-dim { fill: currentColor; opacity: 0.04; stroke: currentColor; stroke-width: 1.5; stroke-dasharray: 4 3; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .big { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; font-weight: 600; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    .arrow-dim { stroke: currentColor; stroke-width: 1.5; fill: none; opacity: 0.4; stroke-dasharray: 3 3; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="20" y="110" width="130" height="60" rx="8" class="boxfill" />
+  <text x="85" y="135" text-anchor="middle" class="txt">Token in</text>
+  <text x="85" y="153" text-anchor="middle" class="big">router</text>
+
+  <path d="M150,140 L220,70" class="arrow" />
+  <path d="M150,140 L220,140" class="arrow" />
+  <path d="M150,140 L220,210" class="arrow-dim" />
+
+  <rect x="220" y="40" width="150" height="55" rx="8" class="boxfill" />
+  <text x="295" y="62" text-anchor="middle" class="txt">Expert #7</text>
+  <text x="295" y="80" text-anchor="middle" class="lbl">selected — load from disk</text>
+
+  <rect x="220" y="112" width="150" height="55" rx="8" class="boxfill" />
+  <text x="295" y="134" text-anchor="middle" class="txt">Expert #23</text>
+  <text x="295" y="152" text-anchor="middle" class="lbl">selected — load from disk</text>
+
+  <rect x="220" y="184" width="150" height="55" rx="8" class="boxfill-dim" />
+  <text x="295" y="206" text-anchor="middle" class="txt">Experts 1-6, 8-22, 24-N</text>
+  <text x="295" y="224" text-anchor="middle" class="lbl">not selected — stay on disk</text>
+
+  <path d="M370,67 L460,105" class="arrow" />
+  <path d="M370,139 L460,120" class="arrow" />
+
+  <rect x="460" y="90" width="160" height="55" rx="8" class="box" />
+  <text x="540" y="112" text-anchor="middle" class="txt">Layer output</text>
+  <text x="540" y="130" text-anchor="middle" class="lbl">only 1-2 experts touched</text>
+
+  <text x="295" y="260" text-anchor="middle" class="lbl">tradeoff: disk latency instead of holding every expert in VRAM</text>
+</svg>

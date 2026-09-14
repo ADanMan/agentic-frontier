@@ -47,8 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-03 — IBM Research "How Much Memory Does Your Agent Actually Need": working/episodic/long-term have separate costs → *Context economy*
-- 2026-09-04 — mattpocock/skills (248k★, #2): one dev's .agents folder, stars track fame not proven quality → *Context economy*
 - 2026-09-04 — hermes-agent (241k★, #3, Nous Research): "grows with you" names no mechanism at all → *The churn watch*
 - 2026-09-04 — Entity-Aligned Retrieval for KB-VQA: CLIP similarity finds "looks like", not "is the same entity" → *Retrieval as a first-class design*
 - 2026-09-05 — Conditional Experience Transfer: autonomous post-training learns when NOT to reuse past runs → *Where the training signal comes from*
@@ -78,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-12 — hello-agents (78.4k★, #10→#9): near-tied stars with its rival, but +1,146 forks → *Proving it works*
 - 2026-09-13 — system_prompts_leaks (65.5k★, #3): extraction across 4 vendors proves prompts are text, not an enforced boundary → *Untrusted tool output*
 - 2026-09-13 — DeskcommCRM (1.9k★, #2): AI agent wired into live WhatsApp sends, "MCP-ready" says nothing about propose-vs-send → *The authorization boundary*
+- 2026-09-14 — colibri (30.3k★, #1, pure C): MoE experts stream from disk since only 1-2 of N are active per token → *Serving under real load*
