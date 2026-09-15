@@ -77,3 +77,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-13 — system_prompts_leaks (65.5k★, #3): extraction across 4 vendors proves prompts are text, not an enforced boundary → *Untrusted tool output*
 - 2026-09-13 — DeskcommCRM (1.9k★, #2): AI agent wired into live WhatsApp sends, "MCP-ready" says nothing about propose-vs-send → *The authorization boundary*
 - 2026-09-14 — colibri (30.3k★, #1, pure C): MoE experts stream from disk since only 1-2 of N are active per token → *Serving under real load*
+- 2026-09-15 — open-code-review (25.5k★, #2): "battle-tested at Alibaba's scale" ships with no benchmark → *Proving it works*
