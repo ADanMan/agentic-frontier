@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-labelledby="title desc">
+  <title id="title">Single-vector vs multi-vector late interaction</title>
+  <desc id="desc">Single-vector search compresses query and document into one vector each compared by cosine similarity; multi-vector keeps one vector per token and scores via MaxSim summed across query tokens.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .dot { fill: currentColor; opacity: 0.6; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .head { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; font-weight: 600; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <text x="150" y="24" text-anchor="middle" class="head">Single-vector</text>
+  <rect x="30" y="40" width="100" height="45" rx="8" class="boxfill" />
+  <text x="80" y="67" text-anchor="middle" class="txt">Query → 1 vec</text>
+  <rect x="30" y="100" width="100" height="45" rx="8" class="boxfill" />
+  <text x="80" y="127" text-anchor="middle" class="txt">Doc → 1 vec</text>
+  <path d="M130,62 L200,90" class="arrow" />
+  <path d="M130,122 L200,95" class="arrow" />
+  <rect x="200" y="70" width="100" height="45" rx="8" class="box" />
+  <text x="250" y="97" text-anchor="middle" class="lbl">cosine(V1,V2)</text>
+
+  <line x1="335" y1="10" x2="335" y2="290" stroke="currentColor" stroke-opacity="0.2" />
+
+  <text x="480" y="24" text-anchor="middle" class="head">Multi-vector (late interaction)</text>
+  <rect x="360" y="40" width="130" height="60" rx="8" class="boxfill" />
+  <text x="425" y="60" text-anchor="middle" class="txt">Query tokens</text>
+  <circle cx="385" cy="80" r="4" class="dot" /><circle cx="405" cy="80" r="4" class="dot" /><circle cx="425" cy="80" r="4" class="dot" /><circle cx="445" cy="80" r="4" class="dot" /><circle cx="465" cy="80" r="4" class="dot" />
+
+  <rect x="360" y="120" width="130" height="60" rx="8" class="boxfill" />
+  <text x="425" y="140" text-anchor="middle" class="txt">Doc tokens</text>
+  <circle cx="380" cy="160" r="4" class="dot" /><circle cx="398" cy="160" r="4" class="dot" /><circle cx="416" cy="160" r="4" class="dot" /><circle cx="434" cy="160" r="4" class="dot" /><circle cx="452" cy="160" r="4" class="dot" /><circle cx="470" cy="160" r="4" class="dot" />
+
+  <path d="M490,70 L560,130" class="arrow" />
+  <path d="M490,150 L560,150" class="arrow" />
+
+  <rect x="500" y="200" width="130" height="60" rx="8" class="box" />
+  <text x="565" y="222" text-anchor="middle" class="lbl">MaxSim per query</text>
+  <text x="565" y="240" text-anchor="middle" class="lbl">token, then summed</text>
+
+  <path d="M425,180 L555,205" class="arrow" />
+
+  <text x="480" y="285" text-anchor="middle" class="lbl">more precision, more vectors to store</text>
+</svg>
