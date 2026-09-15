@@ -79,3 +79,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-14 — colibri (30.3k★, #1, pure C): MoE experts stream from disk since only 1-2 of N are active per token → *Serving under real load*
 - 2026-09-15 — open-code-review (25.5k★, #2): "battle-tested at Alibaba's scale" ships with no benchmark → *Proving it works*
 - 2026-09-15 — YuE2 (8.3k★, #3): "frontier" tagline bundles 3 claims, zero samples given → *The churn watch*
+- 2026-09-15 — PLC-DPO: posterior label correction targets DPO's assumption that preferences are reliable → *Where the training signal comes from*

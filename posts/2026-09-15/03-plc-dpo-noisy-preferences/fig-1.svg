@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">Standard DPO vs posterior label correction</title>
+  <desc id="desc">A labeled preference pair feeds standard DPO which treats the label as ground truth, versus PLC-DPO which re-estimates label reliability before training on it.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="20" y="100" width="150" height="60" rx="8" class="boxfill" />
+  <text x="95" y="126" text-anchor="middle" class="txt">Labeled pair</text>
+  <text x="95" y="144" text-anchor="middle" class="lbl">"A better than B"</text>
+
+  <path d="M170,120 L250,60" class="arrow" />
+  <path d="M170,140 L250,190" class="arrow" />
+
+  <rect x="250" y="30" width="180" height="55" rx="8" class="boxfill" />
+  <text x="340" y="52" text-anchor="middle" class="txt">Standard DPO</text>
+  <text x="340" y="70" text-anchor="middle" class="lbl">label treated as truth</text>
+
+  <rect x="250" y="165" width="180" height="55" rx="8" class="boxfill" />
+  <text x="340" y="187" text-anchor="middle" class="txt">PLC-DPO</text>
+  <text x="340" y="205" text-anchor="middle" class="lbl">label reliability re-estimated</text>
+
+  <path d="M430,57 L520,57" class="arrow" />
+  <path d="M430,192 L520,192" class="arrow" />
+
+  <rect x="520" y="30" width="110" height="55" rx="8" class="box" />
+  <text x="575" y="52" text-anchor="middle" class="lbl">noise learned</text>
+  <text x="575" y="68" text-anchor="middle" class="lbl">as preference</text>
+
+  <rect x="520" y="165" width="110" height="55" rx="8" class="box" />
+  <text x="575" y="187" text-anchor="middle" class="lbl">weak label</text>
+  <text x="575" y="203" text-anchor="middle" class="lbl">down-weighted</text>
+</svg>
