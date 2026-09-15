@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">YuE2 tagline as three separate claims</title>
+  <desc id="desc">A prompt goes through symbolic planning before audio generation, which then branches into a zero-shot cover claim and an agentic editing claim.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .big { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 14px; font-weight: 600; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="15" y="100" width="130" height="60" rx="8" class="boxfill" />
+  <text x="80" y="126" text-anchor="middle" class="txt">Prompt /</text>
+  <text x="80" y="144" text-anchor="middle" class="txt">reference track</text>
+
+  <path d="M145,130 L225,130" class="arrow" />
+
+  <rect x="225" y="100" width="150" height="60" rx="8" class="boxfill" />
+  <text x="300" y="122" text-anchor="middle" class="txt">Symbolic plan</text>
+  <text x="300" y="140" text-anchor="middle" class="lbl">structure, notes — claim 1</text>
+
+  <path d="M375,130 L455,130" class="arrow" />
+
+  <rect x="455" y="100" width="150" height="60" rx="8" class="box" />
+  <text x="530" y="126" text-anchor="middle" class="txt">Audio</text>
+  <text x="530" y="144" text-anchor="middle" class="txt">generation</text>
+
+  <path d="M530,100 L530,45" class="arrow" />
+  <path d="M530,160 L530,215" class="arrow" />
+
+  <rect x="440" y="10" width="180" height="45" rx="8" class="boxfill" />
+  <text x="530" y="37" text-anchor="middle" class="lbl">zero-shot cover — claim 2</text>
+
+  <rect x="440" y="215" width="180" height="45" rx="8" class="boxfill" />
+  <text x="530" y="242" text-anchor="middle" class="lbl">agentic edit — claim 3</text>
+</svg>
