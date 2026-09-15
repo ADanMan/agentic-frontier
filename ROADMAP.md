@@ -47,10 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-04 — hermes-agent (241k★, #3, Nous Research): "grows with you" names no mechanism at all → *The churn watch*
-- 2026-09-04 — Entity-Aligned Retrieval for KB-VQA: CLIP similarity finds "looks like", not "is the same entity" → *Retrieval as a first-class design*
-- 2026-09-05 — Conditional Experience Transfer: autonomous post-training learns when NOT to reuse past runs → *Where the training signal comes from*
-- 2026-09-05 — deepseek-harness (211k★, 3rd reading): star growth decelerates while forks keep climbing steadily → *Proving it works*
 - 2026-09-05 — ponytail (126k★, #2): daily stars keep falling but overall rank keeps climbing → *The churn watch*
 - 2026-09-06 — sglang (35.5k★, +1,237/day, 8,563 forks): fork count is a more honest usage signal than stars → *Serving under real load*
 - 2026-09-06 — ECC (250k★, #2): "security" across 4 different harnesses is a claim, not a verified boundary → *The authorization boundary*
@@ -80,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-15 — open-code-review (25.5k★, #2): "battle-tested at Alibaba's scale" ships with no benchmark → *Proving it works*
 - 2026-09-15 — YuE2 (8.3k★, #3): "frontier" tagline bundles 3 claims, zero samples given → *The churn watch*
 - 2026-09-15 — PLC-DPO: posterior label correction targets DPO's assumption that preferences are reliable → *Where the training signal comes from*
+- 2026-09-15 — TempCloze: video-LLM benchmark isolates language shortcuts from real temporal reasoning → *Proving it works*
