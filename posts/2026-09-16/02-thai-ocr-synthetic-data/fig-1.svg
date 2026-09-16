@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic-to-real OCR transfer with zero labeled real data</title>
+  <desc id="desc">Synthetic text images with exact labels train an OCR base model, which is then adapted to real unlabeled Thai documents to produce Wayu-Paxa-OCR-Zero, without any real labeled OCR pairs.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .dashed { fill: none; stroke: currentColor; stroke-width: 2; stroke-dasharray: 5,4; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="15" y="30" width="170" height="55" rx="8" class="boxfill" />
+  <text x="100" y="52" text-anchor="middle" class="txt">Synthetic images</text>
+  <text x="100" y="70" text-anchor="middle" class="lbl">exact labels, by construction</text>
+
+  <path d="M185,57 L260,57" class="arrow" />
+
+  <rect x="260" y="30" width="140" height="55" rx="8" class="boxfill" />
+  <text x="330" y="52" text-anchor="middle" class="txt">OCR base model</text>
+  <text x="330" y="70" text-anchor="middle" class="lbl">trained on synthetic</text>
+
+  <rect x="15" y="150" width="170" height="55" rx="8" class="box" />
+  <text x="100" y="172" text-anchor="middle" class="txt">Real Thai docs</text>
+  <text x="100" y="190" text-anchor="middle" class="lbl">no OCR labels</text>
+
+  <path d="M185,177 L400,90" class="dashed" marker-end="url(#arrow)" />
+  <text x="290" y="150" text-anchor="middle" class="lbl">unsupervised adaptation</text>
+
+  <path d="M330,85 L330,150" class="arrow" />
+
+  <rect x="440" y="130" width="185" height="60" rx="8" class="boxfill" />
+  <text x="532" y="155" text-anchor="middle" class="txt">Wayu-Paxa-OCR-Zero</text>
+  <text x="532" y="173" text-anchor="middle" class="lbl">zero labeled real pairs</text>
+
+  <path d="M400,177 L440,160" class="arrow" />
+</svg>
