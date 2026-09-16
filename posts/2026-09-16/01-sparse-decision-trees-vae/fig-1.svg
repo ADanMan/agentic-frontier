@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">Discrete tree search reframed as continuous latent search</title>
+  <desc id="desc">A decision tree is encoded by a transformer VAE into a continuous latent space, searched with continuous optimization, then decoded back into a new sparse tree, instead of enumerating the discrete space of all trees.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="15" y="100" width="120" height="60" rx="8" class="boxfill" />
+  <text x="75" y="126" text-anchor="middle" class="txt">Discrete tree</text>
+  <text x="75" y="144" text-anchor="middle" class="lbl">exponential search</text>
+
+  <path d="M135,130 L200,130" class="arrow" />
+
+  <rect x="200" y="100" width="110" height="60" rx="8" class="boxfill" />
+  <text x="255" y="126" text-anchor="middle" class="txt">Transformer</text>
+  <text x="255" y="144" text-anchor="middle" class="lbl">encoder</text>
+
+  <path d="M310,130 L375,130" class="arrow" />
+
+  <ellipse cx="450" cy="130" rx="70" ry="55" class="box" />
+  <text x="450" y="122" text-anchor="middle" class="txt">Latent space</text>
+  <text x="450" y="140" text-anchor="middle" class="lbl">continuous,</text>
+  <text x="450" y="154" text-anchor="middle" class="lbl">differentiable</text>
+
+  <path d="M520,130 L585,130" class="arrow" />
+
+  <rect x="585" y="100" width="45" height="60" rx="8" class="boxfill" />
+  <text x="607" y="126" text-anchor="middle" class="txt" font-size="10">Decode</text>
+  <text x="607" y="142" text-anchor="middle" class="lbl" font-size="9">→ tree</text>
+
+  <path d="M450,75 L450,20" class="arrow" />
+  <text x="450" y="14" text-anchor="middle" class="lbl">continuous optimization / search</text>
+</svg>
