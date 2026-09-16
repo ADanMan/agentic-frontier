@@ -79,3 +79,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-15 — TempCloze: video-LLM benchmark isolates language shortcuts from real temporal reasoning → *Proving it works*
 - 2026-09-16 — Sparse decision trees via transformer VAE: discrete tree search reframed as continuous latent optimization → *Proving it works*
 - 2026-09-16 — Thai OCR-Zero: synthetic labels train the base, unlabeled real pages close the domain gap → *Where the training signal comes from*
+- 2026-09-16 — Fixed-voice Thai TTS from synthetic speech: compact single-voice model trades flexibility for cheap inference → *Serving under real load*
