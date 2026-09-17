@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">Codebase to knowledge graph, no vector store</title>
+  <desc id="desc">Code, docs, SQL schemas, configs and PDFs are parsed deterministically into an AST, producing a knowledge graph with explained edges, queried directly by an agent skill instead of an embedding-based vector store.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="10" y="95" width="110" height="70" rx="8" class="boxfill" />
+  <text x="65" y="120" text-anchor="middle" class="txt">Code, docs,</text>
+  <text x="65" y="136" text-anchor="middle" class="txt">SQL, configs,</text>
+  <text x="65" y="152" text-anchor="middle" class="txt">PDF</text>
+
+  <path d="M120,130 L185,130" class="arrow" />
+
+  <rect x="185" y="95" width="120" height="70" rx="8" class="boxfill" />
+  <text x="245" y="122" text-anchor="middle" class="txt">Deterministic</text>
+  <text x="245" y="140" text-anchor="middle" class="txt">AST parsing</text>
+  <text x="245" y="156" text-anchor="middle" class="lbl">no embeddings</text>
+
+  <path d="M305,130 L370,130" class="arrow" />
+
+  <ellipse cx="445" cy="130" rx="75" ry="55" class="box" />
+  <text x="445" y="120" text-anchor="middle" class="txt">Knowledge graph</text>
+  <text x="445" y="138" text-anchor="middle" class="lbl">every edge</text>
+  <text x="445" y="152" text-anchor="middle" class="lbl">explained</text>
+
+  <path d="M520,130 L585,130" class="arrow" />
+
+  <rect x="585" y="100" width="45" height="60" rx="8" class="boxfill" />
+  <text x="607" y="122" text-anchor="middle" class="txt" font-size="10">Agent</text>
+  <text x="607" y="138" text-anchor="middle" class="lbl" font-size="9">query</text>
+
+  <path d="M445,75 L445,20" class="arrow" />
+  <text x="445" y="14" text-anchor="middle" class="lbl">structural query, not similarity search</text>
+</svg>

@@ -47,13 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-05 — ponytail (126k★, #2): daily stars keep falling but overall rank keeps climbing → *The churn watch*
-- 2026-09-06 — sglang (35.5k★, +1,237/day, 8,563 forks): fork count is a more honest usage signal than stars → *Serving under real load*
-- 2026-09-06 — ECC (250k★, #2): "security" across 4 different harnesses is a claim, not a verified boundary → *The authorization boundary*
-- 2026-09-07 — ECC ranked #1 while trailing #2 on stars, growth, and "today" count → *The churn watch*
-- 2026-09-07 — Motion-Omni: speech and co-speech motion still ship as two models with no shared context → *The churn watch*
-- 2026-09-07 — diagram-design (32.6k★, #3): "no Mermaid slop" names auto-generated Mermaid as the new legacy default → *The churn watch*
-- 2026-09-08 — hyperframes (46.4k★, #1): "Write HTML. Render video." trades pixels for markup, same bet as diagrams → *The churn watch*
 - 2026-09-08 — markitdown (180.5k★, #2): the doc-to-text step sets the ceiling for every RAG chunk after it → *Retrieval as a first-class design*
 - 2026-09-08 — context-mode (21k★, #3): claimed 98% tool-output reduction is a README number, not a benchmark → *Context economy*
 - 2026-09-09 — i-have-adhd (31k★, #1, +819): a skill that forces the answer before the reasoning → *Context economy*
@@ -80,3 +73,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-16 — Sparse decision trees via transformer VAE: discrete tree search reframed as continuous latent optimization → *Proving it works*
 - 2026-09-16 — Thai OCR-Zero: synthetic labels train the base, unlabeled real pages close the domain gap → *Where the training signal comes from*
 - 2026-09-16 — Fixed-voice Thai TTS from synthetic speech: compact single-voice model trades flexibility for cheap inference → *Serving under real load*
+- 2026-09-17 — graphify (118.2k★, +1,313): "no vector store" — AST-parsed graph edges vs embedding similarity, different retrieval units → *Retrieval as a first-class design*
