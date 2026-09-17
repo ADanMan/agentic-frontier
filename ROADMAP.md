@@ -75,3 +75,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-16 — Fixed-voice Thai TTS from synthetic speech: compact single-voice model trades flexibility for cheap inference → *Serving under real load*
 - 2026-09-17 — graphify (118.2k★, +1,313): "no vector store" — AST-parsed graph edges vs embedding similarity, different retrieval units → *Retrieval as a first-class design*
 - 2026-09-17 — security-audit-skill (7.3k★, #2): +310 window gain vs "927 stars today" on the same card, same gods-eye-view pattern → *Proving it works*
+- 2026-09-17 — Grouped Value Attention: title implies keys reconstructed on demand, only values stay cached, past GQA's grouping → *Serving under real load*
