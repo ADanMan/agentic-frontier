@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">One-step forgetting check vs long-horizon memorization check</title>
+  <desc id="desc">A fact arrives at time T. Classic continual learning checks whether the fact survives the very next update. Long-horizon memorization checks whether it survives many subsequent updates further down the line.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <circle cx="40" cy="60" r="18" class="boxfill" />
+  <text x="40" y="64" text-anchor="middle" class="lbl" font-size="10">fact</text>
+
+  <path d="M58,60 L100,60" class="arrow" />
+  <rect x="100" y="35" width="70" height="50" rx="6" class="box" />
+  <text x="135" y="65" text-anchor="middle" class="lbl">update 1</text>
+
+  <path d="M170,60 L215,60" class="arrow" />
+  <text x="192" y="55" text-anchor="middle" class="lbl" font-size="10">check</text>
+  <text x="192" y="90" text-anchor="middle" class="lbl" font-size="10">classic CL</text>
+
+  <path d="M170,110 L520,110" class="dash" stroke="currentColor" stroke-width="1.5" fill="none" stroke-dasharray="4 3" opacity="0.5" />
+
+  <rect x="215" y="35" width="60" height="50" rx="6" class="boxfill" />
+  <text x="245" y="65" text-anchor="middle" class="lbl" font-size="10">update 2</text>
+  <path d="M275,60 L305,60" class="arrow" />
+  <rect x="305" y="35" width="30" height="50" rx="6" class="boxfill" />
+  <text x="320" y="65" text-anchor="middle" class="lbl" font-size="9">...</text>
+  <path d="M335,60 L365,60" class="arrow" />
+  <rect x="365" y="35" width="60" height="50" rx="6" class="boxfill" />
+  <text x="395" y="65" text-anchor="middle" class="lbl" font-size="10">update N</text>
+
+  <path d="M425,60 L470,60" class="arrow" />
+  <text x="500" y="55" text-anchor="middle" class="lbl" font-size="10">check</text>
+  <text x="500" y="90" text-anchor="middle" class="txt" font-size="11">long-horizon</text>
+  <text x="500" y="105" text-anchor="middle" class="txt" font-size="11">memorization</text>
+
+  <text x="320" y="190" text-anchor="middle" class="lbl">Does one mechanism's 1-step guarantee hold N steps later?</text>
+  <text x="320" y="210" text-anchor="middle" class="lbl">Do multiple mechanisms compose, or interfere, over that stretch?</text>
+</svg>
