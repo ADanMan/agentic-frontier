@@ -78,3 +78,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-17 — Grouped Value Attention: title implies keys reconstructed on demand, only values stay cached, past GQA's grouping → *Serving under real load*
 - 2026-09-17 — Long-horizon memorization: stretches the forgetting check from 1 update to N, tests if CL mechanisms compose → *Where the training signal comes from*
 - 2026-09-18 — "The Last AI Built by Humans": RSI defined as persistent changes that also improve the improvement process itself → *Where the training signal comes from*
+- 2026-09-18 — "Never Giving Up" RL paper: RL fine-tuning measurably improves easy problems far more than hard ones → *Proving it works*

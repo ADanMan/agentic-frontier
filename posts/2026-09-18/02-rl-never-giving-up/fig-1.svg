@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">RL improves easy problems far more than hard ones</title>
+  <desc id="desc">A dataset of easy and hard problems goes through RL training. Easy problems, where the model already succeeds often, see a large improvement. Hard problems see only a small improvement. The paper's proposed fix, named Never Giving Up in the title, is not described in the available abstract.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .boxdash { fill: none; stroke: currentColor; stroke-width: 2; stroke-dasharray: 5 4; opacity: 0.7; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    .barEasy { fill: currentColor; opacity: 0.85; }
+    .barHard { fill: currentColor; opacity: 0.35; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="20" y="30" width="180" height="50" rx="8" class="boxfill" />
+  <text x="110" y="60" text-anchor="middle" class="txt">Dataset: easy + hard</text>
+
+  <path d="M200,55 L250,55" class="arrow" />
+
+  <rect x="250" y="30" width="150" height="50" rx="8" class="box" />
+  <text x="325" y="60" text-anchor="middle" class="txt">RL training</text>
+
+  <path d="M400,55 L440,55" class="arrow" />
+
+  <text x="470" y="105" text-anchor="middle" class="lbl">Gain by difficulty</text>
+  <line x1="440" y1="200" x2="600" y2="200" class="box" />
+
+  <rect x="450" y="120" width="40" height="80" class="barEasy" />
+  <text x="470" y="215" text-anchor="middle" class="lbl">Easy</text>
+  <text x="470" y="112" text-anchor="middle" class="lbl" font-size="10">large gain</text>
+
+  <rect x="530" y="185" width="40" height="15" class="barHard" />
+  <text x="550" y="215" text-anchor="middle" class="lbl">Hard</text>
+  <text x="550" y="177" text-anchor="middle" class="lbl" font-size="10">small gain</text>
+
+  <text x="320" y="240" text-anchor="middle" class="lbl">Gap is from the abstract; the "Never Giving Up" fix mechanism is not detailed in the digest excerpt</text>
+</svg>
