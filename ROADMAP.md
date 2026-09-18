@@ -47,12 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-08 — markitdown (180.5k★, #2): the doc-to-text step sets the ceiling for every RAG chunk after it → *Retrieval as a first-class design*
-- 2026-09-08 — context-mode (21k★, #3): claimed 98% tool-output reduction is a README number, not a benchmark → *Context economy*
-- 2026-09-09 — i-have-adhd (31k★, #1, +819): a skill that forces the answer before the reasoning → *Context economy*
-- 2026-09-09 — openai/skills (26.6k★, #3): Codex ships an official skills catalog, format now cross-harness → *The churn watch*
-- 2026-09-09 — ECC (253k★, +1,315): forks (38k) are the more honest usage signal, stars aren't proof → *Proving it works*
-- 2026-09-09 — On-Policy Self-Distillation critical review: dense IL signal + on-policy RL needs a second teacher model → *Where the training signal comes from*
 - 2026-09-10 — superpowers (284k★, #3): "methodology that works" claimed with zero benchmark or case study attached → *Proving it works*
 - 2026-09-10 — teamai-cli (Tencent, #2, +327): "AI native" names a state, not shared-CLI/memory/permissions mechanism → *The churn watch*
 - 2026-09-10 — Recognition-Refusal Misalignment: models answer malformed questions — recognition fails, or routing to refusal does? → *Proving it works*
@@ -80,3 +74,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-18 — "The Last AI Built by Humans": RSI defined as persistent changes that also improve the improvement process itself → *Where the training signal comes from*
 - 2026-09-18 — "Never Giving Up" RL paper: RL fine-tuning measurably improves easy problems far more than hard ones → *Proving it works*
 - 2026-09-18 — agent-skills (addyosmani, 95.8k★): +65 window gain vs "680 stars today" on the same card, ~10x gap, third time this pattern appears → *Proving it works*
+- 2026-09-18 — open-code-review (34.7k★, #1, up from 25.5k on 09-15): "deterministic pipelines + LLM Agent" — unclear if rules gate the agent's comments or both publish directly → *The authorization boundary*
