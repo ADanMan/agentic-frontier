@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">Two star-growth numbers on one trending card disagree by ~10x</title>
+  <desc id="desc">The same trending card for addyosmani/agent-skills shows a window gain of plus 65 stars (from 95,790 to 95,855) and separately claims 680 stars today. The two numbers measure different time windows and should not both be read as the daily growth rate.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    .bigbar { fill: currentColor; opacity: 0.85; }
+    .smallbar { fill: currentColor; opacity: 0.35; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="20" y="20" width="600" height="40" rx="8" class="boxfill" />
+  <text x="320" y="45" text-anchor="middle" class="txt">Same trending card: addyosmani/agent-skills</text>
+
+  <text x="150" y="90" text-anchor="middle" class="lbl">Window gain</text>
+  <rect x="120" y="100" width="60" height="15" class="smallbar" />
+  <text x="150" y="130" text-anchor="middle" class="txt" font-size="11">+65</text>
+  <text x="150" y="146" text-anchor="middle" class="lbl" font-size="10">95,790 → 95,855</text>
+
+  <text x="480" y="90" text-anchor="middle" class="lbl">"Stars today"</text>
+  <rect x="420" y="60" width="120" height="55" class="bigbar" />
+  <text x="480" y="130" text-anchor="middle" class="txt" font-size="11">680</text>
+
+  <path d="M240,107 L390,107" class="arrow" />
+  <text x="320" y="100" text-anchor="middle" class="lbl" font-size="10">~10x gap</text>
+
+  <text x="320" y="200" text-anchor="middle" class="lbl">Both numbers are real, taken from the same digest card — they just measure different time windows</text>
+</svg>
