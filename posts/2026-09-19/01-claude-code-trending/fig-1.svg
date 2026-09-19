@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">Claude Code star growth: steady, not spiky</title>
+  <desc id="desc">A line showing steady incremental star growth for anthropics/claude-code, reaching 146,362 stars with a +94 gain in the latest window, contrasted with a dashed line showing what a viral spike pattern would look like.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .steady { stroke: currentColor; stroke-width: 2.5; fill: none; }
+    .spike { stroke: currentColor; stroke-width: 2; fill: none; stroke-dasharray: 5 4; opacity: 0.5; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+
+  <line x1="50" y1="220" x2="590" y2="220" class="box" />
+  <line x1="50" y1="30" x2="50" y2="220" class="box" />
+  <text x="20" y="130" text-anchor="middle" class="lbl" transform="rotate(-90 20 130)">stars</text>
+  <text x="320" y="245" text-anchor="middle" class="lbl">time (trending window)</text>
+
+  <polyline points="50,200 130,190 210,180 290,172 370,163 450,153 530,140 590,132" class="steady" />
+  <text x="590" y="120" text-anchor="end" class="txt">146,362 (+94 today)</text>
+
+  <polyline points="50,210 200,205 280,195 300,60 400,150 590,145" class="spike" />
+  <text x="400" y="55" text-anchor="middle" class="lbl">one-off viral spike (hypothetical)</text>
+
+  <text x="320" y="20" text-anchor="middle" class="txt">Steady daily gains vs. a hype spike</text>
+</svg>

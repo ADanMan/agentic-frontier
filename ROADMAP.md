@@ -47,11 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-10 — superpowers (284k★, #3): "methodology that works" claimed with zero benchmark or case study attached → *Proving it works*
-- 2026-09-10 — teamai-cli (Tencent, #2, +327): "AI native" names a state, not shared-CLI/memory/permissions mechanism → *The churn watch*
-- 2026-09-10 — Recognition-Refusal Misalignment: models answer malformed questions — recognition fails, or routing to refusal does? → *Proving it works*
-- 2026-09-10 — deepseek-harness (216.8k★): fork/star ratio flat at 11.8% for days despite rising stars, permission model still unclear → *The authorization boundary*
-- 2026-09-11 — gods-eye-view (24.9k★, #2): "+916" window growth vs "1,762 stars today" on the same card, ~2x gap → *Proving it works*
 - 2026-09-11 — OreoLook: three-layer cache filters expensive live-crawl+synthesis path on commodity CPU → *Serving under real load*
 - 2026-09-11 — AutoResearch via world models: cheap simulated outcomes replace real experiments, accuracy on novel hypotheses unstated → *Where the training signal comes from*
 - 2026-09-11 — HyQuant: same low bit-width is fine for MLP weights, large error inside attention, hence hybrid precision → *Serving under real load*
@@ -75,3 +70,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-18 — "Never Giving Up" RL paper: RL fine-tuning measurably improves easy problems far more than hard ones → *Proving it works*
 - 2026-09-18 — agent-skills (addyosmani, 95.8k★): +65 window gain vs "680 stars today" on the same card, ~10x gap, third time this pattern appears → *Proving it works*
 - 2026-09-18 — open-code-review (34.7k★, #1, up from 25.5k on 09-15): "deterministic pipelines + LLM Agent" — unclear if rules gate the agent's comments or both publish directly → *The authorization boundary*
+- 2026-09-19 — claude-code (146.4k★, #2, +94): steady daily gain, not a spike, but README doesn't detail the propose-vs-commit boundary → *The authorization boundary*
