@@ -72,3 +72,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-18 — open-code-review (34.7k★, #1, up from 25.5k on 09-15): "deterministic pipelines + LLM Agent" — unclear if rules gate the agent's comments or both publish directly → *The authorization boundary*
 - 2026-09-19 — claude-code (146.4k★, #2, +94): steady daily gain, not a spike, but README doesn't detail the propose-vs-commit boundary → *The authorization boundary*
 - 2026-09-19 — lobehub (82.6k★, NEW ENTRY #9): "Chief Agent Operator" tagline maps to 4 real subsystems, zero benchmark for the orchestration claim itself → *Proving it works*
+- 2026-09-19 — SpectralShift: reparameterizes trained weights to extend Gated DeltaNet's context instead of continued pretraining → *Serving under real load*
