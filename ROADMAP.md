@@ -73,3 +73,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-19 — claude-code (146.4k★, #2, +94): steady daily gain, not a spike, but README doesn't detail the propose-vs-commit boundary → *The authorization boundary*
 - 2026-09-19 — lobehub (82.6k★, NEW ENTRY #9): "Chief Agent Operator" tagline maps to 4 real subsystems, zero benchmark for the orchestration claim itself → *Proving it works*
 - 2026-09-19 — SpectralShift: reparameterizes trained weights to extend Gated DeltaNet's context instead of continued pretraining → *Serving under real load*
+- 2026-09-19 — RelateAnything: relation prediction is the last vision task still trained on a fixed taxonomy, unlike detection/segmentation → *The churn watch*

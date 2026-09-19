@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" role="img" aria-labelledby="title desc">
+  <title id="title">Three vision tasks and whether their category list moved from training to inference</title>
+  <desc id="desc">Object detection and promptable segmentation already moved their class taxonomy out of training weights and into the inference-time query. Relation prediction (scene graphs) has not: its relation types are still fixed at training time. RelateAnything claims to change that, though the mechanism and real-time claim are not detailed in the available abstract.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .boxdash { fill: none; stroke: currentColor; stroke-width: 2; stroke-dasharray: 5 4; opacity: 0.8; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 10px; opacity: 0.7; }
+    .ok { fill: currentColor; opacity: 0.85; }
+    .pending { fill: currentColor; opacity: 0.3; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+
+  <text x="20" y="25" class="txt">Task</text>
+  <text x="280" y="25" class="txt">Taxonomy fixed at training?</text>
+  <text x="470" y="25" class="txt">Status</text>
+  <line x1="10" y1="35" x2="630" y2="35" class="box" />
+
+  <text x="20" y="65" class="txt">Object detection</text>
+  <text x="470" y="65" class="ok">open-vocabulary ✓</text>
+
+  <text x="20" y="105" class="txt">Segmentation</text>
+  <text x="470" y="105" class="ok">promptable (SAM-style) ✓</text>
+
+  <text x="20" y="145" class="txt">Relation prediction</text>
+  <text x="470" y="145" class="txt">(scene graphs)</text>
+  <text x="470" y="163" class="pending">still fixed —</text>
+  <rect x="20" y="180" width="590" height="50" rx="8" class="boxdash" />
+  <text x="315" y="200" text-anchor="middle" class="txt">RelateAnything claims: open-vocabulary,</text>
+  <text x="315" y="217" text-anchor="middle" class="lbl">real-time, "from any inputs" — mechanism not in this excerpt</text>
+</svg>
