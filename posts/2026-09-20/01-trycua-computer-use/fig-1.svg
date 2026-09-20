@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+  <title id="title">Cua's five components behind the "Computer-Use 2.0" tagline</title>
+  <desc id="desc">A tagline box, "Give AI agents computers they can use — Computer-Use 2.0", points down with a dashed marketing arrow to five concrete components: Cua Fleets (isolated cloud desktops), Cua Driver (cross-OS control with explicit action boundaries), CUA-S1 (small System-1 decision models), Lume (local Apple Silicon VMs), Cua Bench (tasks with a reward signal).</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 10px; opacity: 0.75; }
+    .dash { stroke: currentColor; stroke-width: 1.5; fill: none; stroke-dasharray: 4 4; opacity: 0.6; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="130" y="15" width="380" height="45" rx="8" class="boxfill" />
+  <text x="320" y="33" text-anchor="middle" class="txt">"Give AI agents computers they can use"</text>
+  <text x="320" y="49" text-anchor="middle" class="lbl">Computer-Use 2.0</text>
+
+  <path d="M320,60 L320,88" class="dash" />
+  <text x="345" y="78" class="lbl">marketing layer</text>
+
+  <rect x="10" y="98" width="150" height="68" rx="6" class="box" />
+  <text x="85" y="120" text-anchor="middle" class="txt">Cua Fleets</text>
+  <text x="85" y="138" text-anchor="middle" class="lbl">isolated cloud</text>
+  <text x="85" y="151" text-anchor="middle" class="lbl">desktops</text>
+
+  <rect x="170" y="98" width="150" height="68" rx="6" class="box" />
+  <text x="245" y="120" text-anchor="middle" class="txt">Cua Driver</text>
+  <text x="245" y="138" text-anchor="middle" class="lbl">cross-OS control,</text>
+  <text x="245" y="151" text-anchor="middle" class="lbl">explicit action boundaries</text>
+
+  <rect x="330" y="98" width="150" height="68" rx="6" class="box" />
+  <text x="405" y="120" text-anchor="middle" class="txt">CUA-S1</text>
+  <text x="405" y="138" text-anchor="middle" class="lbl">small models,</text>
+  <text x="405" y="151" text-anchor="middle" class="lbl">"System 1" decisions</text>
+
+  <rect x="490" y="98" width="140" height="68" rx="6" class="box" />
+  <text x="560" y="120" text-anchor="middle" class="txt">Lume</text>
+  <text x="560" y="138" text-anchor="middle" class="lbl">local VMs,</text>
+  <text x="560" y="151" text-anchor="middle" class="lbl">Apple Silicon</text>
+
+  <rect x="170" y="186" width="300" height="60" rx="6" class="box" />
+  <text x="320" y="208" text-anchor="middle" class="txt">Cua Bench</text>
+  <text x="320" y="226" text-anchor="middle" class="lbl">tasks + evaluation with a numeric reward</text>
+
+  <text x="320" y="275" text-anchor="middle" class="lbl">No benchmark given for Fleets isolation or CUA-S1 accuracy in the README itself</text>
+</svg>

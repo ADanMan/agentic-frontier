@@ -74,3 +74,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-19 — lobehub (82.6k★, NEW ENTRY #9): "Chief Agent Operator" tagline maps to 4 real subsystems, zero benchmark for the orchestration claim itself → *Proving it works*
 - 2026-09-19 — SpectralShift: reparameterizes trained weights to extend Gated DeltaNet's context instead of continued pretraining → *Serving under real load*
 - 2026-09-19 — RelateAnything: relation prediction is the last vision task still trained on a fixed taxonomy, unlike detection/segmentation → *The churn watch*
+- 2026-09-20 — trycua/cua (24.6k★, #2, +295): Driver names "explicit action boundaries" for OS-level control, no benchmark on how tight → *The authorization boundary*
