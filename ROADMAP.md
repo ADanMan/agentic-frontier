@@ -78,3 +78,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-21 — ECC (264k★, #1, +353): skills load on demand, instincts+summary persist, raw transcript doesn't → *Context economy*
 - 2026-09-21 — Grounded Skill Synthesis paper: proposes learning skills from code, not just traces; abstract excerpt cuts off before naming 2nd limitation → *Where the training signal comes from*
 - 2026-09-21 — agent-native (5.4k★, #2): one Action definition shares validation+permissions across UI/agent/HTTP/MCP/A2A/CLI → *The authorization boundary*
+- 2026-09-21 — cc-switch (NEW ENTRY #10, 134k★): meta-manager for 9 competing coding-CLI config formats → *The churn watch*

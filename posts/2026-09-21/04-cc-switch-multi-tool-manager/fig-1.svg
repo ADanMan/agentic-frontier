@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">One manager for nine coding-agent config formats</title>
+  <desc id="desc">cc-switch sits in the middle and manages configuration, providers, and MCP servers for nine separate tools: Claude Code, Claude Desktop, Codex, Gemini CLI, Grok Build, OpenCode, OpenClaw, Hermes, and MiniMax Code — each of which would otherwise need manual config editing.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 10px; opacity: 0.75; }
+    .arr { stroke: currentColor; stroke-width: 1.2; fill: none; marker-end: url(#arrow); opacity: 0.7; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <circle cx="320" cy="130" r="55" class="boxfill" />
+  <text x="320" y="125" text-anchor="middle" class="txt">cc-switch</text>
+  <text x="320" y="140" text-anchor="middle" class="lbl">Tauri 2 / Rust</text>
+
+  <g>
+    <path d="M290,90 L120,35" class="arr" />
+    <path d="M310,80 L230,25" class="arr" />
+    <path d="M335,78 L360,20" class="arr" />
+    <path d="M355,88 L470,30" class="arr" />
+    <path d="M370,105 L560,75" class="arr" />
+    <path d="M290,170 L120,225" class="arr" />
+    <path d="M315,180 L240,235" class="arr" />
+    <path d="M345,178 L390,235" class="arr" />
+    <path d="M370,155 L560,190" class="arr" />
+  </g>
+
+  <text x="120" y="30" text-anchor="middle" class="txt">Claude Code</text>
+  <text x="230" y="20" text-anchor="middle" class="txt">Claude Desktop</text>
+  <text x="360" y="15" text-anchor="middle" class="txt">Codex</text>
+  <text x="470" y="25" text-anchor="middle" class="txt">Gemini CLI</text>
+  <text x="565" y="70" text-anchor="middle" class="txt">Grok Build</text>
+  <text x="115" y="235" text-anchor="middle" class="txt">OpenCode</text>
+  <text x="240" y="248" text-anchor="middle" class="txt">OpenClaw</text>
+  <text x="392" y="248" text-anchor="middle" class="txt">Hermes</text>
+  <text x="565" y="200" text-anchor="middle" class="txt">MiniMax Code</text>
+</svg>
