@@ -76,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-19 — RelateAnything: relation prediction is the last vision task still trained on a fixed taxonomy, unlike detection/segmentation → *The churn watch*
 - 2026-09-20 — trycua/cua (24.6k★, #2, +295): Driver names "explicit action boundaries" for OS-level control, no benchmark on how tight → *The authorization boundary*
 - 2026-09-21 — ECC (264k★, #1, +353): skills load on demand, instincts+summary persist, raw transcript doesn't → *Context economy*
+- 2026-09-21 — Grounded Skill Synthesis paper: proposes learning skills from code, not just traces; abstract excerpt cuts off before naming 2nd limitation → *Where the training signal comes from*
