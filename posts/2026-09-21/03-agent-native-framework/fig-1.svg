@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-labelledby="title desc">
+  <title id="title">One Action, six surfaces, one permission check</title>
+  <desc id="desc">A single Action definition, carrying validation and permissions, is reached identically from six surfaces: UI, Agent, HTTP API, MCP, A2A, and CLI. The alternative, shown crossed out, is six separate permission checks duplicated per surface.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 10px; opacity: 0.75; }
+    .arr { stroke: currentColor; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="220" y="15" width="200" height="55" rx="8" class="boxfill" />
+  <text x="320" y="38" text-anchor="middle" class="txt">Action</text>
+  <text x="320" y="55" text-anchor="middle" class="lbl">validation + permissions, defined once</text>
+
+  <g>
+    <path d="M280,70 L100,150" class="arr" />
+    <path d="M300,70 L190,150" class="arr" />
+    <path d="M320,70 L320,150" class="arr" />
+    <path d="M340,70 L450,150" class="arr" />
+    <path d="M360,70 L540,150" class="arr" />
+    <path d="M270,70 L45,150" class="arr" />
+  </g>
+
+  <rect x="0" y="155" width="90" height="40" rx="5" class="box" />
+  <text x="45" y="179" text-anchor="middle" class="txt">UI</text>
+
+  <rect x="145" y="155" width="90" height="40" rx="5" class="box" />
+  <text x="190" y="179" text-anchor="middle" class="txt">Agent</text>
+
+  <rect x="275" y="155" width="90" height="40" rx="5" class="box" />
+  <text x="320" y="179" text-anchor="middle" class="txt">HTTP</text>
+
+  <rect x="405" y="155" width="90" height="40" rx="5" class="box" />
+  <text x="450" y="179" text-anchor="middle" class="txt">MCP</text>
+
+  <rect x="495" y="155" width="90" height="40" rx="5" class="box" />
+  <text x="540" y="179" text-anchor="middle" class="txt">A2A</text>
+
+  <rect x="585" y="155" width="50" height="40" rx="5" class="box" />
+  <text x="610" y="179" text-anchor="middle" class="txt" style="font-size:10px">CLI</text>
+
+  <text x="320" y="230" text-anchor="middle" class="lbl">vs. six duplicated, potentially drifting permission checks — one per surface</text>
+</svg>
