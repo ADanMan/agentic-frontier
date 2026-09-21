@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-labelledby="title desc">
+  <title id="title">ECC's session-to-memory pipeline</title>
+  <desc id="desc">An agent session feeds a distillation step producing a summary, instincts, and skills. That goes into a portable Markdown Memory Vault, readable by the next session in a different harness. Hooks sit outside the session and block risky actions deterministically. 292 skills load into the session only on demand.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 10px; opacity: 0.75; }
+    .dash { stroke: currentColor; stroke-width: 1.5; fill: none; stroke-dasharray: 4 4; opacity: 0.6; marker-end: url(#arrow); }
+    .arr { stroke: currentColor; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="20" y="30" width="140" height="60" rx="6" class="box" />
+  <text x="90" y="55" text-anchor="middle" class="txt">Agent session</text>
+  <text x="90" y="72" text-anchor="middle" class="lbl">Claude Code / Codex / ...</text>
+
+  <path d="M160,60 L215,60" class="arr" />
+
+  <rect x="220" y="20" width="170" height="80" rx="6" class="boxfill" />
+  <text x="305" y="42" text-anchor="middle" class="txt">Distillation</text>
+  <text x="305" y="60" text-anchor="middle" class="lbl">summary</text>
+  <text x="305" y="74" text-anchor="middle" class="lbl">instincts</text>
+  <text x="305" y="88" text-anchor="middle" class="lbl">skills</text>
+
+  <path d="M390,60 L445,60" class="arr" />
+
+  <rect x="450" y="30" width="170" height="60" rx="6" class="box" />
+  <text x="535" y="52" text-anchor="middle" class="txt">Memory Vault</text>
+  <text x="535" y="70" text-anchor="middle" class="lbl">portable Markdown</text>
+
+  <path d="M535,90 Q535,140 305,140 Q90,140 90,95" class="dash" />
+  <text x="305" y="132" text-anchor="middle" class="lbl">read by next session, different harness</text>
+
+  <rect x="20" y="170" width="260" height="55" rx="6" class="box" />
+  <text x="150" y="192" text-anchor="middle" class="txt">Hooks (AgentShield)</text>
+  <text x="150" y="209" text-anchor="middle" class="lbl">deterministic checks outside the model</text>
+  <path d="M150,170 L150,95" class="dash" />
+  <text x="165" y="150" class="lbl">blocks risky actions</text>
+
+  <rect x="340" y="170" width="280" height="55" rx="6" class="box" />
+  <text x="480" y="192" text-anchor="middle" class="txt">292 skills</text>
+  <text x="480" y="209" text-anchor="middle" class="lbl">loaded into session only on demand</text>
+  <path d="M480,170 L370,95" class="dash" />
+
+  <text x="320" y="270" text-anchor="middle" class="lbl">264k stars measure popularity, not a benchmarked quality gain over bare Claude Code</text>
+</svg>
