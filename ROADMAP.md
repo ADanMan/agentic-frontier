@@ -47,7 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-14 — colibri (30.3k★, #1, pure C): MoE experts stream from disk since only 1-2 of N are active per token → *Serving under real load*
 - 2026-09-15 — open-code-review (25.5k★, #2): "battle-tested at Alibaba's scale" ships with no benchmark → *Proving it works*
 - 2026-09-15 — YuE2 (8.3k★, #3): "frontier" tagline bundles 3 claims, zero samples given → *The churn watch*
 - 2026-09-15 — PLC-DPO: posterior label correction targets DPO's assumption that preferences are reliable → *Where the training signal comes from*
@@ -77,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-22 — OpenStock (18k★, #3, +385): README opens on a Solana token address, before the project name → *Proving it works*
 - 2026-09-22 — Skill Synthesis paper: fuller excerpt reveals 2nd limitation, document-derived skills "may lac[k]..." → *Where the training signal comes from*
 - 2026-09-22 — Open ASR Leaderboard adds its first Global South language, symptom of benchmark coverage gap → *Proving it works*
+- 2026-09-22 — Mutation testing explainer: a checker with 40% mutation score passes broken code as often as correct → *Proving it works*
