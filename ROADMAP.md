@@ -47,7 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-12 — Prompt-Engineering-Guide (78.2k★, #9→#10) swaps ranks same day/category with an agent-tutorial repo → *The churn watch*
 - 2026-09-13 — DeskcommCRM (1.9k★, #2): AI agent wired into live WhatsApp sends, "MCP-ready" says nothing about propose-vs-send → *The authorization boundary*
 - 2026-09-14 — colibri (30.3k★, #1, pure C): MoE experts stream from disk since only 1-2 of N are active per token → *Serving under real load*
 - 2026-09-15 — open-code-review (25.5k★, #2): "battle-tested at Alibaba's scale" ships with no benchmark → *Proving it works*
@@ -77,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-22 — Measuring the Checker: mutation analysis scores GPU-kernel checkers, not just the code → *Proving it works*
 - 2026-09-22 — Srijika: restyles glyph outlines on shaping-complete templates, skips full from-scratch font generation → *The churn watch*
 - 2026-09-22 — OpenStock (18k★, #3, +385): README opens on a Solana token address, before the project name → *Proving it works*
+- 2026-09-22 — Skill Synthesis paper: fuller excerpt reveals 2nd limitation, document-derived skills "may lac[k]..." → *Where the training signal comes from*
