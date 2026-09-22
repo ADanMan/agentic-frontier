@@ -47,9 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-11 — OreoLook: three-layer cache filters expensive live-crawl+synthesis path on commodity CPU → *Serving under real load*
-- 2026-09-11 — AutoResearch via world models: cheap simulated outcomes replace real experiments, accuracy on novel hypotheses unstated → *Where the training signal comes from*
-- 2026-09-11 — HyQuant: same low bit-width is fine for MLP weights, large error inside attention, hence hybrid precision → *Serving under real load*
 - 2026-09-12 — Prompt-Engineering-Guide (78.2k★, #9→#10) swaps ranks same day/category with an agent-tutorial repo → *The churn watch*
 - 2026-09-12 — hello-agents (78.4k★, #10→#9): near-tied stars with its rival, but +1,146 forks → *Proving it works*
 - 2026-09-13 — system_prompts_leaks (65.5k★, #3): extraction across 4 vendors proves prompts are text, not an enforced boundary → *Untrusted tool output*
@@ -79,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-21 — Grounded Skill Synthesis paper: proposes learning skills from code, not just traces; abstract excerpt cuts off before naming 2nd limitation → *Where the training signal comes from*
 - 2026-09-21 — agent-native (5.4k★, #2): one Action definition shares validation+permissions across UI/agent/HTTP/MCP/A2A/CLI → *The authorization boundary*
 - 2026-09-21 — cc-switch (NEW ENTRY #10, 134k★): meta-manager for 9 competing coding-CLI config formats → *The churn watch*
+- 2026-09-22 — Measuring the Checker: mutation analysis scores GPU-kernel checkers, not just the code → *Proving it works*
