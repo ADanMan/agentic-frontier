@@ -47,7 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-15 — TempCloze: video-LLM benchmark isolates language shortcuts from real temporal reasoning → *Proving it works*
 - 2026-09-16 — Sparse decision trees via transformer VAE: discrete tree search reframed as continuous latent optimization → *Proving it works*
 - 2026-09-16 — Thai OCR-Zero: synthetic labels train the base, unlabeled real pages close the domain gap → *Where the training signal comes from*
 - 2026-09-16 — Fixed-voice Thai TTS from synthetic speech: compact single-voice model trades flexibility for cheap inference → *Serving under real load*
@@ -77,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-23 — anthropics/financial-services (#1, 36.5k★, +216): real MCP read access to FactSet/Moody's, but the output gate is a disclaimer, not code → *The authorization boundary*
 - 2026-09-23 — deepseek-harness (232.8k★, +1,024): "developer preview... breaking changes" openly stated next to quarter-million stars → *The churn watch*
 - 2026-09-23 — agent-substrate (3.1k★, #2, +164): "30x+ oversubscription" via suspend/resume, no benchmark methodology shown → *Serving under real load*
+- 2026-09-23 — Univer (15.7k★, #3, +406): "isolated draft collaboration" + verification is a technical gate, not just a disclaimer → *The authorization boundary*

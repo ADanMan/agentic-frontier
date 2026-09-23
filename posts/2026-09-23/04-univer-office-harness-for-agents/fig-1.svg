@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-labelledby="title desc">
+  <title id="title">Draft-vs-commit boundary in Univer's agent workflow</title>
+  <desc id="desc">An agent edits an isolated draft copy of the document. The draft goes through output verification. Only if it passes does it merge into the original document; otherwise it is discarded and the original stays untouched.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    .arrow { stroke: currentColor; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+    </marker>
+  </defs>
+
+  <rect x="20" y="80" width="120" height="55" rx="8" class="box" />
+  <text x="80" y="112" text-anchor="middle" class="txt">Agent</text>
+
+  <path d="M140,107 L200,107" class="arrow" />
+
+  <rect x="200" y="80" width="150" height="55" rx="8" class="boxfill" />
+  <text x="275" y="103" text-anchor="middle" class="txt">Isolated draft</text>
+  <text x="275" y="120" text-anchor="middle" class="lbl">own copy, not the original</text>
+
+  <path d="M350,107 L410,107" class="arrow" />
+
+  <rect x="410" y="80" width="110" height="55" rx="8" class="box" />
+  <text x="465" y="103" text-anchor="middle" class="txt">Verification</text>
+
+  <path d="M465,135 L465,165" class="arrow" />
+  <text x="500" y="153" class="lbl">passes</text>
+  <rect x="405" y="165" width="120" height="40" rx="8" class="boxfill" />
+  <text x="465" y="190" text-anchor="middle" class="lbl">merge to original</text>
+
+  <path d="M410,100 L560,55" class="arrow" />
+  <text x="580" y="45" class="lbl">fails</text>
+  <rect x="560" y="15" width="60" height="40" rx="8" class="box" />
+  <text x="590" y="40" text-anchor="middle" class="lbl" font-size="10">discard</text>
+</svg>
