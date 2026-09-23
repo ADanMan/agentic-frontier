@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-labelledby="title desc">
+  <title id="title">Two facts about the same repository</title>
+  <desc id="desc">deepseek-harness has 232,795 stars and gained 1,024 in one day, built on the Cordis composability runtime with a plugin architecture. Its own status section warns it is developer preview with guaranteed breaking changes.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+
+  <rect x="20" y="70" width="260" height="80" rx="8" class="boxfill" />
+  <text x="150" y="100" text-anchor="middle" class="txt">232,795 stars, +1,024 today</text>
+  <text x="150" y="120" text-anchor="middle" class="lbl">Cordis-based plugin runtime</text>
+  <text x="150" y="136" text-anchor="middle" class="lbl">TypeScript, full test suite</text>
+
+  <text x="320" y="115" text-anchor="middle" class="lbl">same repo, same day</text>
+
+  <rect x="360" y="70" width="260" height="80" rx="8" class="box" />
+  <text x="490" y="100" text-anchor="middle" class="txt">"developer preview"</text>
+  <text x="490" y="120" text-anchor="middle" class="lbl">"THERE WILL BE</text>
+  <text x="490" y="136" text-anchor="middle" class="lbl">COMPATIBILITY-BREAKING CHANGES"</text>
+
+  <text x="320" y="20" text-anchor="middle" class="txt">Scale of interest ≠ production readiness</text>
+</svg>

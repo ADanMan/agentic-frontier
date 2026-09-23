@@ -47,7 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-15 — YuE2 (8.3k★, #3): "frontier" tagline bundles 3 claims, zero samples given → *The churn watch*
 - 2026-09-15 — PLC-DPO: posterior label correction targets DPO's assumption that preferences are reliable → *Where the training signal comes from*
 - 2026-09-15 — TempCloze: video-LLM benchmark isolates language shortcuts from real temporal reasoning → *Proving it works*
 - 2026-09-16 — Sparse decision trees via transformer VAE: discrete tree search reframed as continuous latent optimization → *Proving it works*
@@ -77,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-22 — Open ASR Leaderboard adds its first Global South language, symptom of benchmark coverage gap → *Proving it works*
 - 2026-09-22 — Mutation testing explainer: a checker with 40% mutation score passes broken code as often as correct → *Proving it works*
 - 2026-09-23 — anthropics/financial-services (#1, 36.5k★, +216): real MCP read access to FactSet/Moody's, but the output gate is a disclaimer, not code → *The authorization boundary*
+- 2026-09-23 — deepseek-harness (232.8k★, +1,024): "developer preview... breaking changes" openly stated next to quarter-million stars → *The churn watch*
