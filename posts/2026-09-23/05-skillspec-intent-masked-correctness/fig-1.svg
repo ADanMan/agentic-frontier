@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-labelledby="title desc">
+  <title id="title">Two mirror questions about agent skills</title>
+  <desc id="desc">Earlier digest items (Grounded Skill Synthesis, Skill Synthesis) asked where a skill comes from. SkillSpec asks the mirror question: once a skill exists as free-form text, how do you verify it is correct.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+
+  <rect x="20" y="30" width="270" height="80" rx="8" class="boxfill" />
+  <text x="155" y="55" text-anchor="middle" class="txt">Sep 21-22 digest items</text>
+  <text x="155" y="75" text-anchor="middle" class="lbl">Grounded Skill Synthesis,</text>
+  <text x="155" y="90" text-anchor="middle" class="lbl">Skill Synthesis</text>
+  <text x="155" y="105" text-anchor="middle" class="lbl">"where does a skill come from?"</text>
+
+  <rect x="350" y="30" width="270" height="80" rx="8" class="box" />
+  <text x="485" y="55" text-anchor="middle" class="txt">SkillSpec (today)</text>
+  <text x="485" y="75" text-anchor="middle" class="lbl">Intent-Masked Specification</text>
+  <text x="485" y="90" text-anchor="middle" class="lbl">Reasoning</text>
+  <text x="485" y="105" text-anchor="middle" class="lbl">"is an existing skill correct?"</text>
+
+  <text x="320" y="150" text-anchor="middle" class="txt">Mirror questions, same underlying object: the free-form skill artifact</text>
+  <text x="320" y="175" text-anchor="middle" class="lbl">Method/results beyond the title and truncated abstract: not shown in the digest</text>
+</svg>
