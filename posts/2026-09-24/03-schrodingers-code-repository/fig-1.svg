@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">Two indistinguishable explanations for one correct patch</title>
+  <desc id="desc">A popular repository is both visible in pretraining data and used to build a SWE-bench task. A correct patch from a model could be genuine understanding or a memorized diff, and the two look identical from outside until specifically tested.</desc>
+  <style>
+    .box { fill: none; stroke: currentColor; stroke-width: 2; }
+    .boxfill { fill: currentColor; opacity: 0.08; stroke: currentColor; stroke-width: 2; }
+    .dash { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-dasharray: 5 4; opacity: 0.6; }
+    .txt { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; }
+    .lbl { fill: currentColor; font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; opacity: 0.7; }
+    svg { color: #1f2430; }
+    @media (prefers-color-scheme: dark) { svg { color: #e6e6e6; } }
+  </style>
+
+  <rect x="230" y="15" width="180" height="45" rx="8" class="boxfill" />
+  <text x="320" y="42" text-anchor="middle" class="txt">Popular repository</text>
+
+  <line x1="280" y1="60" x2="180" y2="95" class="dash" />
+  <line x1="360" y1="60" x2="460" y2="95" class="dash" />
+
+  <rect x="80" y="95" width="200" height="45" rx="8" class="box" />
+  <text x="180" y="122" text-anchor="middle" class="lbl">seen in pretraining</text>
+
+  <rect x="360" y="95" width="200" height="45" rx="8" class="box" />
+  <text x="460" y="122" text-anchor="middle" class="lbl">used to build a SWE-bench task</text>
+
+  <line x1="180" y1="140" x2="290" y2="170" class="dash" />
+  <line x1="460" y1="140" x2="350" y2="170" class="dash" />
+
+  <rect x="220" y="170" width="200" height="55" rx="8" class="boxfill" />
+  <text x="320" y="192" text-anchor="middle" class="txt">Correct patch: which is it?</text>
+  <text x="320" y="210" text-anchor="middle" class="lbl">genuine fix — or memorized diff</text>
+</svg>
