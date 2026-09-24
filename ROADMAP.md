@@ -47,7 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-16 — Thai OCR-Zero: synthetic labels train the base, unlabeled real pages close the domain gap → *Where the training signal comes from*
 - 2026-09-16 — Fixed-voice Thai TTS from synthetic speech: compact single-voice model trades flexibility for cheap inference → *Serving under real load*
 - 2026-09-17 — graphify (118.2k★, +1,313): "no vector store" — AST-parsed graph edges vs embedding similarity, different retrieval units → *Retrieval as a first-class design*
 - 2026-09-17 — security-audit-skill (7.3k★, #2): +310 window gain vs "927 stars today" on the same card, same gods-eye-view pattern → *Proving it works*
@@ -77,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-23 — agent-substrate (3.1k★, #2, +164): "30x+ oversubscription" via suspend/resume, no benchmark methodology shown → *Serving under real load*
 - 2026-09-23 — Univer (15.7k★, #3, +406): "isolated draft collaboration" + verification is a technical gate, not just a disclaimer → *The authorization boundary*
 - 2026-09-23 — SkillSpec paper: mirror question to prior skill-synthesis papers — not where a skill comes from, but is it correct → *Proving it works*
+- 2026-09-24 — google/ax (#2, +284): window-diff vs "stars today" mismatch, 3rd confirmed instance of this pattern → *Proving it works*
