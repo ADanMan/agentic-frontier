@@ -77,3 +77,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-24 — google/ax (#2, +284): window-diff vs "stars today" mismatch, 3rd confirmed instance of this pattern → *Proving it works*
 - 2026-09-24 — claude-code-templates (#3, 31.5k★): configures permissions/hooks AND monitors execution, both sides of one boundary → *The authorization boundary*
 - 2026-09-24 — Schrödinger's Code Repository paper: SWE-bench repos overlap pretraining data, correct patch could be memorized not solved → *Proving it works*
+- 2026-09-25 — hindsight (27.8k★, #2): +77 window vs 1,668 claimed stars today, 4th mismatch instance → *Proving it works*
