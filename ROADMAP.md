@@ -79,3 +79,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-24 — Schrödinger's Code Repository paper: SWE-bench repos overlap pretraining data, correct patch could be memorized not solved → *Proving it works*
 - 2026-09-25 — hindsight (27.8k★, #2): +77 window vs 1,668 claimed stars today, 4th mismatch instance → *Proving it works*
 - 2026-09-25 — LatentPort paper: hands a 4B model's live state to a 9B sibling, skips context reread → *Context economy*
+- 2026-09-25 — ai-engineering-from-scratch (56.6k★, #1): +103 window vs 347 claimed stars today, 5th mismatch instance → *Proving it works*
