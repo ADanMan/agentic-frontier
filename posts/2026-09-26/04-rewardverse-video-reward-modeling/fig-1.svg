@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="One scalar reward vs a rubric of separate criteria">
+  <style>
+    .bg { fill: #ffffff; }
+    .box { fill: none; stroke: #6b7280; stroke-width: 1.5; }
+    .old { fill: #fef2f2; stroke: #dc2626; stroke-width: 2; }
+    .new { fill: #ecfdf5; stroke: #059669; stroke-width: 2; }
+    .title { font: 600 15px sans-serif; fill: #111827; }
+    .label { font: 13px sans-serif; fill: #374151; }
+    .small { font: 12px sans-serif; fill: #6b7280; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #111827; }
+      .box { stroke: #9ca3af; }
+      .old { fill: #4c1d1d; stroke: #f87171; }
+      .new { fill: #052e21; stroke: #34d399; }
+      .title { fill: #f3f4f6; }
+      .label { fill: #d1d5db; }
+      .small { fill: #9ca3af; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="640" height="320"/>
+
+  <rect class="box" x="20" y="140" width="140" height="60" rx="8"/>
+  <text class="label" x="40" y="175">Generated video</text>
+
+  <rect class="old" x="220" y="40" width="180" height="70" rx="8"/>
+  <text class="title" x="240" y="70">One scalar score</text>
+  <text class="small" x="240" y="92">motion + prompt + artifacts</text>
+  <text class="small" x="240" y="105">→ unstable signal</text>
+
+  <rect class="new" x="220" y="200" width="180" height="100" rx="8"/>
+  <text class="title" x="240" y="225">Rubric of criteria</text>
+  <text class="small" x="240" y="247">motion realism</text>
+  <text class="small" x="240" y="262">prompt adherence</text>
+  <text class="small" x="240" y="277">artifact absence</text>
+
+  <path d="M160,160 L220,90" stroke="#dc2626" stroke-width="1.5" fill="none"/>
+  <path d="M160,180 L220,240" stroke="#059669" stroke-width="1.5" fill="none"/>
+
+  <rect class="box" x="460" y="130" width="150" height="70" rx="8"/>
+  <text class="label" x="480" y="160">Policy</text>
+  <text class="label" x="480" y="180">optimization</text>
+
+  <path d="M400,75 L460,150" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4 3" fill="none"/>
+  <path d="M400,250 L460,170" stroke="#059669" stroke-width="1.5" fill="none"/>
+</svg>
