@@ -47,16 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-17 — security-audit-skill (7.3k★, #2): +310 window gain vs "927 stars today" on the same card, same gods-eye-view pattern → *Proving it works*
-- 2026-09-17 — Grouped Value Attention: title implies keys reconstructed on demand, only values stay cached, past GQA's grouping → *Serving under real load*
-- 2026-09-17 — Long-horizon memorization: stretches the forgetting check from 1 update to N, tests if CL mechanisms compose → *Where the training signal comes from*
-- 2026-09-18 — "The Last AI Built by Humans": RSI defined as persistent changes that also improve the improvement process itself → *Where the training signal comes from*
-- 2026-09-18 — "Never Giving Up" RL paper: RL fine-tuning measurably improves easy problems far more than hard ones → *Proving it works*
-- 2026-09-18 — agent-skills (addyosmani, 95.8k★): +65 window gain vs "680 stars today" on the same card, ~10x gap, third time this pattern appears → *Proving it works*
-- 2026-09-18 — open-code-review (34.7k★, #1, up from 25.5k on 09-15): "deterministic pipelines + LLM Agent" — unclear if rules gate the agent's comments or both publish directly → *The authorization boundary*
-- 2026-09-19 — claude-code (146.4k★, #2, +94): steady daily gain, not a spike, but README doesn't detail the propose-vs-commit boundary → *The authorization boundary*
-- 2026-09-19 — lobehub (82.6k★, NEW ENTRY #9): "Chief Agent Operator" tagline maps to 4 real subsystems, zero benchmark for the orchestration claim itself → *Proving it works*
-- 2026-09-19 — SpectralShift: reparameterizes trained weights to extend Gated DeltaNet's context instead of continued pretraining → *Serving under real load*
 - 2026-09-19 — RelateAnything: relation prediction is the last vision task still trained on a fixed taxonomy, unlike detection/segmentation → *The churn watch*
 - 2026-09-20 — trycua/cua (24.6k★, #2, +295): Driver names "explicit action boundaries" for OS-level control, no benchmark on how tight → *The authorization boundary*
 - 2026-09-21 — ECC (264k★, #1, +353): skills load on demand, instincts+summary persist, raw transcript doesn't → *Context economy*
