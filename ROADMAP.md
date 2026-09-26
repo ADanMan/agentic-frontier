@@ -86,3 +86,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-26 — RewardVerse paper: rubric of explicit criteria proposed to replace one unstable scalar reward for video RL → *Where the training signal comes from*
 - 2026-09-26 — crawl4ai (84.2k★, RAG new entry #9): "clean, LLM-ready Markdown" from any site, open-core + paid cloud → *Retrieval as a first-class design*
 - 2026-09-26 — Spatial-Interactor paper: spatial reasoning reframed as tracking local state transitions from object motion, not static scenes → *The churn watch*
+- 2026-09-26 — AgentKernel paper: names 4 concrete trust-boundary crossings (untrusted content, mixing, memory persistence, tool calls) → *Untrusted tool output*
