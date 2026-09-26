@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="Curation as a trust boundary between third-party plugin code and the user">
+  <style>
+    .bg { fill: #ffffff; }
+    .box { fill: none; stroke: #6b7280; stroke-width: 1.5; }
+    .gate { fill: #eff6ff; stroke: #2563eb; stroke-width: 2; }
+    .title { font: 600 15px sans-serif; fill: #111827; }
+    .label { font: 13px sans-serif; fill: #374151; }
+    .small { font: 12px sans-serif; fill: #6b7280; }
+    .arrow { stroke: #6b7280; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #111827; }
+      .box { stroke: #9ca3af; }
+      .gate { fill: #1e3a5f; stroke: #60a5fa; }
+      .title { fill: #f3f4f6; }
+      .label { fill: #d1d5db; }
+      .small { fill: #9ca3af; }
+      .arrow { stroke: #9ca3af; }
+    }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="640" height="320"/>
+
+  <rect class="box" x="30" y="40" width="160" height="60" rx="8"/>
+  <text class="label" x="50" y="75">Plugin author's code</text>
+
+  <path class="arrow" d="M190,70 L260,70"/>
+
+  <rect class="gate" x="260" y="30" width="180" height="80" rx="8"/>
+  <text class="title" x="280" y="60">"Managed"</text>
+  <text class="small" x="280" y="80">review? scan? unknown</text>
+  <text class="small" x="280" y="98">from the card alone</text>
+
+  <path class="arrow" d="M440,70 L510,70"/>
+
+  <rect class="box" x="510" y="40" width="110" height="60" rx="8"/>
+  <text class="label" x="525" y="75">User's agent</text>
+
+  <rect class="box" x="30" y="180" width="290" height="50" rx="8"/>
+  <text class="label" x="50" y="210">Window: 36,891 → 36,944 (+53)</text>
+
+  <rect class="box" x="340" y="180" width="270" height="50" rx="8"/>
+  <text class="label" x="360" y="210">"83 stars today" (~1.57x gap)</text>
+
+  <text class="small" x="30" y="260">Smallest window/claim gap logged so far on a trending card.</text>
+</svg>

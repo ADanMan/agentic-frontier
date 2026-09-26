@@ -81,3 +81,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-25 — LatentPort paper: hands a 4B model's live state to a 9B sibling, skips context reread → *Context economy*
 - 2026-09-25 — ai-engineering-from-scratch (56.6k★, #1): +103 window vs 347 claimed stars today, 5th mismatch instance → *Proving it works*
 - 2026-09-26 — paperclip (84.9k★, #1): +270 window vs 2,109 claimed stars today, 6th mismatch instance → *Proving it works*
+- 2026-09-26 — claude-plugins-official (36.9k★, #2): "managed" curated directory, card doesn't say review vs. link-list → *The authorization boundary*
