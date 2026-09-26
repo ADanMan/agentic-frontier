@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="One trending card, two numbers that disagree">
+  <style>
+    .bg { fill: #ffffff; }
+    .card { fill: none; stroke: #6b7280; stroke-width: 1.5; rx: 10; }
+    .title { font: 600 16px sans-serif; fill: #111827; }
+    .label { font: 13px sans-serif; fill: #374151; }
+    .num { font: 700 22px sans-serif; fill: #111827; }
+    .small { font: 12px sans-serif; fill: #6b7280; }
+    .accent { fill: #2563eb; }
+    .warn { fill: #dc2626; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #111827; }
+      .card { stroke: #9ca3af; }
+      .title { fill: #f3f4f6; }
+      .label { fill: #d1d5db; }
+      .num { fill: #f9fafb; }
+      .small { fill: #9ca3af; }
+      .accent { fill: #60a5fa; }
+      .warn { fill: #f87171; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="640" height="320"/>
+  <rect class="card" x="20" y="20" width="600" height="90" rx="10"/>
+  <text class="title" x="40" y="50">paperclipai / paperclip — #1 trending</text>
+  <text class="label" x="40" y="78">"The open-source app everyone uses to manage agents at work"</text>
+  <text class="small" x="40" y="98">TypeScript — no README, no feature list in the digest</text>
+
+  <rect class="card" x="60" y="150" width="220" height="120" rx="10"/>
+  <text class="label" x="80" y="180">Window (day-over-day)</text>
+  <text class="num accent" x="80" y="215">84,720 → 84,990</text>
+  <text class="label" x="80" y="245">+270 stars</text>
+
+  <rect class="card" x="360" y="150" width="220" height="120" rx="10"/>
+  <text class="label" x="380" y="180">Card's own field</text>
+  <text class="num warn" x="380" y="215">"2,109 stars today"</text>
+  <text class="label" x="380" y="245">same card, same day</text>
+
+  <line x1="280" y1="210" x2="360" y2="210" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4"/>
+  <text class="small warn" x="285" y="200">~7.8x gap</text>
+</svg>
