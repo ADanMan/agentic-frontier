@@ -47,7 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-19 — RelateAnything: relation prediction is the last vision task still trained on a fixed taxonomy, unlike detection/segmentation → *The churn watch*
 - 2026-09-20 — trycua/cua (24.6k★, #2, +295): Driver names "explicit action boundaries" for OS-level control, no benchmark on how tight → *The authorization boundary*
 - 2026-09-21 — ECC (264k★, #1, +353): skills load on demand, instincts+summary persist, raw transcript doesn't → *Context economy*
 - 2026-09-21 — Grounded Skill Synthesis paper: proposes learning skills from code, not just traces; abstract excerpt cuts off before naming 2nd limitation → *Where the training signal comes from*
@@ -77,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-26 — crawl4ai (84.2k★, RAG new entry #9): "clean, LLM-ready Markdown" from any site, open-core + paid cloud → *Retrieval as a first-class design*
 - 2026-09-26 — Spatial-Interactor paper: spatial reasoning reframed as tracking local state transitions from object motion, not static scenes → *The churn watch*
 - 2026-09-26 — AgentKernel paper: names 4 concrete trust-boundary crossings (untrusted content, mixing, memory persistence, tool calls) → *Untrusted tool output*
+- 2026-09-27 — NVIDIA Model-Optimizer (#3, +67): six compression techniques, all headline numbers vendor-run → *Serving under real load*
