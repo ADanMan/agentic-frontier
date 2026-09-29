@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" font-family="Arial, sans-serif">
+  <style>
+    .bg { fill: #ffffff; }
+    .box { fill: #eef2ff; stroke: #4f46e5; stroke-width: 2; }
+    .box2 { fill: #fef3c7; stroke: #b45309; stroke-width: 2; }
+    .merge { fill: #dcfce7; stroke: #15803d; stroke-width: 2; }
+    .txt { fill: #1f2937; font-size: 15px; }
+    .small { fill: #4b5563; font-size: 12px; }
+    .arrow { stroke: #6b7280; stroke-width: 2; fill: none; marker-end: url(#ah); }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #111827; }
+      .box { fill: #1e1b4b; stroke: #818cf8; }
+      .box2 { fill: #451a03; stroke: #fbbf24; }
+      .merge { fill: #052e16; stroke: #4ade80; }
+      .txt { fill: #e5e7eb; }
+      .small { fill: #9ca3af; }
+      .arrow { stroke: #9ca3af; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="640" height="300"/>
+  <defs>
+    <marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" class="txt"/>
+    </marker>
+  </defs>
+
+  <rect class="box" x="30" y="40" width="180" height="70" rx="8"/>
+  <text class="txt" x="120" y="68" text-anchor="middle">Task A adapter</text>
+  <text class="small" x="120" y="88" text-anchor="middle">rank 8 (simple task)</text>
+
+  <rect class="box2" x="30" y="180" width="180" height="70" rx="8"/>
+  <text class="txt" x="120" y="208" text-anchor="middle">Task B adapter</text>
+  <text class="small" x="120" y="228" text-anchor="middle">rank 32 (hard task)</text>
+
+  <path class="arrow" d="M210,75 L330,140"/>
+  <path class="arrow" d="M210,215 L330,150"/>
+
+  <rect class="merge" x="330" y="105" width="200" height="90" rx="8"/>
+  <text class="txt" x="430" y="138" text-anchor="middle">Budget-aware merge</text>
+  <text class="small" x="430" y="158" text-anchor="middle">per-layer rank allocation</text>
+  <text class="small" x="430" y="176" text-anchor="middle">fixed total budget</text>
+
+  <path class="arrow" d="M530,150 L600,150"/>
+  <text class="txt" x="600" y="145" text-anchor="end" font-size="13">single</text>
+  <text class="txt" x="600" y="163" text-anchor="end" font-size="13">merged</text>
+  <text class="txt" x="600" y="181" text-anchor="end" font-size="13">adapter</text>
+</svg>

@@ -77,3 +77,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-26 — AgentKernel paper: names 4 concrete trust-boundary crossings (untrusted content, mixing, memory persistence, tool calls) → *Untrusted tool output*
 - 2026-09-27 — NVIDIA Model-Optimizer (#3, +67): six compression techniques, all headline numbers vendor-run → *Serving under real load*
 - 2026-09-28 — VoiceStudio (#3, +250): local voice cloning ships an MCP tool for agents, no cloud step required → *The churn watch*
+- 2026-09-29 — Budget-Aware LoRA Merging paper: same-rank-per-layer merging is a hidden simplification, not neutral → *Adapting a model cheaply*
