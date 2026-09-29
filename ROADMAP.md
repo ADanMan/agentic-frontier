@@ -47,11 +47,6 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 
 *(auto-appended by the daily routine; newest at the bottom, trimmed to the latest ~30)*
 
-- 2026-09-21 — ECC (264k★, #1, +353): skills load on demand, instincts+summary persist, raw transcript doesn't → *Context economy*
-- 2026-09-21 — Grounded Skill Synthesis paper: proposes learning skills from code, not just traces; abstract excerpt cuts off before naming 2nd limitation → *Where the training signal comes from*
-- 2026-09-21 — agent-native (5.4k★, #2): one Action definition shares validation+permissions across UI/agent/HTTP/MCP/A2A/CLI → *The authorization boundary*
-- 2026-09-21 — cc-switch (NEW ENTRY #10, 134k★): meta-manager for 9 competing coding-CLI config formats → *The churn watch*
-- 2026-09-22 — Measuring the Checker: mutation analysis scores GPU-kernel checkers, not just the code → *Proving it works*
 - 2026-09-22 — Srijika: restyles glyph outlines on shaping-complete templates, skips full from-scratch font generation → *The churn watch*
 - 2026-09-22 — OpenStock (18k★, #3, +385): README opens on a Solana token address, before the project name → *Proving it works*
 - 2026-09-22 — Skill Synthesis paper: fuller excerpt reveals 2nd limitation, document-derived skills "may lac[k]..." → *Where the training signal comes from*
@@ -81,3 +76,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-29 — D-JEPA paper: accurate latent prediction doesn't guarantee latent distance picks the winning action → *Proving it works*
 - 2026-09-29 — paperclip (93.2k★, #2): +560 window vs 3,197 claimed stars today, 7th mismatch instance → *Proving it works*
 - 2026-09-29 — NeoMME blog (H Company): "native" multimodal+multilingual encoder announced, no numbers yet → *Adapting a model cheaply*
+- 2026-09-29 — Prefill/decode explainer: compute-bound vs memory-bound is why serving stacks split the two phases → *Serving under real load*
