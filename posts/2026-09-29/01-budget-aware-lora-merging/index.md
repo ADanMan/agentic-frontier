@@ -6,6 +6,15 @@ lang: [ru, en]
 generated: true
 ---
 
+```mermaid
+flowchart LR
+    A["Task A adapter<br/>rank 8 (easy task)"] --> M{"Budget-aware<br/>merge"}
+    B["Task B adapter<br/>rank 32 (hard task)"] --> M
+    M --> C["Single merged adapter<br/>per-layer rank allocation<br/>under a fixed budget"]
+```
+
+![diagram](fig-1.svg)
+
 ## Русская версия
 
 # Не все ранги одинаково полезны: как экономить бюджет при слиянии LoRA-адаптеров

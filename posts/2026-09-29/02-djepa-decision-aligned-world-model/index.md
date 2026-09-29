@@ -6,6 +6,16 @@ lang: [ru, en]
 generated: true
 ---
 
+```mermaid
+flowchart TD
+    S["Current state<br/>latent embedding"] --> A["Candidate action A<br/>predicted latent: close"]
+    S --> B["Candidate action B<br/>predicted latent: far"]
+    A --> AF["Actually FAILS to execute"]
+    B --> BS["Actually SUCCEEDS"]
+```
+
+![diagram](fig-1.svg)
+
 ## Русская версия
 
 # D-JEPA: когда «модель мира» предсказывает будущее правильно, но всё равно выбирает не то действие
