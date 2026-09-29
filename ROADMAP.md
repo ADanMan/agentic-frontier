@@ -80,3 +80,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-29 — Budget-Aware LoRA Merging paper: same-rank-per-layer merging is a hidden simplification, not neutral → *Adapting a model cheaply*
 - 2026-09-29 — D-JEPA paper: accurate latent prediction doesn't guarantee latent distance picks the winning action → *Proving it works*
 - 2026-09-29 — paperclip (93.2k★, #2): +560 window vs 3,197 claimed stars today, 7th mismatch instance → *Proving it works*
+- 2026-09-29 — NeoMME blog (H Company): "native" multimodal+multilingual encoder announced, no numbers yet → *Adapting a model cheaply*
