@@ -83,3 +83,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-30 — Hyperspherical Semantic Trajectory paper: preprints/patents/compute as a faster proxy for lagging TFP, no validation shown → *Proving it works*
 - 2026-09-30 — Omni-IO Skills paper: agents plan well but output production stays fragmented across modalities → *Context economy*
 - 2026-09-30 — "Give Your Coding Agents a Memory You Own" blog: title-only signal, vendor-owned agent memory as a lock-in risk → *Context economy*
+- 2026-09-30 — langchain (147k★): #7 → #8, size doesn't protect against daily trending churn → *The churn watch*
