@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img" aria-label="Raw multimodal observations pile up in conversation history versus a structured evidence ledger that keeps only verified facts">
+  <style>
+    .bg { fill: #ffffff; }
+    .box { fill: none; stroke: #6b7280; stroke-width: 1.5; }
+    .messy { fill: #fef2f2; stroke: #dc2626; stroke-width: 1.2; }
+    .clean { fill: #f0fdf4; stroke: #16a34a; stroke-width: 1.5; }
+    .title { font: 600 15px sans-serif; fill: #111827; }
+    .label { font: 12px sans-serif; fill: #374151; }
+    .small { font: 11px sans-serif; fill: #6b7280; }
+    .arrow { stroke: #6b7280; stroke-width: 1.3; fill: none; marker-end: url(#arrow); }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #111827; }
+      .box { stroke: #9ca3af; }
+      .messy { fill: #3f1d1d; stroke: #f87171; }
+      .clean { fill: #14321f; stroke: #4ade80; }
+      .title { fill: #f3f4f6; }
+      .label { fill: #d1d5db; }
+      .small { fill: #9ca3af; }
+      .arrow { stroke: #9ca3af; }
+    }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="640" height="380"/>
+
+  <text class="title" x="20" y="30">Без evidence ledger</text>
+  <rect class="messy" x="20" y="45" width="280" height="110" rx="8"/>
+  <text class="label" x="35" y="68">video frame · audio clip ·</text>
+  <text class="label" x="35" y="86">web page · calc result ·</text>
+  <text class="label" x="35" y="104">video frame · web page ·</text>
+  <text class="small" x="35" y="128">всё вперемешку в истории диалога —</text>
+  <text class="small" x="35" y="144">модель сама решает, чему верить</text>
+
+  <text class="title" x="340" y="30">С evidence ledger</text>
+  <rect class="clean" x="340" y="45" width="280" height="110" rx="8"/>
+  <text class="label" x="355" y="68">факт 1: подтверждён (видео, t=12s)</text>
+  <text class="label" x="355" y="86">факт 2: подтверждён (сайт X)</text>
+  <text class="label" x="355" y="104">факт 3: не подтверждён — отброшен</text>
+  <text class="small" x="355" y="128">структурированный, проверяемый</text>
+  <text class="small" x="355" y="144">журнал доказательств</text>
+
+  <path class="arrow" d="M160,155 L160,190"/>
+  <path class="arrow" d="M480,155 L480,190"/>
+
+  <rect class="box" x="20" y="200" width="600" height="150" rx="8"/>
+  <text class="label" x="35" y="225">Планировщик агента опирается на журнал, а не на сырую историю чата</text>
+  <text class="small" x="35" y="250">Omni-Decision: планирование для омни-модальных агентов (видео, аудио, веб, вычисления)</text>
+  <text class="small" x="35" y="270">Проблема по мнению авторов: шумные наблюдения накапливаются в истории</text>
+  <text class="small" x="35" y="290">диалога и сбивают планирование — до конкретных цифр дайджест не доходит.</text>
+  <text class="small" x="35" y="320">arXiv 2607.11433 · Ma, Zhu, Zhong, Zhu, Wang и др.</text>
+</svg>
