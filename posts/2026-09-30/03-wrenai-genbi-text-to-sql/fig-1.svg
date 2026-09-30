@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="A natural-language question passes through a governed semantic layer before it becomes SQL against real databases">
+  <style>
+    .bg { fill: #ffffff; }
+    .box { fill: none; stroke: #6b7280; stroke-width: 1.5; }
+    .hub { fill: #eff6ff; stroke: #2563eb; stroke-width: 2; }
+    .db { fill: #f3f4f6; stroke: #6b7280; stroke-width: 1.2; }
+    .title { font: 600 15px sans-serif; fill: #111827; }
+    .label { font: 12px sans-serif; fill: #374151; }
+    .small { font: 11px sans-serif; fill: #6b7280; }
+    .arrow { stroke: #6b7280; stroke-width: 1.3; fill: none; marker-end: url(#arrow); }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #111827; }
+      .box { stroke: #9ca3af; }
+      .hub { fill: #1e3a5f; stroke: #60a5fa; }
+      .db { fill: #1f2937; stroke: #9ca3af; }
+      .title { fill: #f3f4f6; }
+      .label { fill: #d1d5db; }
+      .small { fill: #9ca3af; }
+      .arrow { stroke: #9ca3af; }
+    }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="640" height="360"/>
+
+  <rect class="box" x="20" y="60" width="160" height="60" rx="8"/>
+  <text class="title" x="35" y="85">«Сколько мы</text>
+  <text class="title" x="35" y="103">продали в Q3?»</text>
+
+  <path class="arrow" d="M180,90 L255,90"/>
+
+  <rect class="hub" x="255" y="40" width="150" height="100" rx="8"/>
+  <text class="title" x="270" y="65">WrenAI</text>
+  <text class="label" x="270" y="87">открытый</text>
+  <text class="label" x="270" y="105">context layer</text>
+  <text class="small" x="270" y="123">(governed SQL)</text>
+
+  <path class="arrow" d="M405,90 L470,60"/>
+  <path class="arrow" d="M405,95 L470,90"/>
+  <path class="arrow" d="M405,100 L470,120"/>
+
+  <rect class="db" x="470" y="35" width="150" height="35" rx="6"/>
+  <text class="label" x="483" y="57">BigQuery</text>
+  <rect class="db" x="470" y="75" width="150" height="35" rx="6"/>
+  <text class="label" x="483" y="97">Snowflake</text>
+  <rect class="db" x="470" y="115" width="150" height="35" rx="6"/>
+  <text class="label" x="483" y="137">ClickHouse / 20+</text>
+
+  <rect class="box" x="20" y="200" width="600" height="130" rx="8"/>
+  <text class="small" x="35" y="225">Ключевое слово — "governed": между вопросом и SQL стоит семантический слой,</text>
+  <text class="small" x="35" y="245">который решает, что можно запросить, а не только "переведи текст в SQL".</text>
+  <text class="small" x="35" y="270">Открытый код + управляемое облако — как у большинства инфраструктурных</text>
+  <text class="small" x="35" y="290">агентных проектов сейчас. Ранг #8 (↑1) среди трендов Generative AI на GitHub.</text>
+</svg>

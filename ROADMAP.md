@@ -79,3 +79,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-29 — Prefill/decode explainer: compute-bound vs memory-bound is why serving stacks split the two phases → *Serving under real load*
 - 2026-09-30 — NVIDIA/OpenShell (#2, +461): "safe, private runtime" is the project's own claim, no audit cited → *The authorization boundary*
 - 2026-09-30 — Omni-Decision paper: planning bottleneck is noisy history, not perception, fix is a verified evidence ledger → *Context economy*
+- 2026-09-30 — WrenAI (#8, ↑1): "governed" context layer is the pitch, semantic layer over raw schema-to-SQL → *Retrieval as a first-class design*
