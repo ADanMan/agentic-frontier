@@ -77,3 +77,4 @@ accumulates. Concrete tool names belong there — dated — never in the vectors
 - 2026-09-29 — paperclip (93.2k★, #2): +560 window vs 3,197 claimed stars today, 7th mismatch instance → *Proving it works*
 - 2026-09-29 — NeoMME blog (H Company): "native" multimodal+multilingual encoder announced, no numbers yet → *Adapting a model cheaply*
 - 2026-09-29 — Prefill/decode explainer: compute-bound vs memory-bound is why serving stacks split the two phases → *Serving under real load*
+- 2026-09-30 — NVIDIA/OpenShell (#2, +461): "safe, private runtime" is the project's own claim, no audit cited → *The authorization boundary*
